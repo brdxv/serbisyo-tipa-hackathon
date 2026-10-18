@@ -607,6 +607,9 @@ When generating concepts:
 - The final primary brand color must follow the Team Leader's chosen color. Until it is supplied, concept prompts may use a restrained cool-blue placeholder accent only as a temporary visualization aid.
 - Generate **one dedicated page/screen per image** by default. Do not combine three different pages into one concept board unless the Team Leader explicitly asks for a multi-screen board.
 - For every core consumer-facing page, maintain both a desktop and mobile concept where the responsive composition materially changes.
+- Treat previously approved/generated pages as **visual source files** for later prompts. A later page should explicitly reference the earlier page(s) it depends on so the image generator preserves the same brand, components, spacing, typography, markers, cards, and interaction language.
+- Responsive pairs must be generated as a family: desktop establishes the information/component system, while mobile recomposes that same system for a portrait canvas and touch interaction. Mobile should not be a separate visual redesign.
+- Sequential workflow screens such as contribution steps must preserve the same shell and only change the active step/content.
 
 The canonical prompt library for these explorations is stored in `UI_IMAGE_PROMPTS.md`.
 

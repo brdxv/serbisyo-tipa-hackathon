@@ -22,10 +22,15 @@ Unless a prompt says otherwise, preserve these principles:
 - Avoid: direct Google Maps imitation, dense analytics dashboards, excessive glassmorphism, neon cyberpunk, over-decoration, huge gradients, random 3D elements, unnecessary floating ornaments, and every metric being placed in identical cards.
 - Use believable local sample names such as `Morong Municipal Office`, `Morong Community Health Center`, `Rizal Family Clinic`, `URS Registrar`, `Bayanihan Pharmacy`, and `Teresa Water District`.
 - **Generation rule:** every prompt should generate **one dedicated screen only**. Do not combine multiple pages, multiple device layouts, collages, presentation boards, or moodboards into one image unless the prompt explicitly asks for a component/design-system board.
+- **Cross-page continuity rule:** when a prompt names another prompt as a continuity reference and that earlier image has already been generated, use the earlier generated image as the visual source of truth. Preserve the same SerbisYO logo treatment, primary/semantic colors, typography family and weight hierarchy, icon style, border radii, shadows, spacing rhythm, marker language, card construction, metric treatments, and navigation patterns unless the new screen specifically requires a responsive adaptation. Do not redesign the brand from page to page.
+- **Responsive continuity rule:** when a mobile prompt corresponds to an already-generated desktop page, treat the desktop image as the established design system and **recompose it for mobile** rather than inventing a new visual direction. Keep the same content hierarchy and component identity while changing placement, density, and interaction for thumb-friendly use.
+- **Workflow continuity rule:** when a later workflow step depends on an earlier step, keep the same selected provider, progress component, form styling, button treatment, and page shell. Only the step content should change.
 
 ---
 
 # P01 — Explore / Home Desktop
+
+**Continuity / reference instruction:** This is the primary visual anchor for the SerbisYO consumer experience. If no approved SerbisYO UI image exists yet, establish the core visual system here. Future consumer-facing desktop and mobile pages should inherit this page's logo treatment, palette, typography, marker style, filter chips, service-card language, spacing, shadows, and navigation behavior.
 
 Design a **high-fidelity desktop web UI concept** for **SerbisYO**, a community-powered service intelligence, discovery, and transparency platform. This is the main **Explore / Home page**, and it should immediately communicate that SerbisYO is not just a review site, but a **map-first decision-making platform** that helps users know **where to go, when to go, what to expect, and which provider is more reliable**.
 
@@ -54,6 +59,8 @@ The design language should use soft layered white or off-white surfaces, gentle 
 ---
 
 # P02 — Service Profile Desktop
+
+**Continuity / reference instruction:** If **P01 Explore / Home Desktop** has already been generated, use that image as the direct visual reference. Preserve its top navigation, brand palette, typography, map treatment, marker style, panel surfaces, radii, shadows, spacing, and metric language. The selected service card from P01 should feel as if it naturally expands into this Service Profile rather than opening a separately designed product.
 
 Design a **high-fidelity desktop web UI concept** for the **SerbisYO Service Profile page**, showing the detailed profile of **Morong Community Health Center**. This page appears after a user selects a service from Explore, so it must preserve the feeling that the user is still inside the same spatial experience. It should feel like the selected service card has naturally expanded into a deeper **service intelligence profile**, not like navigation into an unrelated dashboard.
 
@@ -89,6 +96,8 @@ Include clear actions: **Contribute Experience**, **Suggest an Update**, **Repor
 
 # P03 — Contribute Experience Overview Desktop
 
+**Continuity / reference instruction:** If **P01** and/or **P02** have already been generated, use them as the established desktop SerbisYO design system. Preserve the same header/navigation shell, typography, colors, control radii, button styling, card surfaces, spacing rhythm, and provider identity. This contribution flow should feel like a task entered from P02's **Contribute Experience** action, not a new standalone form product.
+
 Design a **high-fidelity desktop web UI concept** for the **SerbisYO Contribute Experience workflow**, where users submit their real experience after using a service. This screen is central to the product because SerbisYO depends on structured community data. The contribution experience should feel **quick, useful, modern, credible, and user-friendly**, never like a long institutional survey.
 
 Create a **guided multi-step desktop flow** that is clearly adaptable to mobile. Use a clean centered main panel with a compact provider context area and a subtle step indicator across the top:
@@ -122,6 +131,8 @@ Use the same SerbisYO visual system as Explore and Service Profile: soft neutral
 
 # P04 — Explore / Home Mobile
 
+**Continuity / reference instruction:** If **P01 Explore / Home Desktop** has already been generated, use that generated desktop image as the **primary visual source of truth**. Do not invent a different mobile brand or component style. Preserve the same SerbisYO logo, color palette, typography, category/filter chip language, custom service-marker design, service-card styling, SerbisYO Score treatment, reliability/confidence indicators, icon family, radii, and visual tone. Recompose the desktop 35/65 results-and-map workspace into a **single portrait mobile experience** using a full-screen map, floating search/filter controls, a draggable bottom service sheet, and bottom navigation.
+
 Design a **high-fidelity mobile UI concept** for the SerbisYO Explore experience on a modern smartphone. Preserve the same information model as desktop, but recompose it for a one-handed map-first mobile experience rather than shrinking the desktop split layout.
 
 Use a **full-height map** as the main canvas. At the top, place a floating rounded search bar reading **“Search services”**, a compact location indicator, and horizontally scrollable category/filter chips such as **Government, Clinics, Open Now, Accessible, Shortest Wait**. Keep the map visible behind these elements.
@@ -147,6 +158,8 @@ Generation requirement: output **only this single mobile Explore screen**. Do no
 
 # P05 — Search / Autocomplete State
 
+**Continuity / reference instruction:** Use the already-generated **P01 desktop Explore** as the reference for desktop search, or **P04 mobile Explore** when generating a mobile version. Search should appear as an expanded state of the existing Explore search field, preserving the same page shell, map, filter style, typography, colors, and service-result language.
+
 Design a **high-fidelity SerbisYO search interaction state** that appears when a user activates the main search field from Explore. Keep the map and nearby service context visible in the background so the user does not feel transported into a separate search page.
 
 Show a large active search field with the typed query **“clinic”**. Below it, display a floating search-suggestion panel with a clean hierarchy containing:
@@ -163,6 +176,8 @@ Include a small **Search this area** or **Nearby results** affordance if spatial
 ---
 
 # P06 — Filters / Sorting State
+
+**Continuity / reference instruction:** Use **P01** for desktop or **P04** for mobile as the visual source of truth. This is an interaction state layered over Explore, so do not redesign the page. Preserve the existing map, search, chips, cards, and navigation; only expand the filtering/sorting control surface using the same component styling.
 
 Design a **SerbisYO filter interface** layered over the Explore map. The filter experience should feel concise and decision-oriented rather than like an advanced settings page.
 
@@ -182,6 +197,8 @@ Use the SerbisYO design language: light layered panels, restrained depth, modern
 ---
 
 # P07 — Service Profile Mobile
+
+**Continuity / reference instruction:** If **P02 Service Profile Desktop** and **P04 Explore Mobile** already exist, combine their established rules: inherit P02's information hierarchy, metric treatments, sections, provider identity, and actions while inheriting P04's mobile shell, typography scale, bottom-sheet behavior, marker style, bottom navigation, and touch ergonomics. This should look unmistakably like the responsive mobile version of P02.
 
 Design a **high-fidelity mobile SerbisYO Service Profile** that feels like it grows naturally from a selected Explore map card into a full-height detail sheet. Preserve spatial context by keeping a small map preview or selected marker visible near the top before the service details begin.
 
@@ -204,6 +221,8 @@ Generation requirement: output **only this single mobile Service Profile screen*
 ---
 
 # P07A — Contribute Experience Mobile Overview
+
+**Continuity / reference instruction:** If **P03 Contribute Experience Desktop** exists, treat it as the form/workflow source of truth; if **P04/P07** exist, use them for mobile navigation, typography scale, spacing, and component density. Preserve the same provider context, four-step progress language, form controls, CTA styling, and brand system while adapting the flow to a portrait mobile canvas.
 
 Generate **one dedicated high-fidelity mobile UI screen only** for the **SerbisYO Contribute Experience workflow**. Do not generate a collage, multiple steps in separate frames, or a desktop/mobile comparison. The output must show **one smartphone screen** that clearly represents the contribution flow.
 
@@ -231,6 +250,8 @@ Use the same SerbisYO visual language as Explore and Service Profile: soft light
 
 # P08 — Community Intelligence / Busy Hours Detail
 
+**Continuity / reference instruction:** Use **P02 Service Profile Desktop** or **P07 Service Profile Mobile** as the source of truth depending on device. This should feel like an expanded subsection of the Service Profile, preserving exactly the same metric names, score colors, confidence treatment, typography, bars, card/surface styling, and provider context.
+
 Design a focused **SerbisYO Community Intelligence detail state** for a selected service provider. This can appear as an expanded section or subview from Service Profile rather than a completely unrelated page.
 
 Show a clear header such as **“Community Intelligence”** with the provider name beneath. Present the five main dimensions:
@@ -249,6 +270,8 @@ Include one small trend or recent-change statement, for example **“Average rep
 
 # P09 — Contribution Step 1: Confirm Service
 
+**Continuity / reference instruction:** Use **P03 desktop** or **P07A mobile** as the established contribution-flow shell. Preserve the same provider context card, progress indicator, typography, controls, CTA placement, page background, and navigation. Only the form content should reflect Step 1: Service.
+
 Design the first step of the SerbisYO contribution workflow: **Confirm the service you used**. The screen should feel fast and reassuring, making it obvious that the user is contributing about the correct place.
 
 Show a compact provider card for **Morong Community Health Center** with category, address, small map preview, and selected marker. Below, include a clear service selector such as:
@@ -265,6 +288,8 @@ Use spacious form composition, readable labels, soft neutral surfaces, and a sti
 ---
 
 # P10 — Contribution Step 2: Visit Details
+
+**Continuity / reference instruction:** Continue directly from **P09**. Keep the exact same provider, progress indicator, page shell, field language, button treatment, spacing, and responsive layout. Only advance the active progress step to **Visit** and replace the form body with waiting/processing and availability/accuracy inputs.
 
 Design the second SerbisYO contribution step titled **“How was your visit?”**. Keep the selected provider/service visible in a compact header so users remain oriented.
 
@@ -283,6 +308,8 @@ The layout should be clean, friendly, and practical on both desktop and mobile. 
 
 # P11 — Contribution Step 3: Rate Experience
 
+**Continuity / reference instruction:** Continue directly from **P10**. Preserve all visual structure and provider context, advance the progress indicator to **Experience**, and swap only the main form content to the structured rating controls. Do not redesign the contribution flow between steps.
+
 Design the third SerbisYO contribution step titled **“How was the service?”**. This step should capture structured quality feedback without reducing everything to a generic 5-star review.
 
 Show three rating dimensions:
@@ -300,6 +327,8 @@ Use warm but professional microcopy, large touch targets, strong typography, sof
 ---
 
 # P12 — Contribution Step 4: Review and Submit
+
+**Continuity / reference instruction:** Continue directly from **P11**. Keep the same page shell, provider identity, typography, controls, spacing, and progress component, with **Review** active. Present the prior-step information as a review summary using the established form/card language.
 
 Design the final SerbisYO contribution step titled **“Review your experience”**. Show a clean summary of everything the user entered before submission.
 
@@ -323,6 +352,8 @@ The primary action should be **Share Experience**. Include a secondary **Back** 
 
 # P13 — Contribution Success State
 
+**Continuity / reference instruction:** This is the immediate completion state after **P12**. Preserve the same contribution shell, provider context, brand styling, button language, and layout proportions. Transition the form body into a restrained success state rather than opening a separately designed confirmation page.
+
 Design a polished **SerbisYO contribution success screen** shown immediately after a user submits an experience. The state should feel rewarding but restrained, avoiding gamification or confetti-heavy visuals.
 
 Display the message:
@@ -341,6 +372,8 @@ Use one controlled celebratory visual moment such as a soft checkmark animation 
 ---
 
 # P14 — Suggest an Update
+
+**Continuity / reference instruction:** This action originates from **P02 desktop Service Profile** or **P07 mobile Service Profile**. Keep the underlying service profile visible or contextually implied and use the same modal/bottom-sheet style, typography, radii, buttons, and provider identity. It should feel like a native action of the Service Profile.
 
 Design a **SerbisYO Suggest an Update** interface launched from a service profile. This workflow should feel constructive and accuracy-focused, not like a complaint form.
 
@@ -361,6 +394,8 @@ Add short reassurance text such as **“Community updates are reviewed before th
 
 # P15 — Report Information / Contribution
 
+**Continuity / reference instruction:** Use **P02/P07** and, if already generated, **P14** as the visual reference. Preserve the same overlay/sheet treatment, provider context, typography, spacing, and action hierarchy. Reporting should look like a sibling workflow to Suggest Update, not a separately branded moderation form.
+
 Design a **SerbisYO Report Information** modal or sheet for reporting problematic community content. The tone should be serious and fair without using aggressive warning styling.
 
 Show the reported provider or contribution in a compact preview. Offer reasons such as:
@@ -379,6 +414,8 @@ Use restrained semantic colors, clear focus states, and the same typography/surf
 ---
 
 # P16 — Saved Services Desktop
+
+**Continuity / reference instruction:** Use **P01 Explore Desktop** as the primary desktop visual reference. Reuse the exact service-card component language, top navigation, search/brand treatment, score/reliability/confidence indicators, typography, and spacing. Saved Services should feel like another destination in the same consumer app, not a dashboard redesign.
 
 Design a **high-fidelity desktop Saved Services page** for SerbisYO. The page should allow users to revisit services they are considering without becoming another dashboard.
 
@@ -400,6 +437,8 @@ Keep the visual language quiet, useful, and consistent with Explore rather than 
 
 # P17 — Saved Services Mobile
 
+**Continuity / reference instruction:** If **P16 Saved Services Desktop** and **P04 Explore Mobile** exist, inherit P16's content/card hierarchy and P04's mobile navigation, typography, spacing, touch targets, and overall portrait shell. This should be the responsive mobile version of P16.
+
 Design a mobile SerbisYO **Saved Services** page. Use a clean vertical list with compact service cards that preserve the same metrics and hierarchy from Explore. Each card should show provider name, category, open state, average wait, reliability, and a small saved/bookmark indicator.
 
 Include a simple sort/filter control at the top and optional `View on map` action. Bottom navigation should remain visible with **Saved** selected. Keep the page highly scannable and thumb-friendly, with no dense map unless the user chooses to open one.
@@ -407,6 +446,8 @@ Include a simple sort/filter control at the top and optional `View on map` actio
 ---
 
 # P18 — User Profile / Activity Desktop
+
+**Continuity / reference instruction:** Use **P01/P02** as the established desktop product design system. Preserve the same top navigation, typography, colors, card surfaces, iconography, radii, spacing, and metric styling while changing the content focus to personal activity. Do not introduce a social-media visual system.
 
 Design a **desktop SerbisYO User Profile / Activity page** focused on useful participation history rather than social networking.
 
@@ -420,6 +461,8 @@ Include simple account/settings access but avoid followers, likes, social feeds,
 ---
 
 # P19 — User Profile / Activity Mobile
+
+**Continuity / reference instruction:** If **P18 Profile Desktop** and **P04/P07 mobile** exist, use P18 for content hierarchy and P04/P07 for the mobile shell, bottom navigation, card density, typography scale, and touch ergonomics. Keep Profile visually consistent with the rest of the mobile app.
 
 Design a mobile SerbisYO **Profile / Activity** screen inspired by premium travel/profile apps but adapted for community service participation.
 
@@ -436,6 +479,8 @@ Show one or two recent contribution previews but keep the page simple. Bottom na
 
 # P20 — Login / Register
 
+**Continuity / reference instruction:** Use the approved consumer-facing SerbisYO pages, especially **P01/P04**, as the brand source of truth. Preserve logo, typography, palette, button styling, form-field styling, radii, shadows, and background language. Authentication may be simpler, but it should unmistakably belong to the same product.
+
 Design a minimal **SerbisYO authentication screen** for the hackathon prototype. The page should feel like part of the product rather than a generic template.
 
 Use a split or centered composition with subtle map/service context in the background. Show SerbisYO branding and concise value copy such as **“Share experiences. Save services. Help your community know what to expect.”**
@@ -447,6 +492,8 @@ Avoid decorative illustrations that dominate the page, complicated social-login 
 ---
 
 # P21 — Simple Service Comparison (Should-Have)
+
+**Continuity / reference instruction:** Use **P01 service cards** and **P02 Service Profile metrics** as the component source of truth. Reuse the exact metric names, score colors, provider identity style, typography, and actions. Comparison should reorganize existing SerbisYO information, not invent new cards or visual conventions.
 
 Design a **SerbisYO service comparison view** for comparing two or three nearby providers. This is a should-have feature and should look useful without turning into a spreadsheet.
 
@@ -469,6 +516,8 @@ Avoid declaring an absolute “winner.” The goal is transparent comparison so 
 
 # P22 — No Results / Empty Search State
 
+**Continuity / reference instruction:** This is a state of **P01 desktop Explore** or **P04 mobile Explore**, not a new page. Preserve the exact map, navigation, search, filters, panel/sheet, typography, and colors from the corresponding Explore image; replace only the result content with the empty-state message and recovery actions.
+
 Design a SerbisYO **No Results** state inside the Explore map experience. The map should remain visible, but the service panel should clearly explain:
 
 **“No matching services found in this area.”**
@@ -484,6 +533,8 @@ Use a simple friendly illustration or subtle map icon only if necessary. Do not 
 ---
 
 # P23 — No Community Data State
+
+**Continuity / reference instruction:** This is a state of **P02 desktop Service Profile** or **P07 mobile Service Profile**. Preserve the same provider header, layout, metrics area, typography, map context, and actions. Replace unavailable community metrics with a truthful no-data treatment instead of creating a differently styled page.
 
 Design a SerbisYO **service profile with no community contributions yet**. The provider still has official/basic information, but community intelligence is not available.
 
@@ -501,6 +552,8 @@ Include a prominent **Contribute Experience** action. Do not fabricate zero scor
 
 # P24 — Loading / Map Failure State
 
+**Continuity / reference instruction:** Use **P01/P04 Explore** as the source of truth. Preserve navigation, search, service-card/list styling, colors, typography, and layout. Only replace the failed map region with the degraded-state treatment while keeping usable service-list functionality visible.
+
 Design a resilient **SerbisYO degraded-state screen** for when map tiles or location services fail but service-list data is still available.
 
 Keep the service results list usable. Replace the map with a calm placeholder panel explaining **“Map unavailable right now”** and provide actions such as **Retry Map** and **Use Service List**. Search and filters should remain functional if possible.
@@ -510,6 +563,8 @@ Use restrained error styling and clearly communicate what still works. Avoid ful
 ---
 
 # P25 — Moderator Queue Desktop
+
+**Continuity / reference instruction:** Use the established SerbisYO desktop design system from **P01/P02**, especially typography, palette, radii, buttons, surfaces, and iconography, but simplify the composition for an internal utility workspace. The moderator experience may be denser, but should still clearly belong to SerbisYO.
 
 Design a **desktop internal moderation workspace** for SerbisYO. Use the established design system but make the layout more utilitarian than the consumer experience.
 
@@ -526,6 +581,8 @@ Use neutral surfaces, clear text hierarchy, and minimal decorative styling. The 
 ---
 
 # P26 — Moderator Detail / Report Review
+
+**Continuity / reference instruction:** Continue directly from **P25 Moderator Queue**. Preserve the same internal navigation, queue/detail architecture, typography, buttons, semantic colors, spacing, and report-card language. This is a focused detail state of the same moderation workspace.
 
 Design a focused SerbisYO **moderator report-review screen** showing one reported community contribution in detail.
 
@@ -544,6 +601,8 @@ Place actions **Keep Contribution**, **Remove Contribution**, and **Escalate / N
 ---
 
 # P27 — Future Provider Dashboard
+
+**Continuity / reference instruction:** Use **P02 Service Profile** and **P25 moderation/internal utility styling** as references. Preserve SerbisYO's metric names, score/confidence treatments, typography, colors, and surfaces while adapting the information for a verified provider perspective. Do not create an unrelated enterprise dashboard brand.
 
 Design a **future-scope desktop provider dashboard** for SerbisYO. This is pitch-only and should not be treated as a hackathon MVP requirement.
 
@@ -569,6 +628,8 @@ Keep the interface operational and improvement-focused rather than defensive. Av
 
 # P28 — Future Official vs Community View
 
+**Continuity / reference instruction:** Continue from **P27 Provider Dashboard** and reuse the established provider-side navigation, typography, color semantics, cards, metric language, and spacing. This should appear as a deeper provider transparency view inside the same future provider product area.
+
 Design a future SerbisYO provider transparency page comparing **Official Service Information** with **Community-Reported Experience**.
 
 Show simple paired comparisons such as:
@@ -583,6 +644,8 @@ Use a clean comparison layout with explanations and improvement opportunities. A
 ---
 
 # P29 — SerbisYO UI Component System / Design Board
+
+**Continuity / reference instruction:** If consumer screens have already been approved, extract the component language from the **actual generated P01/P02/P04/P07/P03/P07A images** rather than inventing a new design system. This board should document and normalize the already-established SerbisYO components.
 
 Create a high-fidelity **SerbisYO UI component and visual-system board** for the design team. This is not a user-facing page; it is a reference sheet showing the core reusable interface language.
 
@@ -611,6 +674,8 @@ Arrange everything like a premium product design system board with clear spacing
 ---
 
 # P30 — Map Marker and Service Card Exploration Board
+
+**Continuity / reference instruction:** Use the approved **P01/P04 Explore** images as the source of truth for existing marker and service-card forms. Explore refinements and states that remain recognizably the same components; do not replace them with an unrelated marker/card family unless the team intentionally decides to redesign the core identity.
 
 Create a focused visual exploration sheet for **SerbisYO map markers and service cards**, since these are signature product elements.
 

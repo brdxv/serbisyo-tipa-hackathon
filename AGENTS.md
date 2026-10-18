@@ -17,6 +17,8 @@ For visual/UI concept generation or major interface work, also read:
 - `UI_IMAGE_PROMPTS.md`
 - `UI_IMAGE_PROMPTS_MASTER.md`
 
+When returning or using an image-generation prompt, include its **Continuity / reference instruction**. If the referenced earlier SerbisYO image exists in the current conversation or project workflow, treat it as the visual source of truth instead of generating a new design language.
+
 For role, QA, research, or presentation work also read:
 
 - `TEAM_WORKPLAN.md`
