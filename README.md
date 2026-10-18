@@ -44,6 +44,30 @@ Run frontend and API together:
 npm run dev
 ```
 
+### Windows one-click launcher
+
+Developers on Windows can also double-click:
+
+```text
+RUN_SERBISYO.bat
+```
+
+The launcher will:
+
+1. Verify that Node.js and npm are available.
+2. Install/sync the project dependencies.
+3. Start the frontend and API in a separate development-server window.
+4. Wait for Vite to become available.
+5. Open `http://localhost:5173` automatically in the default browser.
+
+Keep the **SerbisYO Development Server** window open while working. Closing that window, or pressing `Ctrl+C` inside it, stops the local servers.
+
+For launcher testing without automatically opening a browser, run:
+
+```bat
+RUN_SERBISYO.bat --no-browser
+```
+
 Default local addresses:
 
 - Web: `http://localhost:5173`
