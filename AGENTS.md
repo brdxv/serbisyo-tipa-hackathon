@@ -15,6 +15,7 @@ For visual/UI concept generation or major interface work, also read:
 
 - `DESIGN_BLUEPRINT.md`
 - `UI_IMAGE_PROMPTS.md`
+- `UI_IMAGE_PROMPTS_MASTER.md`
 
 For role, QA, research, or presentation work also read:
 

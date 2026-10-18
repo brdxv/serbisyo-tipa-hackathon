@@ -1,5 +1,7 @@
 # SerbisYO UI/UX Concept Image Prompt Library
 
+> **Canonical prompt set:** Use `UI_IMAGE_PROMPTS_MASTER.md` for the complete page-by-page and subflow prompt library. This file contains earlier exploratory variations and remains useful for alternate visual directions.
+
 These prompts are intended for **concept-image generation only**. They help the team compare possible visual directions before final implementation.
 
 They are not instructions to copy any existing design reference exactly. The final UI should remain uniquely SerbisYO.
