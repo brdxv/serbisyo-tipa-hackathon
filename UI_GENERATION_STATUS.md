@@ -2,57 +2,61 @@
 
 Last updated: October 18, 2026
 
-This file tracks which UI concept prompts already have generated reference images and which still need image generation. `APPROVED` means the Team Leader explicitly approved the visual direction. `CURRENT REFERENCE` means an existing/generated screen is currently being used as the reference for the next responsive pair. `GENERATED — PENDING APPROVAL` means an image exists but should not yet be treated as the final visual source of truth until approved.
+This file tracks generated and pending UI concept references. `APPROVED` means the Team Leader explicitly approved the visual direction. `CURRENT REFERENCE` means an existing screen is being used as the source for its responsive counterpart. `GENERATED — PENDING APPROVAL` means an image exists but should not yet be treated as final until approved.
 
-## Current Core Pair Progress
-
-| Prompt | Screen | Status | Continuity / Next Use |
-|---|---|---|---|
-| **P01** | Explore / Home Desktop | **APPROVED** | Master desktop visual reference for all consumer-facing desktop screens. |
-| **P02** | Explore / Home Mobile | **APPROVED** | Master mobile visual reference; responsive counterpart of P01. |
-| **P03** | Service Profile Desktop | **CURRENT REFERENCE** | Existing desktop Service Profile supplied/selected by Team Leader; use as source for P04. |
-| **P04** | Service Profile Mobile | **GENERATED — PENDING APPROVAL** | Generated from P03 + P02. Approve/regenerate before using as the mobile Service Profile baseline. |
-| **P05** | Contribute Experience Desktop | **GENERATED — PENDING APPROVAL** | Generated from P01/P03 visual language. |
-| **P06** | Contribute Experience Mobile | **GENERATED — PENDING APPROVAL** | Generated from P05 + P02/P04 mobile language. |
-
-## Remaining Prompts
+## Processed Prompts
 
 | Prompt | Screen | Status |
 |---|---|---|
+| **P01** | Explore / Home Desktop | **APPROVED** |
+| **P02** | Explore / Home Mobile | **APPROVED** |
+| **P03** | Service Profile Desktop | **CURRENT REFERENCE / FINISHED** |
+| **P04** | Service Profile Mobile | **GENERATED — PENDING APPROVAL** |
+| **P05** | Contribute Experience Desktop | **GENERATED — PENDING APPROVAL** |
+| **P06** | Contribute Experience Mobile | **GENERATED — PENDING APPROVAL** |
 | **P07** | Search / Autocomplete | **GENERATED — PENDING APPROVAL** |
 | **P08** | Filters / Sorting | **GENERATED — PENDING APPROVAL** |
-| **P09** | Community Intelligence / Busy Hours Detail | **NOT GENERATED** |
-| **P10** | Contribution Step 1 — Confirm Service | **NOT GENERATED** |
-| **P11** | Contribution Step 2 — Visit Details | **NOT GENERATED** |
-| **P12** | Contribution Step 3 — Rate Experience | **NOT GENERATED** |
-| **P13** | Contribution Step 4 — Review and Submit | **NOT GENERATED** |
-| **P14** | Contribution Success | **NOT GENERATED** |
-| **P15** | Suggest an Update | **NOT GENERATED** |
-| **P16** | Report Information / Contribution | **NOT GENERATED** |
-| **P17** | Saved Services Desktop | **NOT GENERATED** |
-| **P18** | Saved Services Mobile | **NOT GENERATED** |
-| **P19** | User Profile / Activity Desktop | **NOT GENERATED** |
-| **P20** | User Profile / Activity Mobile | **NOT GENERATED** |
-| **P21** | Login / Register | **NOT GENERATED** |
-| **P22** | Service Comparison | **NOT GENERATED** |
-| **P23** | No Results / Empty Search | **NOT GENERATED** |
-| **P24** | No Community Data | **NOT GENERATED** |
-| **P25** | Loading / Map Failure | **NOT GENERATED** |
-| **P26** | Moderator Queue Desktop | **NOT GENERATED** |
-| **P27** | Moderator Detail / Report Review | **NOT GENERATED** |
-| **P28** | Future Provider Dashboard | **NOT GENERATED** |
-| **P29** | Future Official vs Community View | **NOT GENERATED** |
-| **P30** | SerbisYO UI Component System Board | **NOT GENERATED** |
-| **P31** | Map Marker + Service Card Exploration Board | **NOT GENERATED** |
 
-## Generation Order Rule
+## Next and Remaining Prompts
 
-- For every desktop/mobile pair, finish the **desktop screen first**, then immediately generate its **mobile counterpart**.
-- Do not move to the next paired feature until the current pair has a usable visual reference.
-- **P01 + P02** remain the master Explore references.
-- **P03 + P04** are the Service Profile pair.
-- **P05 + P06** have been generated and are awaiting approval/final selection.
-- **P07 + P08** have also been generated as Explore interaction states and are awaiting approval/final selection.
-- **P09** is the next ungenerated prompt in sequence.
-- Later interaction states should inherit the approved page they belong to rather than introducing a new design language.
+| Prompt | Screen | Status |
+|---|---|---|
+| **P09** | Community Intelligence / Busy Hours Desktop | **NOT GENERATED — NEXT** |
+| **P10** | Community Intelligence / Busy Hours Mobile | **NOT GENERATED** |
+| **P11** | Contribution Step 1 — Confirm Service Desktop | **NOT GENERATED** |
+| **P12** | Contribution Step 1 — Confirm Service Mobile | **NOT GENERATED** |
+| **P13** | Contribution Step 2 — Visit Details Desktop | **NOT GENERATED** |
+| **P14** | Contribution Step 2 — Visit Details Mobile | **NOT GENERATED** |
+| **P15** | Contribution Step 3 — Rate Experience Desktop | **NOT GENERATED** |
+| **P16** | Contribution Step 3 — Rate Experience Mobile | **NOT GENERATED** |
+| **P17** | Contribution Step 4 — Review and Submit Desktop | **NOT GENERATED** |
+| **P18** | Contribution Step 4 — Review and Submit Mobile | **NOT GENERATED** |
+| **P19** | Contribution Success Desktop | **NOT GENERATED** |
+| **P20** | Contribution Success Mobile | **NOT GENERATED** |
+| **P21** | Suggest an Update Desktop | **NOT GENERATED** |
+| **P22** | Suggest an Update Mobile | **NOT GENERATED** |
+| **P23** | Report Information / Contribution Desktop | **NOT GENERATED** |
+| **P24** | Report Information / Contribution Mobile | **NOT GENERATED** |
+| **P25** | Saved Services Desktop | **NOT GENERATED** |
+| **P26** | Saved Services Mobile | **NOT GENERATED** |
+| **P27** | User Profile / Activity Desktop | **NOT GENERATED** |
+| **P28** | User Profile / Activity Mobile | **NOT GENERATED** |
+| **P29** | Login / Register | **NOT GENERATED** |
+| **P30** | Service Comparison | **NOT GENERATED** |
+| **P31** | No Results / Empty Search | **NOT GENERATED** |
+| **P32** | No Community Data | **NOT GENERATED** |
+| **P33** | Loading / Map Failure | **NOT GENERATED** |
+| **P34** | Moderator Queue Desktop | **NOT GENERATED** |
+| **P35** | Moderator Detail / Report Review | **NOT GENERATED** |
+| **P36** | Future Provider Dashboard | **NOT GENERATED** |
+| **P37** | Future Official vs Community View | **NOT GENERATED** |
+| **P38** | SerbisYO UI Component System Board | **NOT GENERATED** |
+| **P39** | Map Marker + Service Card Exploration Board | **NOT GENERATED** |
 
+## Pairing Rule
+
+- Whenever both desktop and mobile versions are useful, they are consecutive prompt IDs.
+- Generate/review **desktop first**, then immediately generate its **mobile counterpart**.
+- P07 and P08 remain device-adaptive interaction states because they modify the existing Explore screen rather than represent a standalone page.
+- Internal moderator/future-scope tools remain desktop-first unless the Team Leader later requests mobile counterparts.
+- **P09 is the next ungenerated prompt.**

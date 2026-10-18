@@ -254,93 +254,179 @@ Use the SerbisYO design language: light layered panels, restrained depth, modern
 
 ---
 
-# P09 — Community Intelligence / Busy Hours Detail
+# P09 — Community Intelligence / Busy Hours Detail Desktop
 
-**Continuity / reference instruction:** Use **P03 Service Profile Desktop** or **P04 Service Profile Mobile** as the source of truth depending on device. This should feel like an expanded subsection of the Service Profile, preserving exactly the same metric names, score colors, confidence treatment, typography, bars, card/surface styling, and provider context.
+**Continuity / reference instruction:** Use **P03 Service Profile Desktop** as the direct visual source of truth. This is an expanded desktop subview of the Service Profile, not a new product area. Preserve the same SerbisYO header, provider identity, typography, score colors, confidence treatment, progress bars, card/surface styling, map language, radii, shadows, spacing, and action hierarchy.
 
-Design a focused **SerbisYO Community Intelligence detail state** for a selected service provider. This can appear as an expanded section or subview from Service Profile rather than a completely unrelated page.
+Generate **one dedicated high-fidelity desktop Community Intelligence / Busy Hours detail screen only** for **Morong Community Health Center**. Keep enough Service Profile context visible that the user understands where they came from.
 
-Show a clear header such as **“Community Intelligence”** with the provider name beneath. Present the five main dimensions:
+Show a clear header such as **Community Intelligence** with the provider name beneath. Present the five core dimensions:
 
-- Service Quality
-- Reliability / Consistency
-- Time & Efficiency
-- Information Accuracy
-- Accessibility
+- **Service Quality**
+- **Reliability / Consistency**
+- **Time & Efficiency**
+- **Information Accuracy**
+- **Accessibility**
 
-Use a refined combination of progress bars, score strips, labels, and short explanations. Include a compact **Busy Hours** visualization across the day, using a simple horizontal histogram or heat strip showing quieter and busier time ranges. Add a small note such as **“Based on 74 recent community contributions”** and show **Community Confidence: High**.
+Use a refined combination of compact progress bars, score strips, short explanations, and confidence indicators. Include **Community Confidence: High** and a note such as **Based on 74 recent community contributions**.
 
-Include one small trend or recent-change statement, for example **“Average reported wait improved by 6 minutes compared with last week.”** Keep this informational and understandable, not finance-like. Avoid dense charts, pie charts, or analytics-dashboard styling. The goal is to explain the service’s real experience in a human-readable way.
+Make **Busy Hours** a major but still human-readable section. Use a clean horizontal histogram or heat strip across the day, with clear periods such as **Usually quiet**, **Moderate**, and **Busiest**. Show a useful insight like **Busiest from 11 AM to 1 PM**.
 
----
+Include one small recent-change insight such as **Average reported wait improved by 6 minutes compared with last week.** Keep this understandable and service-oriented, not finance-like.
 
-# P10 — Contribution Step 1: Confirm Service
+If space allows, include a compact breakdown showing how many recent reports contributed to each metric or a small **Recent trends** area, but avoid dense analytics dashboards, pie charts, or excessive charting.
 
-**Continuity / reference instruction:** Use **P05 desktop** or **P06 mobile** as the established contribution-flow shell. Preserve the same provider context card, progress indicator, typography, controls, CTA placement, page background, and navigation. Only the form content should reflect Step 1: Service.
-
-Design the first step of the SerbisYO contribution workflow: **Confirm the service you used**. The screen should feel fast and reassuring, making it obvious that the user is contributing about the correct place.
-
-Show a compact provider card for **Morong Community Health Center** with category, address, small map preview, and selected marker. Below, include a clear service selector such as:
-
-- General Consultation
-- Records Request
-- Vaccination
-- Laboratory
-
-Include visit date/time controls and a simple **This is the correct place** confirmation. Show the four-step progress indicator with **Service** active and **Visit, Experience, Review** upcoming.
-
-Use spacious form composition, readable labels, soft neutral surfaces, and a sticky or prominent **Next** button. Avoid asking for ratings yet. The design should feel like a short consumer flow rather than account setup or a survey.
+Use the exact SerbisYO desktop visual language from P03. **Generation requirement:** output only one desktop Community Intelligence detail screen.
 
 ---
 
-# P11 — Contribution Step 2: Visit Details
+# P10 — Community Intelligence / Busy Hours Detail Mobile
 
-**Continuity / reference instruction:** Continue directly from **P10**. Keep the exact same provider, progress indicator, page shell, field language, button treatment, spacing, and responsive layout. Only advance the active progress step to **Visit** and replace the form body with waiting/processing and availability/accuracy inputs.
+**Continuity / reference instruction:** Use **P09 Community Intelligence Desktop** as the information and metric source of truth, and use **P04 Service Profile Mobile** as the mobile shell and responsive visual reference. Preserve the same metric names, colors, confidence treatment, provider identity, typography, rounded surfaces, icon family, spacing rhythm, and mobile navigation language.
 
-Design the second SerbisYO contribution step titled **“How was your visit?”**. Keep the selected provider/service visible in a compact header so users remain oriented.
+Generate **one dedicated high-fidelity portrait mobile Community Intelligence / Busy Hours detail screen only**. Do not create a collage or desktop/mobile comparison.
 
-Collect structured service-timing information using clear ergonomic controls:
+Keep **Morong Community Health Center** visible in a compact top context header with a back action to the Service Profile. Present the five Community Intelligence dimensions as vertically stacked, thumb-friendly metric rows rather than shrinking desktop cards.
 
-- **How long did you wait?** — numeric/time input such as `24 minutes`
-- **How long did the service take?** — `18 minutes`
-- **Was the service available?** — Yes / Partly / No
-- **Was the posted information accurate?** — Yes / Partly / No
+Show:
 
-Use large segmented controls and highly legible input fields. Add subtle explanatory text where useful, for example **“Count from joining the queue until service starts.”** Show the progress indicator with **Visit** active and a sticky **Next** action.
+- **Service Quality**
+- **Reliability / Consistency**
+- **Time & Efficiency**
+- **Information Accuracy**
+- **Accessibility**
+- **Community Confidence: High**
+- **Based on 74 recent community contributions**
 
-The layout should be clean, friendly, and practical on both desktop and mobile. Avoid sliders if they make exact time entry unclear. This screen should visually reinforce that SerbisYO values measurable experience data.
+Place a compact but legible **Busy Hours** visualization below, optimized for portrait width. Clearly show the busiest period around **11 AM–1 PM** and quieter periods before/after. Include the same recent-change insight from P09.
+
+Keep the design vertically scannable, readable with one hand, and consistent with P04. Avoid tiny desktop charts, horizontal overflow, or dense dashboard behavior.
+
+**Generation requirement:** output only one portrait mobile Community Intelligence detail screen.
 
 ---
 
-# P12 — Contribution Step 3: Rate Experience
+# P11 — Contribution Step 1: Confirm Service Desktop
 
-**Continuity / reference instruction:** Continue directly from **P11**. Preserve all visual structure and provider context, advance the progress indicator to **Experience**, and swap only the main form content to the structured rating controls. Do not redesign the contribution flow between steps.
+**Continuity / reference instruction:** Use **P05 Contribute Experience Desktop** as the established contribution-flow shell. Preserve its header/navigation, provider context card, four-step progress indicator, typography, controls, button treatment, page background, map relationship, spacing, and SerbisYO visual system. Only the form content changes to Step 1.
 
-Design the third SerbisYO contribution step titled **“How was the service?”**. This step should capture structured quality feedback without reducing everything to a generic 5-star review.
+Generate **one dedicated high-fidelity desktop screen** for **Step 1 — Service** of the SerbisYO contribution workflow.
 
-Show three rating dimensions:
+The active progress step should be **Service**, with **Visit, Experience, Review** upcoming.
+
+Show a compact provider card for **Morong Community Health Center**, including category, address, open state, small map/marker preview, and a clear confirmation that this is the place being reviewed.
+
+Main heading: **Confirm the service you used**.
+
+Provide a clean service selector with realistic options such as:
+
+- **General Consultation**
+- **Medical Records Request**
+- **Vaccination**
+- **Laboratory Services**
+
+Allow one service to be selected. Include visit date and time controls and a simple confirmation such as **This is the correct place**.
+
+Use spacious desktop form composition, readable labels, soft neutral surfaces, and a strong **Next: Visit Details** CTA. Do not ask for ratings yet.
+
+**Generation requirement:** output only one desktop Step 1 screen.
+
+---
+
+# P12 — Contribution Step 1: Confirm Service Mobile
+
+**Continuity / reference instruction:** Use **P11** as the Step 1 content source of truth and **P06 Contribute Experience Mobile** as the mobile workflow shell. Preserve the same provider, progress indicator, typography, control styling, CTA language, bottom navigation, rounded surfaces, and spacing rhythm.
+
+Generate **one dedicated portrait mobile screen** for **Step 1 — Service**.
+
+Keep the provider context compact at the top. Make **Service** the active progress step. Show the same service options from P11 as large touch-friendly selectable rows or cards. Include visit date/time controls designed for mobile and a simple **This is the correct place** confirmation.
+
+Place a sticky **Next: Visit Details** button above the bottom navigation. Keep the flow one-handed, spacious, and visually continuous with P06.
+
+**Generation requirement:** output only one portrait mobile Step 1 screen.
+
+---
+
+# P13 — Contribution Step 2: Visit Details Desktop
+
+**Continuity / reference instruction:** Continue directly from **P11 Contribution Step 1 Desktop** and preserve the same page shell, provider context, progress indicator, form styling, button treatment, map relationship, and spacing. Advance the active step to **Visit**.
+
+Generate **one dedicated high-fidelity desktop Step 2 screen** titled **How was your visit?**.
+
+Collect structured service-timing information:
+
+- **What was the waiting time?** — use clear time ranges such as `<5 min`, `5–15 min`, `15–30 min`, `30–60 min`, `>1 hr`
+- **What was the processing time?** — use the same time-range control
+- **Was the service available?** — Yes / No / Partly available
+- **Was the posted information accurate?** — Yes / No / Somewhat accurate
+
+Include short explanatory text where useful, such as **Time from arrival until being assisted** and **Time spent for the actual service**.
+
+Add an optional details field **Anything others should know?** and keep the primary CTA **Next: Rate Your Experience**. The screen should reinforce measurable service data rather than casual opinion.
+
+**Generation requirement:** output only one desktop Step 2 screen.
+
+---
+
+# P14 — Contribution Step 2: Visit Details Mobile
+
+**Continuity / reference instruction:** Use **P13** as the exact Step 2 content source of truth and **P06/P12** as the mobile workflow shell. Preserve the same provider context, progress structure, selected states, controls, typography, buttons, and bottom navigation.
+
+Generate **one dedicated portrait mobile Step 2 screen** titled **How was your visit?**.
+
+Use touch-friendly controls for waiting time, processing time, service availability, information accuracy, and the optional note field. Recompose the desktop two-column form into a clear vertical mobile flow. Keep **Visit** active in the progress indicator and use a sticky **Next: Rate Your Experience** CTA.
+
+Avoid tiny segmented controls or horizontal overflow. Keep the page consistent with the approved P06 mobile contribution design.
+
+**Generation requirement:** output only one portrait mobile Step 2 screen.
+
+---
+
+# P15 — Contribution Step 3: Rate Experience Desktop
+
+**Continuity / reference instruction:** Continue directly from **P13 Contribution Step 2 Desktop**. Preserve the same contribution shell, provider identity, progress component, control styling, spacing, and button treatment. Advance the active step to **Experience**.
+
+Generate **one dedicated high-fidelity desktop Step 3 screen** titled **How was the service?**.
+
+Collect structured ratings for:
 
 - **Service Quality**
 - **Accessibility**
 - **Overall Experience**
 
-Use modern labeled scales such as **Poor, Fair, Good, Very Good, Excellent** or a similarly clear segmented interaction. Selected states should be easy to distinguish without relying only on color.
+Use a clear labeled scale such as **Poor, Fair, Good, Very Good, Excellent** instead of relying only on generic stars. Selected states should remain understandable without color alone.
 
-Below, add an optional compact field asking **“Anything important about accessibility?”** if space allows. Keep provider context visible in a small header and show the workflow indicator with **Experience** active.
+Include an optional compact field such as **Anything important about accessibility?** and short explanatory microcopy where useful. Use a strong **Next: Review Your Experience** CTA and a secondary Back action.
 
-Use warm but professional microcopy, large touch targets, strong typography, soft surfaces, and a clear **Next** button. Avoid emojis, childish gamification, or excessive sentiment icons. The page should feel credible enough for public services and businesses alike.
+The page should feel credible for public offices, clinics, schools, businesses, and other service providers. Avoid emojis, childish reactions, or gamified scoring.
+
+**Generation requirement:** output only one desktop Step 3 screen.
 
 ---
 
-# P13 — Contribution Step 4: Review and Submit
+# P16 — Contribution Step 3: Rate Experience Mobile
 
-**Continuity / reference instruction:** Continue directly from **P12**. Keep the same page shell, provider identity, typography, controls, spacing, and progress component, with **Review** active. Present the prior-step information as a review summary using the established form/card language.
+**Continuity / reference instruction:** Use **P15** as the Step 3 content source of truth and **P06/P14** as the mobile contribution shell. Preserve provider context, progress indicator, rating language, control styling, typography, CTA treatment, bottom navigation, and spacing.
 
-Design the final SerbisYO contribution step titled **“Review your experience”**. Show a clean summary of everything the user entered before submission.
+Generate **one dedicated portrait mobile Step 3 screen** titled **How was the service?**.
 
-Include compact sections for:
+Stack **Service Quality, Accessibility, and Overall Experience** vertically with large touch-friendly labeled rating controls. Make the selected state obvious through border, icon, and text treatment in addition to color.
 
-- Provider and service
+Include the optional accessibility note and a sticky **Next: Review Your Experience** action. Keep the page calm, credible, and easy to complete with one hand.
+
+**Generation requirement:** output only one portrait mobile Step 3 screen.
+
+---
+
+# P17 — Contribution Step 4: Review and Submit Desktop
+
+**Continuity / reference instruction:** Continue directly from **P15 Contribution Step 3 Desktop**. Preserve the exact same contribution shell, provider identity, typography, controls, spacing, map relationship, and progress component, with **Review** active.
+
+Generate **one dedicated high-fidelity desktop Step 4 screen** titled **Review your experience**.
+
+Show a clean summary of:
+
+- Provider and selected service
 - Visit date/time
 - Waiting time
 - Processing time
@@ -350,40 +436,70 @@ Include compact sections for:
 - Accessibility
 - Overall experience
 
-Add an optional short comment field labeled **“Anything others should know?”** with restrained character guidance. Show a small note explaining that the contribution will help improve community service information.
+Allow each section to be edited. Include an optional short comment field labeled **Anything others should know?** with restrained character guidance.
 
-The primary action should be **Share Experience**. Include a secondary **Back** action and allow users to edit any section. Keep the page calm and confident; this is a final review, not a legal confirmation. Use the same design language as previous contribution steps.
+Add a small note explaining that the contribution will help improve community service information. Use **Share Experience** as the strongest primary action and **Back** as secondary.
+
+**Generation requirement:** output only one desktop Step 4 screen.
 
 ---
 
-# P14 — Contribution Success State
+# P18 — Contribution Step 4: Review and Submit Mobile
 
-**Continuity / reference instruction:** This is the immediate completion state after **P13**. Preserve the same contribution shell, provider context, brand styling, button language, and layout proportions. Transition the form body into a restrained success state rather than opening a separately designed confirmation page.
+**Continuity / reference instruction:** Use **P17** as the review-content source of truth and **P06/P16** as the mobile workflow shell. Preserve the same provider, progress indicator, summary labels, edit actions, typography, buttons, and spacing.
 
-Design a polished **SerbisYO contribution success screen** shown immediately after a user submits an experience. The state should feel rewarding but restrained, avoiding gamification or confetti-heavy visuals.
+Generate **one dedicated portrait mobile Step 4 screen** titled **Review your experience**.
 
-Display the message:
+Recompose the desktop review summary into stacked mobile sections with clear edit affordances. Keep the optional comment field compact. Place a sticky **Share Experience** CTA above the bottom navigation and a secondary Back action.
 
-**“Experience added. You just helped the next person know what to expect.”**
+Keep **Review** active in the progress indicator and make the page calm and confidence-building rather than legalistic.
 
-Show a small provider summary and a subtle indication that community data has been updated, such as **74 → 75 contributions** or a refreshed confidence indicator. If appropriate, show the submitted wait time or a small preview of the updated service insight.
+**Generation requirement:** output only one portrait mobile Step 4 screen.
+
+---
+
+# P19 — Contribution Success Desktop
+
+**Continuity / reference instruction:** This is the immediate completion state after **P17**. Preserve the same desktop contribution shell, provider context, brand styling, button language, layout proportions, and page background. Transition the form body into a success state instead of opening a separately designed page.
+
+Generate **one dedicated high-fidelity desktop success screen**.
+
+Display:
+
+**Experience added. You just helped the next person know what to expect.**
+
+Show a compact provider summary and a subtle indication that community data has updated, such as **74 → 75 contributions**, the submitted wait time, or a refreshed confidence indicator.
 
 Include two actions:
 
 - **View Updated Insights**
 - **Back to Service**
 
-Use one controlled celebratory visual moment such as a soft checkmark animation or expanding marker glow. Keep surfaces clean, spacious, and consistent with SerbisYO.
+Use one restrained celebratory moment such as a soft checkmark, subtle marker glow, or small confirmation motion. Avoid confetti, badges, points, or gamification.
+
+**Generation requirement:** output only one desktop contribution success screen.
 
 ---
 
-# P15 — Suggest an Update
+# P20 — Contribution Success Mobile
 
-**Continuity / reference instruction:** This action originates from **P03 desktop Service Profile** or **P04 mobile Service Profile**. Keep the underlying service profile visible or contextually implied and use the same modal/bottom-sheet style, typography, radii, buttons, and provider identity. It should feel like a native action of the Service Profile.
+**Continuity / reference instruction:** Use **P19** as the success-state content source of truth and **P06/P18** as the mobile contribution shell. Preserve the same provider context, brand styling, typography, buttons, rounded surfaces, and bottom navigation.
 
-Design a **SerbisYO Suggest an Update** interface launched from a service profile. This workflow should feel constructive and accuracy-focused, not like a complaint form.
+Generate **one dedicated portrait mobile contribution success screen** with the same message and updated-data cue from P19. Stack **View Updated Insights** and **Back to Service** as clear thumb-friendly actions.
 
-Use a compact modal on desktop and a rounded bottom sheet on mobile. Title: **“Suggest an update”**. Show selectable issue types:
+Use a restrained confirmation visual and keep the screen visually continuous with the contribution flow that preceded it.
+
+**Generation requirement:** output only one portrait mobile success screen.
+
+---
+
+# P21 — Suggest an Update Desktop
+
+**Continuity / reference instruction:** This action originates from **P03 Service Profile Desktop**. Keep the underlying Service Profile visible or contextually implied and use the same desktop modal language, typography, radii, buttons, provider identity, shadows, and spacing.
+
+Generate **one dedicated high-fidelity desktop Suggest an Update state**.
+
+Open a compact modal or floating sheet titled **Suggest an update** for **Morong Community Health Center**. Show selectable issue types:
 
 - Operating hours
 - Address/location
@@ -392,17 +508,31 @@ Use a compact modal on desktop and a rounded bottom sheet on mobile. Title: **�
 - Accessibility information
 - Other service detail
 
-After selecting an issue type, reveal a simple corrected-value field and an optional explanation. Include the provider name at the top so the user knows what they are updating. Use the primary action **Send Update** and secondary **Cancel**.
+After an issue is selected, reveal a corrected-value field and optional explanation. Include the reassurance **Community updates are reviewed before they affect service information.**
 
-Add short reassurance text such as **“Community updates are reviewed before they affect service information.”** Keep the design neutral, trustworthy, and easy to complete.
+Use **Send Update** as the primary action and **Cancel** as secondary. Keep the underlying Service Profile/map context visible enough to reinforce where the action came from.
+
+**Generation requirement:** output only one desktop Suggest an Update interaction state.
 
 ---
 
-# P16 — Report Information / Contribution
+# P22 — Suggest an Update Mobile
 
-**Continuity / reference instruction:** Use **P03/P04** and, if already generated, **P15** as the visual reference. Preserve the same overlay/sheet treatment, provider context, typography, spacing, and action hierarchy. Reporting should look like a sibling workflow to Suggest Update, not a separately branded moderation form.
+**Continuity / reference instruction:** Use **P21** as the workflow/content source of truth and **P04 Service Profile Mobile** as the mobile visual source. This should feel like the mobile counterpart of the same Service Profile action.
 
-Design a **SerbisYO Report Information** modal or sheet for reporting problematic community content. The tone should be serious and fair without using aggressive warning styling.
+Generate **one dedicated portrait mobile Suggest an Update state** using a rounded draggable bottom sheet over the Service Profile.
+
+Show the same issue types, corrected-value field, optional explanation, reassurance text, **Send Update**, and **Cancel**. Use large touch targets and preserve the P04 mobile typography, spacing, surfaces, and icon family.
+
+**Generation requirement:** output only one portrait mobile Suggest an Update state.
+
+---
+
+# P23 — Report Information / Contribution Desktop
+
+**Continuity / reference instruction:** Use **P03 Service Profile Desktop** and **P21 Suggest an Update Desktop** as visual references. Preserve the same desktop overlay/modal treatment, provider context, typography, spacing, buttons, semantic colors, and action hierarchy. Reporting should feel like a sibling workflow to Suggest Update.
+
+Generate **one dedicated high-fidelity desktop Report Information state**.
 
 Show the reported provider or contribution in a compact preview. Offer reasons such as:
 
@@ -415,11 +545,25 @@ Show the reported provider or contribution in a compact preview. Offer reasons s
 
 Include an optional explanation field and actions **Submit Report** and **Cancel**. Add concise text explaining that reports help keep community information useful and trustworthy.
 
-Use restrained semantic colors, clear focus states, and the same typography/surface system as the rest of SerbisYO. Avoid red-dominated punitive design.
+Use restrained semantic colors and avoid a red-dominated punitive design.
+
+**Generation requirement:** output only one desktop Report Information interaction state.
 
 ---
 
-# P17 — Saved Services Desktop
+# P24 — Report Information / Contribution Mobile
+
+**Continuity / reference instruction:** Use **P23** as the report-workflow source of truth and **P04/P22** as the mobile visual reference. Preserve the same provider/contribution preview, reason labels, explanation field, button hierarchy, typography, spacing, and neutral tone.
+
+Generate **one dedicated portrait mobile Report Information state** as a rounded bottom sheet or focused modal over the Service Profile.
+
+Keep the same reasons and actions **Submit Report** and **Cancel**, but recompose them with large touch targets and a scroll-safe mobile layout. The tone should remain serious and fair without aggressive warning styling.
+
+**Generation requirement:** output only one portrait mobile Report Information state.
+
+---
+
+# P25 — Saved Services Desktop
 
 **Continuity / reference instruction:** Use **P01 Explore Desktop** as the primary desktop visual reference. Reuse the exact service-card component language, top navigation, search/brand treatment, score/reliability/confidence indicators, typography, and spacing. Saved Services should feel like another destination in the same consumer app, not a dashboard redesign.
 
@@ -441,9 +585,9 @@ Keep the visual language quiet, useful, and consistent with Explore rather than 
 
 ---
 
-# P18 — Saved Services Mobile
+# P26 — Saved Services Mobile
 
-**Continuity / reference instruction:** If **P17 Saved Services Desktop** and **P02 Explore Mobile** exist, inherit P17's content/card hierarchy and P02's mobile navigation, typography, spacing, touch targets, and overall portrait shell. This should be the responsive mobile version of P17.
+**Continuity / reference instruction:** If **P25 Saved Services Desktop** and **P02 Explore Mobile** exist, inherit P25's content/card hierarchy and P02's mobile navigation, typography, spacing, touch targets, and overall portrait shell. This should be the responsive mobile version of P25.
 
 Design a mobile SerbisYO **Saved Services** page. Use a clean vertical list with compact service cards that preserve the same metrics and hierarchy from Explore. Each card should show provider name, category, open state, average wait, reliability, and a small saved/bookmark indicator.
 
@@ -451,7 +595,7 @@ Include a simple sort/filter control at the top and optional `View on map` actio
 
 ---
 
-# P19 — User Profile / Activity Desktop
+# P27 — User Profile / Activity Desktop
 
 **Continuity / reference instruction:** Use **P01/P03** as the established desktop product design system. Preserve the same top navigation, typography, colors, card surfaces, iconography, radii, spacing, and metric styling while changing the content focus to personal activity. Do not introduce a social-media visual system.
 
@@ -466,9 +610,9 @@ Include simple account/settings access but avoid followers, likes, social feeds,
 
 ---
 
-# P20 — User Profile / Activity Mobile
+# P28 — User Profile / Activity Mobile
 
-**Continuity / reference instruction:** If **P19 Profile Desktop** and **P02/P04 mobile** exist, use P19 for content hierarchy and P02/P04 for the mobile shell, bottom navigation, card density, typography scale, and touch ergonomics. Keep Profile visually consistent with the rest of the mobile app.
+**Continuity / reference instruction:** If **P27 Profile Desktop** and **P02/P04 mobile** exist, use P27 for content hierarchy and P02/P04 for the mobile shell, bottom navigation, card density, typography scale, and touch ergonomics. Keep Profile visually consistent with the rest of the mobile app.
 
 Design a mobile SerbisYO **Profile / Activity** screen inspired by premium travel/profile apps but adapted for community service participation.
 
@@ -483,7 +627,7 @@ Show one or two recent contribution previews but keep the page simple. Bottom na
 
 ---
 
-# P21 — Login / Register
+# P29 — Login / Register
 
 **Continuity / reference instruction:** Use the approved consumer-facing SerbisYO pages, especially **P01/P02**, as the brand source of truth. Preserve logo, typography, palette, button styling, form-field styling, radii, shadows, and background language. Authentication may be simpler, but it should unmistakably belong to the same product.
 
@@ -497,7 +641,7 @@ Avoid decorative illustrations that dominate the page, complicated social-login 
 
 ---
 
-# P22 — Simple Service Comparison (Should-Have)
+# P30 — Simple Service Comparison (Should-Have)
 
 **Continuity / reference instruction:** Use **P01 service cards** and **P03 Service Profile metrics** as the component source of truth. Reuse the exact metric names, score colors, provider identity style, typography, and actions. Comparison should reorganize existing SerbisYO information, not invent new cards or visual conventions.
 
@@ -520,7 +664,7 @@ Avoid declaring an absolute “winner.” The goal is transparent comparison so 
 
 ---
 
-# P23 — No Results / Empty Search State
+# P31 — No Results / Empty Search State
 
 **Continuity / reference instruction:** This is a state of **P01 desktop Explore** or **P02 mobile Explore**, not a new page. Preserve the exact map, navigation, search, filters, panel/sheet, typography, and colors from the corresponding Explore image; replace only the result content with the empty-state message and recovery actions.
 
@@ -538,7 +682,7 @@ Use a simple friendly illustration or subtle map icon only if necessary. Do not 
 
 ---
 
-# P24 — No Community Data State
+# P32 — No Community Data State
 
 **Continuity / reference instruction:** This is a state of **P03 desktop Service Profile** or **P04 mobile Service Profile**. Preserve the same provider header, layout, metrics area, typography, map context, and actions. Replace unavailable community metrics with a truthful no-data treatment instead of creating a differently styled page.
 
@@ -556,7 +700,7 @@ Include a prominent **Contribute Experience** action. Do not fabricate zero scor
 
 ---
 
-# P25 — Loading / Map Failure State
+# P33 — Loading / Map Failure State
 
 **Continuity / reference instruction:** Use **P01/P02 Explore** as the source of truth. Preserve navigation, search, service-card/list styling, colors, typography, and layout. Only replace the failed map region with the degraded-state treatment while keeping usable service-list functionality visible.
 
@@ -568,7 +712,7 @@ Use restrained error styling and clearly communicate what still works. Avoid ful
 
 ---
 
-# P26 — Moderator Queue Desktop
+# P34 — Moderator Queue Desktop
 
 **Continuity / reference instruction:** Use the established SerbisYO desktop design system from **P01/P03**, especially typography, palette, radii, buttons, surfaces, and iconography, but simplify the composition for an internal utility workspace. The moderator experience may be denser, but should still clearly belong to SerbisYO.
 
@@ -586,9 +730,9 @@ Use neutral surfaces, clear text hierarchy, and minimal decorative styling. The 
 
 ---
 
-# P27 — Moderator Detail / Report Review
+# P35 — Moderator Detail / Report Review
 
-**Continuity / reference instruction:** Continue directly from **P26 Moderator Queue**. Preserve the same internal navigation, queue/detail architecture, typography, buttons, semantic colors, spacing, and report-card language. This is a focused detail state of the same moderation workspace.
+**Continuity / reference instruction:** Continue directly from **P34 Moderator Queue**. Preserve the same internal navigation, queue/detail architecture, typography, buttons, semantic colors, spacing, and report-card language. This is a focused detail state of the same moderation workspace.
 
 Design a focused SerbisYO **moderator report-review screen** showing one reported community contribution in detail.
 
@@ -606,9 +750,9 @@ Place actions **Keep Contribution**, **Remove Contribution**, and **Escalate / N
 
 ---
 
-# P28 — Future Provider Dashboard
+# P36 — Future Provider Dashboard
 
-**Continuity / reference instruction:** Use **P03 Service Profile** and **P26 moderation/internal utility styling** as references. Preserve SerbisYO's metric names, score/confidence treatments, typography, colors, and surfaces while adapting the information for a verified provider perspective. Do not create an unrelated enterprise dashboard brand.
+**Continuity / reference instruction:** Use **P03 Service Profile** and **P34 moderation/internal utility styling** as references. Preserve SerbisYO's metric names, score/confidence treatments, typography, colors, and surfaces while adapting the information for a verified provider perspective. Do not create an unrelated enterprise dashboard brand.
 
 Design a **future-scope desktop provider dashboard** for SerbisYO. This is pitch-only and should not be treated as a hackathon MVP requirement.
 
@@ -632,9 +776,9 @@ Keep the interface operational and improvement-focused rather than defensive. Av
 
 ---
 
-# P29 — Future Official vs Community View
+# P37 — Future Official vs Community View
 
-**Continuity / reference instruction:** Continue from **P28 Provider Dashboard** and reuse the established provider-side navigation, typography, color semantics, cards, metric language, and spacing. This should appear as a deeper provider transparency view inside the same future provider product area.
+**Continuity / reference instruction:** Continue from **P36 Provider Dashboard** and reuse the established provider-side navigation, typography, color semantics, cards, metric language, and spacing. This should appear as a deeper provider transparency view inside the same future provider product area.
 
 Design a future SerbisYO provider transparency page comparing **Official Service Information** with **Community-Reported Experience**.
 
@@ -649,7 +793,7 @@ Use a clean comparison layout with explanations and improvement opportunities. A
 
 ---
 
-# P30 — SerbisYO UI Component System / Design Board
+# P38 — SerbisYO UI Component System / Design Board
 
 **Continuity / reference instruction:** If consumer screens have already been approved, extract the component language from the **actual generated P01/P03/P02/P04/P05/P06 images** rather than inventing a new design system. This board should document and normalize the already-established SerbisYO components.
 
@@ -679,7 +823,7 @@ Arrange everything like a premium product design system board with clear spacing
 
 ---
 
-# P31 — Map Marker and Service Card Exploration Board
+# P39 — Map Marker and Service Card Exploration Board
 
 **Continuity / reference instruction:** Use the approved **P01/P02 Explore** images as the source of truth for existing marker and service-card forms. Explore refinements and states that remain recognizably the same components; do not replace them with an unrelated marker/card family unless the team intentionally decides to redesign the core identity.
 
@@ -704,69 +848,98 @@ Use one consistent SerbisYO visual language. Markers should be recognizable with
 
 # Retrieval Order
 
-The prompt IDs are deliberately ordered so **desktop/mobile versions of the same page are consecutive**. When a desktop and mobile version both exist, generate/review the desktop first, then its mobile counterpart immediately after.
+The prompt IDs are ordered so **desktop/mobile versions of the same consumer-facing page or workflow state are consecutive whenever both versions are useful**. Generate/review the desktop version first, then immediately generate its mobile counterpart.
 
-## Core paired screens
+## Approved Explore pair
 
 1. **P01 — Explore / Home Desktop** — APPROVED desktop master reference
 2. **P02 — Explore / Home Mobile** — APPROVED mobile master reference
-3. **P03 — Service Profile Desktop** — references P01
-4. **P04 — Service Profile Mobile** — references P03 + P02
-5. **P05 — Contribute Experience Desktop** — references P01/P03
-6. **P06 — Contribute Experience Mobile** — references P05 + P02/P04
 
-## Discovery and service-intelligence states
+## Service Profile pair
 
-7. **P07 — Search / Autocomplete** — references Explore for the target device
-8. **P08 — Filters / Sorting** — references Explore for the target device
-9. **P09 — Community Intelligence / Busy Hours** — references Service Profile for the target device
+3. **P03 — Service Profile Desktop**
+4. **P04 — Service Profile Mobile**
 
-## Contribution workflow sequence
+## Contribution Overview pair
 
-10. **P10 — Confirm Service**
-11. **P11 — Visit Details**
-12. **P12 — Rate Experience**
-13. **P13 — Review and Submit**
-14. **P14 — Contribution Success**
+5. **P05 — Contribute Experience Desktop**
+6. **P06 — Contribute Experience Mobile**
 
-## Trust and correction
+## Explore interaction states
 
-15. **P15 — Suggest an Update**
-16. **P16 — Report Information / Contribution**
+7. **P07 — Search / Autocomplete** — device-adaptive Explore state
+8. **P08 — Filters / Sorting** — device-adaptive Explore state
+
+## Community Intelligence pair
+
+9. **P09 — Community Intelligence / Busy Hours Desktop**
+10. **P10 — Community Intelligence / Busy Hours Mobile**
+
+## Contribution Step 1 pair
+
+11. **P11 — Confirm Service Desktop**
+12. **P12 — Confirm Service Mobile**
+
+## Contribution Step 2 pair
+
+13. **P13 — Visit Details Desktop**
+14. **P14 — Visit Details Mobile**
+
+## Contribution Step 3 pair
+
+15. **P15 — Rate Experience Desktop**
+16. **P16 — Rate Experience Mobile**
+
+## Contribution Step 4 pair
+
+17. **P17 — Review and Submit Desktop**
+18. **P18 — Review and Submit Mobile**
+
+## Contribution Success pair
+
+19. **P19 — Contribution Success Desktop**
+20. **P20 — Contribution Success Mobile**
+
+## Trust and correction pairs
+
+21. **P21 — Suggest an Update Desktop**
+22. **P22 — Suggest an Update Mobile**
+23. **P23 — Report Information Desktop**
+24. **P24 — Report Information Mobile**
 
 ## Personal utility pairs
 
-17. **P17 — Saved Services Desktop**
-18. **P18 — Saved Services Mobile**
-19. **P19 — User Profile / Activity Desktop**
-20. **P20 — User Profile / Activity Mobile**
-21. **P21 — Login / Register**
+25. **P25 — Saved Services Desktop**
+26. **P26 — Saved Services Mobile**
+27. **P27 — User Profile / Activity Desktop**
+28. **P28 — User Profile / Activity Mobile**
+29. **P29 — Login / Register**
 
 ## Optional and state screens
 
-22. **P22 — Service Comparison**
-23. **P23 — No Results / Empty Search**
-24. **P24 — No Community Data**
-25. **P25 — Loading / Map Failure**
+30. **P30 — Service Comparison**
+31. **P31 — No Results / Empty Search**
+32. **P32 — No Community Data**
+33. **P33 — Loading / Map Failure**
 
 ## Internal tools
 
-26. **P26 — Moderator Queue Desktop**
-27. **P27 — Moderator Detail / Report Review**
+34. **P34 — Moderator Queue Desktop**
+35. **P35 — Moderator Detail / Report Review**
 
 ## Future-scope pitch concepts
 
-28. **P28 — Future Provider Dashboard**
-29. **P29 — Future Official vs Community View**
+36. **P36 — Future Provider Dashboard**
+37. **P37 — Future Official vs Community View**
 
 ## Design-system references
 
-30. **P30 — SerbisYO UI Component System Board**
-31. **P31 — Map Marker and Service Card Exploration Board**
+38. **P38 — SerbisYO UI Component System Board**
+39. **P39 — Map Marker and Service Card Exploration Board**
 
 ## Prompt retrieval rule
 
-When the Team Leader asks for a prompt ID, return the **exact current prompt plus its continuity/reference instruction**. Do not renumber it in conversation and do not silently substitute another screen.
+When the Team Leader asks for a prompt ID, return the **exact current prompt plus its continuity/reference instruction**. Do not use the old P17-P31 numbering after this expansion.
 
 ## Review Checklist for Generated Concepts
 
