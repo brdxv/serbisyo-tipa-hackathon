@@ -16,8 +16,11 @@ For visual/UI concept generation or major interface work, also read:
 - `DESIGN_BLUEPRINT.md`
 - `UI_IMAGE_PROMPTS.md`
 - `UI_IMAGE_PROMPTS_MASTER.md`
+- `APPROVED_UI_BASELINE.md`
 
 When returning or using an image-generation prompt, include its **Continuity / reference instruction**. If the referenced earlier SerbisYO image exists in the current conversation or project workflow, treat it as the visual source of truth instead of generating a new design language.
+
+Use the current ordered prompt IDs from `UI_IMAGE_PROMPTS_MASTER.md`. Do not use the old numbering after the October 18 prompt-library reorder. In particular, the approved Explore pair is **P01 Desktop + P02 Mobile**.
 
 For role, QA, research, or presentation work also read:
 

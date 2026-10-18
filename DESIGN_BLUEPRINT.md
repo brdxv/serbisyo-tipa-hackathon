@@ -610,6 +610,7 @@ When generating concepts:
 - Treat previously approved/generated pages as **visual source files** for later prompts. A later page should explicitly reference the earlier page(s) it depends on so the image generator preserves the same brand, components, spacing, typography, markers, cards, and interaction language.
 - Responsive pairs must be generated as a family: desktop establishes the information/component system, while mobile recomposes that same system for a portrait canvas and touch interaction. Mobile should not be a separate visual redesign.
 - Sequential workflow screens such as contribution steps must preserve the same shell and only change the active step/content.
+- Prompt IDs are paired consecutively wherever desktop/mobile versions both exist. The approved Explore pair is now **P01 Desktop + P02 Mobile**; the former mobile Explore label P04 is retained only as historical context in `APPROVED_UI_BASELINE.md`.
 
 The canonical prompt library for these explorations is stored in `UI_IMAGE_PROMPTS.md`.
 
