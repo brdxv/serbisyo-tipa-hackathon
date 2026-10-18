@@ -605,6 +605,8 @@ When generating concepts:
 - Prefer believable product UI over futuristic concept art.
 - Avoid unnecessary glassmorphism, excessive gradients, neon effects, oversized shadows, and decorative 3D objects.
 - The final primary brand color must follow the Team Leader's chosen color. Until it is supplied, concept prompts may use a restrained cool-blue placeholder accent only as a temporary visualization aid.
+- Generate **one dedicated page/screen per image** by default. Do not combine three different pages into one concept board unless the Team Leader explicitly asks for a multi-screen board.
+- For every core consumer-facing page, maintain both a desktop and mobile concept where the responsive composition materially changes.
 
 The canonical prompt library for these explorations is stored in `UI_IMAGE_PROMPTS.md`.
 

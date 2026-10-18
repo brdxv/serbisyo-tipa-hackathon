@@ -21,6 +21,7 @@ Unless a prompt says otherwise, preserve these principles:
 - Color: use the final SerbisYO primary color when supplied. Until then, use a restrained cool-blue placeholder accent with neutral surfaces and semantic success/warning/error colors.
 - Avoid: direct Google Maps imitation, dense analytics dashboards, excessive glassmorphism, neon cyberpunk, over-decoration, huge gradients, random 3D elements, unnecessary floating ornaments, and every metric being placed in identical cards.
 - Use believable local sample names such as `Morong Municipal Office`, `Morong Community Health Center`, `Rizal Family Clinic`, `URS Registrar`, `Bayanihan Pharmacy`, and `Teresa Water District`.
+- **Generation rule:** every prompt should generate **one dedicated screen only**. Do not combine multiple pages, multiple device layouts, collages, presentation boards, or moodboards into one image unless the prompt explicitly asks for a component/design-system board.
 
 ---
 
@@ -140,6 +141,8 @@ Example: **Morong Municipal Office — Government — Open — 24 min wait — 9
 
 Include compact bottom navigation with **Explore, Contribute, Saved, Profile**. The design should feel modern, airy, spatial, and highly ergonomic, with controls placed for thumb reach. The selected bottom card and marker should clearly feel connected. Avoid clutter, dense labels, or generic map-app styling. The result should feel like a premium local-discovery product adapted specifically to service transparency.
 
+Generation requirement: output **only this single mobile Explore screen**. Do not place desktop and mobile versions side by side.
+
 ---
 
 # P05 — Search / Autocomplete State
@@ -195,6 +198,34 @@ Add the insight **“Usually reliable, but busiest from 11 AM to 1 PM.”**
 As the user scrolls, reveal **Busy Hours**, **Services Offered**, **Service Quality**, **Information Accuracy**, **Accessibility**, and **Recent Community Experiences**. Keep **Contribute Experience** visible as a prominent sticky or bottom action. Secondary actions such as **Suggest Update** and **Report Information** can appear lower in the page.
 
 Use soft rounded sections, compact metrics, clean spacing, and a travel-app-like rhythm without looking playful or tourist-focused. Avoid cramming all desktop information above the fold. The page should feel calm, trustworthy, and easily scannable with one hand.
+
+Generation requirement: output **only this single mobile Service Profile screen**. Do not combine it with Explore or desktop layouts.
+
+---
+
+# P07A — Contribute Experience Mobile Overview
+
+Generate **one dedicated high-fidelity mobile UI screen only** for the **SerbisYO Contribute Experience workflow**. Do not generate a collage, multiple steps in separate frames, or a desktop/mobile comparison. The output must show **one smartphone screen** that clearly represents the contribution flow.
+
+Design a **mobile-first multi-step guided form** for submitting a real service experience. The experience should feel simple, friendly, fast, and trustworthy, optimized for one-handed smartphone use. At the top, show a compact progress indicator for:
+
+1. **Service**
+2. **Visit**
+3. **Experience**
+4. **Review**
+
+Keep a small provider context header visible for **Morong Community Health Center**, **Clinic / Healthcare**, **Morong, Rizal**, with a subtle map marker or location cue.
+
+The visible step should be **“How was your visit?”** and include touch-friendly controls for:
+
+- Waiting time
+- Processing/service time
+- Was the service available? — **Yes / No / Partly**
+- Was the posted information accurate? — **Yes / No / Partly**
+
+Use soft rounded inputs, segmented controls, clear labels, comfortable spacing, and a sticky bottom **Next** button positioned for thumb reach. The screen may subtly hint that later steps collect **Service Quality**, **Accessibility**, **Overall Experience**, and an optional note, but do not show multiple separate page mockups in the same image.
+
+Use the same SerbisYO visual language as Explore and Service Profile: soft light surfaces, restrained brand accent, modern readable typography, gentle shadows, premium spacing, and no unnecessary decoration. The result should feel like a real consumer mobile product for community-powered service transparency rather than a generic form app.
 
 ---
 
@@ -604,53 +635,54 @@ Use one consistent SerbisYO visual language. Markers should be recognizable with
 
 When generating UI concepts in batches, use this order:
 
-### Group 1 — Core product identity
+### Group 1 — Core product identity, desktop + mobile
+Generate these as **six separate images**, one prompt per image:
+
 1. P01 Explore / Home Desktop
-2. P02 Service Profile Desktop
-3. P03 Contribute Experience Overview Desktop
+2. P04 Explore / Home Mobile
+3. P02 Service Profile Desktop
+4. P07 Service Profile Mobile
+5. P03 Contribute Experience Overview Desktop
+6. P07A Contribute Experience Mobile Overview
 
-### Group 2 — Mobile core experience
-4. P04 Explore / Home Mobile
-5. P07 Service Profile Mobile
-6. P10 Contribution Step 2: Visit Details
-
-### Group 3 — Discovery interactions
+### Group 2 — Discovery interactions and deeper service intelligence
 7. P05 Search / Autocomplete
 8. P06 Filters / Sorting
 9. P08 Community Intelligence / Busy Hours
 
-### Group 4 — Complete contribution workflow
+### Group 3 — Complete contribution workflow
 10. P09 Confirm Service
-11. P11 Rate Experience
-12. P12 Review and Submit
-13. P13 Contribution Success
+11. P10 Visit Details
+12. P11 Rate Experience
+13. P12 Review and Submit
+14. P13 Contribution Success
 
-### Group 5 — Trust and correction
-14. P14 Suggest an Update
-15. P15 Report Information
-16. P22 No Results
-17. P23 No Community Data
-18. P24 Loading / Map Failure
+### Group 4 — Trust and correction
+15. P14 Suggest an Update
+16. P15 Report Information
+17. P22 No Results
+18. P23 No Community Data
+19. P24 Loading / Map Failure
 
-### Group 6 — Personal utility
-19. P16 Saved Services Desktop
-20. P17 Saved Services Mobile
-21. P18 User Profile Desktop
-22. P19 User Profile Mobile
-23. P20 Login / Register
+### Group 5 — Personal utility
+20. P16 Saved Services Desktop
+21. P17 Saved Services Mobile
+22. P18 User Profile Desktop
+23. P19 User Profile Mobile
+24. P20 Login / Register
 
-### Group 7 — Optional MVP / internal tools
-24. P21 Service Comparison
-25. P25 Moderator Queue
-26. P26 Moderator Detail
+### Group 6 — Optional MVP / internal tools
+25. P21 Service Comparison
+26. P25 Moderator Queue
+27. P26 Moderator Detail
 
-### Group 8 — Future-scope pitch concepts
-27. P27 Provider Dashboard
-28. P28 Official vs Community View
+### Group 7 — Future-scope pitch concepts
+28. P27 Provider Dashboard
+29. P28 Official vs Community View
 
-### Group 9 — Design-system references
-29. P29 UI Component System Board
-30. P30 Map Marker and Service Card Exploration Board
+### Group 8 — Design-system references
+30. P29 UI Component System Board
+31. P30 Map Marker and Service Card Exploration Board
 
 ## Review Checklist for Generated Concepts
 
