@@ -21,8 +21,8 @@ Last updated: October 18, 2026
 
 | Prompt | Screen | Status |
 |---|---|---|
-| **P11** | Contribution Workflow Board Desktop | **NOT GENERATED — NEXT** |
-| **P12** | Contribution Workflow Board Mobile | **NOT GENERATED** |
+| **P11** | Contribution Workflow Board Desktop | **GENERATED — PENDING APPROVAL** |
+| **P12** | Contribution Workflow Board Mobile | **GENERATED — PENDING APPROVAL** |
 | **P13** | Contribution Success Desktop | **NOT GENERATED** |
 | **P14** | Contribution Success Mobile | **NOT GENERATED** |
 | **P15** | Suggest an Update Desktop | **NOT GENERATED** |
@@ -48,6 +48,6 @@ Last updated: October 18, 2026
 ## Current Rule
 
 - P11/P12 consolidate the four contribution steps into one desktop board and one mobile board.
-- Generate **P11 first**, approve the desktop flow, then generate **P12** as its responsive mobile counterpart.
+- **P11 + P12 have now been generated** and are awaiting final approval.
 - P13/P14 remain separate post-submission success screens.
-- **P11 is the next ungenerated prompt.**
+- **P13 is the next ungenerated prompt.**
