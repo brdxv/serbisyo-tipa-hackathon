@@ -36,7 +36,7 @@ Build the functional web application and keep the implementation aligned with th
 - Implement map discovery and service search.
 - Implement service profile and community insight views.
 - Implement forms, validation, and contribution flow.
-- Build Express API endpoints and business logic.
+- Build PHP API endpoints and business logic.
 - Design/implement the PostgreSQL schema.
 - Implement aggregation, scoring, and confidence logic.
 - Integrate frontend, backend, and database.

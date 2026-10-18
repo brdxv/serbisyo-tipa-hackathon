@@ -44,8 +44,10 @@ For role, QA, research, or presentation work also read:
 - Language: TypeScript.
 - Frontend: React + Vite.
 - Styling: Tailwind CSS.
-- Backend: Node.js + Express.
+- Backend: PHP 8.2+ JSON API.
 - Database: PostgreSQL.
+- Node.js remains frontend build tooling for Vite only; do not reintroduce Node/Express as the API runtime unless explicitly requested.
+- Prefer plain PHP + PDO for the hackathon backend. Composer/framework adoption should be deliberate, not automatic.
 - Keep architecture understandable and hackathon-feasible.
 - Avoid unnecessary dependencies and infrastructure.
 - Prefer reusable typed components and clear API contracts.

@@ -8,16 +8,16 @@ Responsive web application.
 
 | Layer | Technology | Purpose |
 |---|---|---|
-| Language | TypeScript | Shared typed language across frontend and backend |
+| Languages | TypeScript + PHP | TypeScript for the React frontend; PHP for the backend API |
 | Frontend | React + Vite | Interactive UI and fast development/build tooling |
 | Styling | Tailwind CSS | Responsive styling and consistent UI implementation |
-| Backend | Node.js + Express | API, validation, business logic, scoring, and database access |
+| Backend | PHP 8.2+ | JSON API, validation, business logic, scoring, and database access |
 | Database | PostgreSQL | Relational storage for providers, services, contributions, users, and moderation data |
 
 ## 3. Technical Principles
 
 - Keep architecture simple enough to finish and explain.
-- TypeScript should be used consistently.
+- Use TypeScript consistently in the frontend and PHP 8.2+ consistently in the backend.
 - Separate UI, API/business logic, and persistence concerns.
 - Build the core user flow before optional infrastructure.
 - Use sample/seed data so frontend work can proceed immediately.
@@ -32,7 +32,7 @@ React + Vite Frontend
         |
         | HTTP/JSON API
         v
-Node.js + Express Backend
+PHP Backend
         |
         | Queries / ORM or SQL layer
         v
@@ -44,7 +44,7 @@ Map Provider / Geospatial UI
 Frontend map integration
 ```
 
-The team may use an ORM/query library if it accelerates development, but it is not required by the project concept.
+For the hackathon, use lightweight PHP with PDO rather than introducing a framework or ORM unless the team has a clear need for one. PostgreSQL remains the database source of truth.
 
 ## 5. Core Data Entities
 

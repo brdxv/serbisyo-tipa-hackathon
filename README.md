@@ -26,10 +26,10 @@ Instead of relying only on ordinary star ratings, SerbisYO turns community exper
 
 ## Development Workspace
 
-The codebase now uses a small npm-workspace structure:
+The codebase uses a small frontend/backend structure:
 
 - `apps/web` - React + Vite + Tailwind responsive frontend.
-- `apps/api` - Node.js + Express API.
+- `apps/api` - PHP 8.2+ JSON API using the built-in PHP server for local development.
 - `database` - explicit PostgreSQL schema and seed data.
 
 Install dependencies from the repository root:
@@ -54,9 +54,9 @@ RUN_SERBISYO.bat
 
 The launcher will:
 
-1. Verify that Node.js and npm are available.
-2. Install/sync the project dependencies.
-3. Start the frontend and API in a separate development-server window.
+1. Verify that Node.js/npm and PHP are available. Node.js is used only for the React/Vite frontend toolchain.
+2. Install/sync the frontend dependencies.
+3. Start the React frontend and PHP API in a separate development-server window.
 4. Wait for Vite to become available.
 5. Open `http://localhost:5173` automatically in the default browser.
 
@@ -71,10 +71,10 @@ RUN_SERBISYO.bat --no-browser
 Default local addresses:
 
 - Web: `http://localhost:5173`
-- API: `http://localhost:4000`
-- API health check: `http://localhost:4000/api/health`
+- PHP API: `http://localhost:8000`
+- API health check: `http://localhost:8000/api/health`
 
-Copy `apps/api/.env.example` to `apps/api/.env` when PostgreSQL is ready. The frontend can start before the database integration is complete by using seeded/mock feature data.
+Copy `apps/api/.env.example` to `apps/api/.env` when PostgreSQL is ready. The PHP backend intentionally has no Composer dependency yet so the team can start immediately. PostgreSQL access uses PHP PDO and requires the `pdo_pgsql` extension once database-backed routes are implemented. The frontend can still start before database integration is complete by using seeded/mock feature data.
 
 ## Hackathon Deadline Mindset
 

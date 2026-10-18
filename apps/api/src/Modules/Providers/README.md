@@ -1,4 +1,4 @@
-# Providers API Module
+# Providers PHP Module
 
 Target endpoints:
 
@@ -7,4 +7,4 @@ Target endpoints:
 - `GET /api/providers/:id/services`
 - `GET /api/providers/:id/insights`
 
-Keep provider queries, metric aggregation, validation, and route handlers inside this module.
+Keep controllers, services, repositories, and request validation for provider data inside this module.

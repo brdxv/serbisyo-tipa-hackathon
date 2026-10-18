@@ -3,14 +3,16 @@
   "private": true,
   "version": "0.1.0",
   "workspaces": [
-    "apps/*"
+    "apps/web"
   ],
   "scripts": {
-    "dev": "concurrently -n web,api -c auto \"npm run dev -w @serbisyo/web\" \"npm run dev -w @serbisyo/api\"",
+    "dev": "concurrently -n web,api -c auto \"npm run dev:web\" \"npm run dev:api\"",
     "dev:web": "npm run dev -w @serbisyo/web",
-    "dev:api": "npm run dev -w @serbisyo/api",
-    "build": "npm run build -w @serbisyo/web && npm run build -w @serbisyo/api",
-    "typecheck": "npm run typecheck -w @serbisyo/web && npm run typecheck -w @serbisyo/api"
+    "dev:api": "php -S localhost:8000 -t apps/api/public apps/api/router.php",
+    "build": "npm run build -w @serbisyo/web",
+    "typecheck": "npm run typecheck -w @serbisyo/web",
+    "lint:php": "php -l apps/api/public/index.php && php -l apps/api/router.php && php -l apps/api/src/bootstrap.php && php -l apps/api/src/Config/Env.php && php -l apps/api/src/Database/Connection.php && php -l apps/api/src/Http/JsonResponse.php && php -l apps/api/src/Routes/api.php && php -l apps/api/src/Modules/Health/HealthController.php",
+    "check": "npm run typecheck && npm run lint:php"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"

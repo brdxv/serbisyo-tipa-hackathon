@@ -27,26 +27,33 @@ serbisyo-tipa-hackathon/
 │  │     ├─ pages/                 # route-level screen composition
 │  │     ├─ styles/
 │  │     └─ types/
-│  └─ api/                         # Node + Express API
+│  └─ api/                         # PHP 8.2+ JSON API
+│     ├─ public/
+│     │  └─ index.php              # HTTP entry point
+│     ├─ router.php                # local PHP built-in server router
 │     └─ src/
-│        ├─ config/                # environment/configuration
-│        ├─ db/                    # database pool/helpers
-│        ├─ middleware/            # common Express middleware
-│        ├─ modules/               # feature/domain API modules
-│        │  ├─ providers/
-│        │  ├─ search/
-│        │  ├─ contributions/
-│        │  ├─ reports/
-│        │  ├─ moderation/
-│        │  └─ auth/
-│        ├─ routes/                # top-level route registration
-│        └─ utils/
+│        ├─ Config/                # environment/configuration
+│        ├─ Database/              # PDO PostgreSQL connection
+│        ├─ Http/                  # JSON response helpers
+│        ├─ Middleware/            # shared request middleware
+│        ├─ Modules/               # feature/domain API modules
+│        │  ├─ Providers/
+│        │  ├─ Search/
+│        │  ├─ Contributions/
+│        │  ├─ Reports/
+│        │  ├─ Moderation/
+│        │  └─ Auth/
+│        ├─ Routes/                # top-level route registration
+│        └─ Support/
 ├─ database/
 │  ├─ schema.sql                   # PostgreSQL source of truth
 │  └─ seed.sql                     # demo data starting point
+├─ assets/
+│  ├─ branding/                    # palette, typography, logo/brand references
+│  └─ media files/                 # reusable icon, marker, and vector asset sheets
 ├─ docs/                           # optional future grouping for docs
 ├─ *.md                            # current canonical project documents
-├─ package.json                    # npm workspaces / shared commands
+├─ package.json                    # frontend tooling + combined local commands
 └─ tsconfig.base.json
 ```
 
@@ -76,18 +83,17 @@ Do not create a giant `components/` folder containing every product feature.
 
 ## Backend Rule
 
-Each backend module should eventually follow this small pattern only when needed:
+Each PHP backend module should eventually follow this small pattern only when needed:
 
 ```text
-modules/providers/
-├─ providers.routes.ts
-├─ providers.controller.ts
-├─ providers.service.ts
-├─ providers.repository.ts
-└─ providers.schemas.ts
+Modules/Providers/
+├─ ProviderController.php
+├─ ProviderService.php
+├─ ProviderRepository.php
+└─ ProviderValidator.php
 ```
 
-For very small modules, combine files instead of creating empty layers. Hackathon speed is more important than ceremonial architecture.
+For very small modules, combine files instead of creating empty layers. Hackathon speed is more important than ceremonial architecture. The current backend deliberately avoids a framework and Composer dependencies until they provide a clear benefit.
 
 ## API Boundary
 

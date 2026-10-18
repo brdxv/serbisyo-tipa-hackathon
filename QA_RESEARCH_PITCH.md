@@ -184,7 +184,7 @@ Recommended narrative:
 7. **Technology / Architecture**
    - React + Vite
    - Tailwind CSS
-   - Node.js + Express
+   - PHP 8.2+ backend API
    - PostgreSQL
 
 8. **Live Demonstration**
