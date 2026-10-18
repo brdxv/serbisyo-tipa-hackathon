@@ -532,68 +532,209 @@ Show the same issue types, corrected-value field, optional explanation, reassura
 
 # P17 — Report Information / Contribution Desktop
 
-**Continuity / reference instruction:** Use **P03 Service Profile Desktop** and **P15 Suggest an Update Desktop** as visual references. Preserve the same desktop overlay/modal treatment, provider context, typography, spacing, buttons, semantic colors, and action hierarchy. Reporting should feel like a sibling workflow to Suggest Update.
+**Continuity / reference instruction:** Use **P03 Service Profile Desktop** as the underlying page source of truth and **P15 Suggest an Update Desktop** as the overlay/modal interaction reference. Reporting should feel like a sibling trust workflow to Suggest Update, not a new moderation website. Preserve the same SerbisYO header, provider identity, male avatar, typography, blue/green system, modal language, radii, shadows, spacing, and button hierarchy.
 
-Generate **one dedicated high-fidelity desktop Report Information state**.
+**Canvas / image size:** **1536 × 1024 px, 3:2 landscape.** Match the established desktop frame exactly.
 
-Show the reported provider or contribution in a compact preview. Offer reasons such as:
+**Recurring shell requirement:** keep the SerbisYO desktop header unchanged: logo top-left, rounded `Search a service or place...` field, `Morong, Rizal` selector, notification bell with red unread dot, and the **canonical male profile avatar** at far right.
 
-- Spam
-- Fake or misleading contribution
-- Abusive content
-- Irrelevant content
-- Privacy concern
-- Other
+Generate **one dedicated high-fidelity desktop Report Information / Contribution interaction state**. Keep the underlying **Morong Community Health Center** Service Profile visible and subtly dimmed so the action origin remains obvious.
 
-Include an optional explanation field and actions **Submit Report** and **Cancel**. Add concise text explaining that reports help keep community information useful and trustworthy.
+Open a centered modal or compact floating sheet titled:
 
-Use restrained semantic colors and avoid a red-dominated punitive design.
+### **Report information**
 
-**Generation requirement:** output only one desktop Report Information interaction state.
+Supporting text:
+
+**Help us keep community information useful, accurate, and respectful.**
+
+Show a compact preview of what is being reported. Use a recent community contribution example such as:
+
+**Document Request**  
+**Waited 28 min**  
+**“Staff was helpful but the line was long near lunch.”**  
+Submitted for **Morong Community Health Center**.
+
+Ask:
+
+### **Why are you reporting this?**
+
+Provide selectable reasons:
+
+- **Spam**
+- **Fake or misleading contribution**
+- **Abusive or harmful content**
+- **Irrelevant content**
+- **Privacy concern**
+- **Other**
+
+Use the same clean selection-row language as P15. One option may be selected for demonstration, for example **Fake or misleading contribution**.
+
+Include an optional explanation field:
+
+### **Tell us more**
+**Optional**
+
+Placeholder:
+
+**“This contribution appears to describe a different office and may mislead users.”**
+
+Add a restrained trust note:
+
+**Reports are reviewed before any community contribution is removed or changed.**
+
+Use a shield/information icon. The tone should communicate fairness rather than punishment.
+
+Primary action:
+
+### **Submit Report**
+
+Secondary:
+
+### **Cancel**
+
+Allow a small close **X** in the upper corner.
+
+Keep semantic warning colors restrained. Do not make the entire modal red. Use SerbisYO blue for the main action, neutral surfaces for most of the form, and limited orange/red only for warning/context cues.
+
+Avoid admin-dashboard styling, aggressive warning banners, legalistic language, or implying that reporting instantly deletes content.
+
+**Generation requirement:** output **only one 1536 × 1024 desktop Report Information / Contribution interaction state**.
 
 ---
 
 # P18 — Report Information / Contribution Mobile
 
-**Continuity / reference instruction:** Use **P17** as the report-workflow source of truth and **P04/P16** as the mobile visual reference. Preserve the same provider/contribution preview, reason labels, explanation field, button hierarchy, typography, spacing, and neutral tone.
+**Continuity / reference instruction:** Use **P17 Report Information Desktop** as the workflow/content source of truth and use **P04 Service Profile Mobile** plus **P16 Suggest an Update Mobile** as the mobile shell and bottom-sheet references. Preserve the same reported contribution, report reasons, explanation field, trust note, button hierarchy, typography, colors, male avatar, and provider context.
 
-Generate **one dedicated portrait mobile Report Information state** as a rounded bottom sheet or focused modal over the Service Profile.
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Match the approved mobile frame and density.
 
-Keep the same reasons and actions **Submit Report** and **Cancel**, but recompose them with large touch targets and a scroll-safe mobile layout. The tone should remain serious and fair without aggressive warning styling.
+Preserve the mobile SerbisYO shell: iOS-style status bar, logo upper-left, `Morong, Rizal` selector, notification bell with red unread dot, the same canonical male avatar, and the normal bottom navigation where visible.
 
-**Generation requirement:** output only one portrait mobile Report Information state.
+Generate **one dedicated portrait mobile Report Information / Contribution state** as a large rounded draggable bottom sheet over the dimmed **Morong Community Health Center** Service Profile.
+
+Show a visible drag handle, title **Report information**, short trust-oriented description, and the same compact contribution preview from P17.
+
+Ask **Why are you reporting this?** and present the same reasons as large touch-friendly rows:
+
+- Spam
+- Fake or misleading contribution
+- Abusive or harmful content
+- Irrelevant content
+- Privacy concern
+- Other
+
+One option may be selected. Add the optional **Tell us more** multiline field and the note:
+
+**Reports are reviewed before any community contribution is removed or changed.**
+
+Use a large sticky **Submit Report** button and a secondary **Cancel** action. Keep the sheet scroll-safe and thumb-friendly with no horizontal overflow.
+
+Avoid red-dominated styling, tiny radio buttons, multiple popups, or a punitive tone.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Report Information / Contribution interaction state**.
 
 ---
 
 # P19 — Saved Services Desktop
 
-**Continuity / reference instruction:** Use **P01 Explore Desktop** as the primary desktop visual reference. Reuse the exact service-card component language, top navigation, search/brand treatment, score/reliability/confidence indicators, typography, and spacing. Saved Services should feel like another destination in the same consumer app, not a dashboard redesign.
+**Continuity / reference instruction:** Use **P01 Explore / Home Desktop** as the primary desktop source of truth. Reuse the exact header, search treatment, provider-card language, SerbisYO Score, reliability/confidence indicators, icons, typography, colors, male avatar, radii, shadows, and spacing. Saved Services should feel like another consumer destination inside the same product, not an admin dashboard.
 
-Design a **high-fidelity desktop Saved Services page** for SerbisYO. The page should allow users to revisit services they are considering without becoming another dashboard.
+**Canvas / image size:** **1536 × 1024 px, 3:2 landscape.** Match the approved desktop frame.
 
-Use a clean list/grid hybrid or a narrow saved-service list with optional mini-map context. Each saved provider should show:
+Keep the canonical desktop header: SerbisYO logo, global rounded search bar, `Morong, Rizal`, notification bell with unread dot, and canonical male avatar.
 
-- Provider name
-- Category
-- Open/closed state
-- Average wait
-- Reliability
-- SerbisYO Score
-- One short insight
+Generate **one dedicated high-fidelity desktop Saved Services page** titled:
 
-Include lightweight sorting such as **Recently Saved, Distance, Reliability**. If using a mini map, selected saved services should use the same SerbisYO marker language from Explore. Provide a simple empty state possibility such as **“Save services to compare or revisit them later.”**
+### **Saved Services**
 
-Keep the visual language quiet, useful, and consistent with Explore rather than inventing a new page style.
+Supporting copy:
+
+**Services you saved to revisit, compare, or check before going.**
+
+Use a clean two-column desktop composition: a primary saved-service list/grid on the left or center and an optional compact map/context panel on the right. Do not let the map dominate as strongly as Explore.
+
+Include realistic saved providers already used across SerbisYO, such as:
+
+- **Morong Community Health Center** — Clinic / Healthcare
+- **Morong Municipal Office** — Government Service
+- **URS Registrar** — Education Service
+- **Bayanihan Pharmacy** — Pharmacy
+- **Teresa Water District** — Utilities
+
+Each saved-service card should preserve the Explore information hierarchy:
+
+- provider image
+- provider name
+- category
+- open/closed state
+- short location/distance
+- **Average Wait**
+- **Reliability**
+- **SerbisYO Score**
+- **Community Confidence** where useful
+- one concise insight, e.g. **Usually quieter after 3 PM**
+- active bookmark/saved icon
+
+Include lightweight sort controls:
+
+- **Recently Saved**
+- **Distance**
+- **Shortest Wait**
+- **Reliability**
+
+Add a compact optional action such as **View Saved on Map**. If a mini-map is shown, reuse the exact custom SerbisYO marker system.
+
+Include one subtle explanatory or empty-state cue somewhere in the design, such as:
+
+**Save services to compare or revisit them later.**
+
+Do not create shopping-cart behavior, folders, social collections, or unnecessary dashboard statistics.
+
+**Generation requirement:** output **only one 1536 × 1024 desktop Saved Services page**.
 
 ---
 
 # P20 — Saved Services Mobile
 
-**Continuity / reference instruction:** If **P19 Saved Services Desktop** and **P02 Explore Mobile** exist, inherit P19's content/card hierarchy and P02's mobile navigation, typography, spacing, touch targets, and overall portrait shell. This should be the responsive mobile version of P19.
+**Continuity / reference instruction:** Use **P19 Saved Services Desktop** as the content/card source of truth and **P02 Explore / Home Mobile** as the mobile shell and interaction reference. Preserve the same provider list, card hierarchy, saved state, metrics, typography, colors, male avatar, spacing, and icon family. This should look unmistakably like the responsive mobile counterpart of P19.
 
-Design a mobile SerbisYO **Saved Services** page. Use a clean vertical list with compact service cards that preserve the same metrics and hierarchy from Explore. Each card should show provider name, category, open state, average wait, reliability, and a small saved/bookmark indicator.
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Match the approved mobile frame.
 
-Include a simple sort/filter control at the top and optional `View on map` action. Bottom navigation should remain visible with **Saved** selected. Keep the page highly scannable and thumb-friendly, with no dense map unless the user chooses to open one.
+Preserve the canonical mobile shell: iOS-style status bar, SerbisYO logo, `Morong, Rizal` selector, notification bell with red unread dot, same male avatar, and bottom navigation **Explore / Contribute / Saved / Profile** with **Saved** visibly selected.
+
+Generate **one dedicated high-fidelity portrait mobile Saved Services screen**.
+
+At the top of the content area, show:
+
+### **Saved Services**
+
+Supporting line:
+
+**Revisit services you want to check before going.**
+
+Add one compact sort/filter control such as **Recently Saved** and an optional **View on Map** action.
+
+Use a vertically scrollable list of compact saved-service cards. Reuse the same saved providers and metrics from P19. Each card should show:
+
+- provider image
+- name
+- category
+- open/closed state
+- location or distance
+- average wait
+- reliability
+- SerbisYO Score
+- one short insight where space permits
+- active bookmark icon
+
+Cards should be highly scannable and touch-friendly. Do not place a dense map behind the list. If map viewing is available, expose it as an explicit secondary action rather than making it the default mobile canvas.
+
+Allow the bookmark icon to clearly imply **remove from saved** without needing an extra menu.
+
+Avoid folders, collection boards, social-sharing emphasis, cramped desktop grids, or unrelated card designs.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Saved Services screen**.
 
 ---
 
