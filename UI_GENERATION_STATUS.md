@@ -12,15 +12,15 @@ This file tracks which UI concept prompts already have generated reference image
 | **P02** | Explore / Home Mobile | **APPROVED** | Master mobile visual reference; responsive counterpart of P01. |
 | **P03** | Service Profile Desktop | **CURRENT REFERENCE** | Existing desktop Service Profile supplied/selected by Team Leader; use as source for P04. |
 | **P04** | Service Profile Mobile | **GENERATED — PENDING APPROVAL** | Generated from P03 + P02. Approve/regenerate before using as the mobile Service Profile baseline. |
-| **P05** | Contribute Experience Desktop | **NOT GENERATED** | Generate after P03/P04 are settled. Use P01/P03 as references. |
-| **P06** | Contribute Experience Mobile | **NOT GENERATED** | Generate immediately after P05. Use P05 + approved P02/P04 mobile language. |
+| **P05** | Contribute Experience Desktop | **GENERATED — PENDING APPROVAL** | Generated from P01/P03 visual language. |
+| **P06** | Contribute Experience Mobile | **GENERATED — PENDING APPROVAL** | Generated from P05 + P02/P04 mobile language. |
 
 ## Remaining Prompts
 
 | Prompt | Screen | Status |
 |---|---|---|
-| **P07** | Search / Autocomplete | **NOT GENERATED** |
-| **P08** | Filters / Sorting | **NOT GENERATED** |
+| **P07** | Search / Autocomplete | **GENERATED — PENDING APPROVAL** |
+| **P08** | Filters / Sorting | **GENERATED — PENDING APPROVAL** |
 | **P09** | Community Intelligence / Busy Hours Detail | **NOT GENERATED** |
 | **P10** | Contribution Step 1 — Confirm Service | **NOT GENERATED** |
 | **P11** | Contribution Step 2 — Visit Details | **NOT GENERATED** |
@@ -51,6 +51,8 @@ This file tracks which UI concept prompts already have generated reference image
 - Do not move to the next paired feature until the current pair has a usable visual reference.
 - **P01 + P02** remain the master Explore references.
 - **P03 + P04** are the Service Profile pair.
-- **P05 + P06** are the next pair to generate once P04 is approved.
+- **P05 + P06** have been generated and are awaiting approval/final selection.
+- **P07 + P08** have also been generated as Explore interaction states and are awaiting approval/final selection.
+- **P09** is the next ungenerated prompt in sequence.
 - Later interaction states should inherit the approved page they belong to rather than introducing a new design language.
 
