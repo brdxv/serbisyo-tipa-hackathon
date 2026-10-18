@@ -11,6 +11,11 @@ Before making meaningful changes, read:
 3. `USER_FLOWS_UI.md`
 4. `TECHNICAL_PLAN.md`
 
+For visual/UI concept generation or major interface work, also read:
+
+- `DESIGN_BLUEPRINT.md`
+- `UI_IMAGE_PROMPTS.md`
+
 For role, QA, research, or presentation work also read:
 
 - `TEAM_WORKPLAN.md`

@@ -590,3 +590,21 @@ The interface should make the following feel effortless:
 
 If a screen, card, animation, or feature does not support that loop, it should not be prioritized during the hackathon.
 
+## 22. Concept Image Generation Direction
+
+The team may generate UI/UX concept images before implementation to quickly compare visual directions. These images are **design exploration references**, not final specifications and not pixel-perfect implementation targets.
+
+When generating concepts:
+
+- Preserve the SerbisYO information hierarchy and workflows in this file.
+- Use invented service-provider names and neutral map geography unless the team intentionally wants a local demo area.
+- Do not copy any supplied reference image exactly.
+- Keep the map visually calm so service information remains readable.
+- Show realistic data such as waiting time, reliability, operating hours, confidence, and recent community activity.
+- Generate desktop and mobile concepts separately where useful.
+- Prefer believable product UI over futuristic concept art.
+- Avoid unnecessary glassmorphism, excessive gradients, neon effects, oversized shadows, and decorative 3D objects.
+- The final primary brand color must follow the Team Leader's chosen color. Until it is supplied, concept prompts may use a restrained cool-blue placeholder accent only as a temporary visualization aid.
+
+The canonical prompt library for these explorations is stored in `UI_IMAGE_PROMPTS.md`.
+

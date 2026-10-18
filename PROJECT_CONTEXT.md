@@ -116,3 +116,31 @@ Supporting alignment:
 - **SerbisYO Score** - prototype-level composite score summarizing selected service dimensions.
 - **Community Confidence** - indication of how much confidence should be placed in aggregated data based on contribution count, recency, and/or consistency.
 
+## 11. Product Experience Direction
+
+SerbisYO should feel like a **modern spatial service app** rather than a traditional school-system dashboard. The map is the main working canvas, while service information appears through layered cards, side sheets, bottom sheets, compact filters, and contextual actions.
+
+The product experience should preserve one consistent mental model across devices:
+
+> **Find a service -> focus the place on the map -> reveal service intelligence -> make a decision -> contribute an experience -> help the next person.**
+
+Desktop and mobile should not feel like separate products. The same information hierarchy should morph between layouts:
+
+- **Desktop:** results/service panel + dominant map + contextual detail sheet.
+- **Mobile:** full map canvas + floating search/filter controls + draggable bottom sheet + compact bottom navigation.
+
+The visual direction is inspired by modern travel, mapping, local discovery, and spatial utility interfaces, but SerbisYO must not directly imitate any reference product. Its own identity should come from service intelligence, community confidence, time/reliability metrics, and the relationship between service cards and map markers.
+
+### Visual Principles
+
+- Map-first, not dashboard-first.
+- Soft layered surfaces over a calm map.
+- Clear information hierarchy instead of many equal-sized cards.
+- Rounded controls and sheets used intentionally, not everywhere.
+- Restrained motion that explains state changes and spatial relationships.
+- Modern, trustworthy, community-centered tone.
+- Strong responsive behavior from narrow mobile screens to wide desktop monitors.
+- Accessibility and readability take priority over decoration.
+
+The detailed page-by-page visual direction is maintained in `DESIGN_BLUEPRINT.md`, while concept-image generation prompts are maintained in `UI_IMAGE_PROMPTS.md`.
+
