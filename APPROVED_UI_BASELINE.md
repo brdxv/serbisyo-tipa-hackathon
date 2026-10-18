@@ -79,18 +79,17 @@ The prompt library is now ordered so paired desktop/mobile pages are consecutive
 5. **P05 Contribute Experience Desktop**
 6. **P06 Contribute Experience Mobile**
 
-The same pairing rule now continues through the deeper workflow states:
+The deeper workflow now uses a compact pairing structure:
 
 7. **P09 Community Intelligence Desktop** + **P10 Mobile**
-8. **P11 Confirm Service Desktop** + **P12 Mobile**
-9. **P13 Visit Details Desktop** + **P14 Mobile**
-10. **P15 Rate Experience Desktop** + **P16 Mobile**
-11. **P17 Review and Submit Desktop** + **P18 Mobile**
-12. **P19 Contribution Success Desktop** + **P20 Mobile**
-13. **P21 Suggest an Update Desktop** + **P22 Mobile**
-14. **P23 Report Information Desktop** + **P24 Mobile**
+8. **P11 Contribution Workflow Board Desktop** + **P12 Mobile Board** — each board contains the four chronological steps **Service → Visit → Experience → Review**
+9. **P13 Contribution Success Desktop** + **P14 Mobile**
+10. **P15 Suggest an Update Desktop** + **P16 Mobile**
+11. **P17 Report Information Desktop** + **P18 Mobile**
 
 P07 Search / Autocomplete and P08 Filters / Sorting remain device-adaptive interaction-state prompts because they directly modify the approved Explore page rather than represent standalone pages. Their desktop or mobile form should inherit P01 or P02 respectively.
+
+P11/P12 are intentional board exceptions to the normal one-screen-per-image rule so the full contribution flow can be reviewed in only two generated images while keeping chronological consistency.
 
 When generating a paired page, always generate/review the desktop version first, then immediately generate its mobile counterpart using both the approved mobile baseline and the just-approved desktop page.
 
