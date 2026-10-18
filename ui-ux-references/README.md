@@ -2,7 +2,7 @@
 
 This folder stores the visual references used during SerbisYO implementation.
 
-Use the prompt IDs from `UI_IMAGE_PROMPTS_MASTER.md` when naming approved/generated screens so developers can immediately trace each image back to its design prompt.
+Use the page/state title plus the device type when naming approved/generated screens so developers can immediately understand what each reference is for. Prompt IDs remain documented in `UI_IMAGE_PROMPTS_MASTER.md`.
 
 Each major page/state has its **own titled folder**. Store the desktop and mobile reference images **together inside that one folder** so both versions are immediately visible side by side.
 
@@ -14,12 +14,12 @@ Each major page/state has its **own titled folder**. Store the desktop and mobil
 
 Recommended naming examples:
 
-- `01 - Explore Home/P01-explore-home-desktop.png`
-- `01 - Explore Home/P02-explore-home-mobile.png`
-- `02 - Service Profile/P03-service-profile-desktop.png`
-- `02 - Service Profile/P04-service-profile-mobile.png`
-- `07 - Contribution Workflow Board/P11-contribution-workflow-desktop.png`
-- `07 - Contribution Workflow Board/P12-contribution-workflow-mobile.png`
+- `01 - Explore Home/Explore Home Desktop.png`
+- `01 - Explore Home/Explore Home Mobile.png`
+- `02 - Service Profile/Service Profile Desktop.png`
+- `02 - Service Profile/Service Profile Mobile.png`
+- `07 - Contribution Workflow Board/Contribution Workflow Board Desktop.png`
+- `07 - Contribution Workflow Board/Contribution Workflow Board Mobile.png`
 
 ## Main Reference Folders
 
@@ -49,7 +49,7 @@ Each folder above directly contains both the desktop and mobile reference images
 
 Additional reference-only folders:
 
-- `design-boards/` — design-system/component exploration boards such as P32/P33
+- `design-boards/` — contains `UI Component System Design Board.png` and `Map Marker and Service Card Exploration Board.png`
 - `source-inspiration/` — external/reference images used only as design inspiration
 
 Treat approved SerbisYO generations as implementation references. External inspiration images should not override the approved SerbisYO visual baseline.
