@@ -13,6 +13,7 @@ Instead of relying only on ordinary star ratings, SerbisYO turns community exper
 - `PROJECT_CONTEXT.md` - project vision, problem, users, principles, SDG alignment, and terminology.
 - `PRODUCT_SCOPE.md` - hackathon MVP, priorities, non-goals, and feature freeze rules.
 - `USER_FLOWS_UI.md` - required pages, elements, interactions, responsive behavior, and UI/UX direction.
+- `DESIGN_BLUEPRINT.md` - detailed page-by-page visual direction, responsive layouts, interaction patterns, and design priorities.
 - `TECHNICAL_PLAN.md` - tech stack, architecture, data model, scoring logic, and implementation order.
 - `TEAM_WORKPLAN.md` - team composition, role responsibilities, collaboration rules, and timeline.
 - `QA_RESEARCH_PITCH.md` - research direction, QA plan, pitch deck structure, demo flow, and presentation preparation.
