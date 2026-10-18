@@ -989,6 +989,434 @@ Use one consistent SerbisYO visual language. Markers should be recognizable with
 
 ---
 
+# P34 — Search / Autocomplete Mobile
+
+**Continuity / reference instruction:** Use **P07 Search / Autocomplete State** as the interaction/content source of truth and **P02 Explore / Home Mobile** as the exact mobile shell reference. This is not a new search page. It is the approved mobile Explore screen with the existing search field actively focused and expanded.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Match the established mobile frame, density, header, map styling, bottom navigation, and canonical male avatar.
+
+Preserve the mobile SerbisYO shell: iOS-style status bar, SerbisYO logo, `Morong, Rizal` selector, notification bell with red unread dot, canonical male avatar, and bottom navigation **Explore / Contribute / Saved / Profile** with **Explore** selected.
+
+Generate **one dedicated high-fidelity portrait mobile Search / Autocomplete interaction state**.
+
+Use the existing search field in an active state with the typed query:
+
+### **clinic**
+
+Expand a floating search-suggestion surface directly beneath it while retaining enough map context to show the user is still inside Explore.
+
+Organize the suggestions into:
+
+### **Matching Category**
+- **Clinic / Healthcare**
+
+### **Matching Providers**
+- **Rizal Family Clinic** — Clinic / Healthcare — Morong, Rizal — **Open** — **18 min wait**
+- **Morong Community Health Center** — Clinic / Healthcare — Morong, Rizal — **Open** — **24 min wait**
+
+### **Recent Searches**
+- Government services
+- Pharmacy
+- Registrar
+- Health center
+
+### **Nearby Suggestions**
+- Clinics near Morong
+- Open clinics
+- Shortest wait nearby
+- Accessible clinics
+
+Use compact provider thumbnails/icons and one useful metric only. Healthcare markers on the visible map may become emphasized while unrelated markers become slightly subdued.
+
+Keep rows thumb-friendly and vertically scrollable. Include clear-search and back/dismiss affordances without turning the screen into a full-screen command palette.
+
+Avoid a desktop dropdown squeezed into mobile, multiple screens, new navigation, different avatar, or a generic Google Maps imitation.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Search / Autocomplete state**.
+
+---
+
+# P35 — Filters / Sorting Mobile
+
+**Continuity / reference instruction:** Use **P08 Filters / Sorting State** as the exact filter content/logic source and **P02 Explore / Home Mobile** as the mobile shell and map source of truth. This is an Explore interaction state, not a separate settings page.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Preserve the approved mobile proportions, canonical male avatar, map styling, typography, chip language, and bottom navigation.
+
+Generate **one dedicated high-fidelity portrait mobile Filters / Sorting interaction state** using a large **rounded draggable bottom sheet** over the existing Explore map.
+
+Keep the map partially visible behind the sheet. Include a drag handle, title **Filters & Sorting**, and a compact **Reset** action.
+
+Show these filter groups with large touch-friendly controls:
+
+- **Open Now** — toggle
+- **Service Category** — Government, Clinics, Food, Banks, Education, Pharmacy, Utilities
+- **Accessibility** — PWD accessible, Wheelchair accessible, Priority lane, Accessible restroom
+- **Waiting Time** — Any, Under 15 min, Under 30 min, Under 1 hour
+- **Reliability** — Any, 80%+, 90%+, Highest reliability
+- **Community Confidence** — Any, Moderate or higher, High confidence only
+
+Include a separated **Sort By** area:
+
+- Nearest
+- Shortest Wait
+- Highest Reliability
+- Highest SerbisYO Score
+- Most Community Data
+
+Show immediate result feedback such as:
+
+### **18 services match**
+
+Use a sticky primary action:
+
+### **Show 18 Services**
+
+Filtered-out markers may be subdued behind the sheet. Do not hide all geographic context.
+
+Avoid tiny checkboxes, horizontal overflow, desktop side panels, or dense settings-page behavior.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Filters / Sorting state**.
+
+---
+
+# P36 — Login / Register Mobile
+
+**Continuity / reference instruction:** Use **P23 Login / Register** as the authentication content and brand source of truth and **P02/P04** for mobile typography, buttons, fields, radii, spacing, and visual polish. Because the user is not signed in yet, do not show the signed-in avatar or normal bottom navigation.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Generate one clean mobile authentication screen, not multiple phones or a desktop/mobile collage.
+
+Preserve the SerbisYO logo, blue/green palette, modern sans-serif typography, rounded form fields, button treatment, shadows, and subtle map/service context from P23.
+
+Use a vertically balanced composition with:
+
+### **SerbisYO**
+
+Value statement:
+
+**Share experiences. Save services. Help your community know what to expect.**
+
+Show a restrained map/service visual background or small service context near the upper area without overwhelming the form.
+
+Primary state:
+
+### **Welcome back**
+
+Fields:
+
+- Email
+- Password
+
+Actions:
+
+- **Sign In** — primary
+- **Forgot your password?** — lightweight text action
+- **Create Account** — secondary
+- **Continue exploring without signing in** — tertiary
+
+If registration is represented in the same screen, use a simple **Sign In / Create Account** segmented switch rather than a second full phone screen. Registration should request only **Name, Email, Password**.
+
+Avoid social-login grids, enterprise-security aesthetics, giant illustrations, or a different brand system.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Login / Register screen**.
+
+---
+
+# P37 — Simple Service Comparison Mobile
+
+**Continuity / reference instruction:** Use **P24 Simple Service Comparison** as the exact comparison-content source of truth, **P01/P03** for service metrics, and **P02/P04** for the approved mobile shell, typography, card density, and touch ergonomics. Do not invent new comparison metrics or a new card family.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Preserve the canonical mobile header and male avatar. Bottom navigation may remain visible with **Explore** selected.
+
+Generate **one dedicated high-fidelity portrait mobile Compare Services screen**.
+
+Use a mobile comparison structure that remains readable without becoming a spreadsheet. Show two providers as the primary visible comparison, with a lightweight **Change / Add Service** action for a third provider.
+
+Example providers:
+
+- **Morong Community Health Center**
+- **Bayanihan Pharmacy**
+
+At the top, show compact provider headers with image, name, category, and open state. Below, compare aligned rows for:
+
+- Open status
+- Distance
+- Average wait
+- Processing time
+- Reliability
+- SerbisYO Score
+- Accessibility
+- Community Confidence
+
+Highlight differences with restrained tags such as:
+
+- **Shortest wait**
+- **Nearest**
+- **Highest confidence**
+- **Most accessible**
+
+Do not declare an overall winner.
+
+Include thumb-friendly actions for each provider:
+
+- **View Profile**
+- **View on Map**
+
+Use sticky provider headers or a compact two-column comparison treatment if helpful, but prevent unreadable tiny text or uncontrolled horizontal scrolling.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Service Comparison screen**.
+
+---
+
+# P38 — No Results / Empty Search Mobile
+
+**Continuity / reference instruction:** Use **P25 No Results / Empty Search State** as the empty-state content source and **P02 Explore / Home Mobile** as the exact mobile layout source. Only replace the service-result content with the no-results treatment; preserve the map-first identity, header, search, markers/map context, and bottom navigation.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Preserve the canonical male avatar and **Explore** bottom-nav state.
+
+Generate **one dedicated portrait mobile No Results state**.
+
+Keep the query visible in the search field, for example:
+
+### **dental clinic**
+
+Retain some map context above or behind a mobile bottom sheet. The bottom sheet should explain:
+
+### **No matching services found in this area.**
+
+Supporting text:
+
+**We couldn’t find services matching “dental clinic” near Morong, Rizal.**
+
+Offer large recovery actions:
+
+- **Clear filters**
+- **Search a wider area**
+- **Try another category**
+
+Optionally include compact category suggestions such as **Healthcare, Government, Education**.
+
+Do not use a blank full-screen error page, alarming colors, or remove the search/map context needed for immediate recovery.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile No Results / Empty Search state**.
+
+---
+
+# P39 — No Community Data Mobile
+
+**Continuity / reference instruction:** Use **P26 No Community Data State** as the content source and **P04 Service Profile Mobile** as the exact responsive shell. This is the same Service Profile with community metrics unavailable, not a new page design.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Preserve the canonical mobile header, same male avatar, provider image, provider identity, map preview, action style, typography, and bottom navigation.
+
+Generate **one dedicated portrait mobile Service Profile no-community-data state** for **Morong Community Health Center**.
+
+Keep official/basic provider information visible:
+
+- Clinic / Healthcare
+- Morong, Rizal
+- Open status
+- Operating hours
+- Contact/location
+- Services offered where useful
+
+Where Community Intelligence normally appears, show a truthful empty state:
+
+### **No community experience yet.**
+
+Supporting text:
+
+**Be the first to help others know what to expect.**
+
+Use a prominent primary action:
+
+### **Contribute Experience**
+
+Optionally add concise helper points such as **Share your wait time**, **Help the community**, and **Keep information accurate**.
+
+Do not show `0/100`, `0% reliability`, zero stars, or any visual that implies poor service because data is absent.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile No Community Data Service Profile state**.
+
+---
+
+# P40 — Loading / Map Failure Mobile
+
+**Continuity / reference instruction:** Use **P27 Loading / Map Failure State** as the degraded-state content source and **P02 Explore / Home Mobile** as the exact responsive layout source. Preserve mobile search, filters, service cards, typography, colors, bottom navigation, and canonical male avatar. Only the map region should fail.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.**
+
+Generate **one dedicated portrait mobile degraded-state Explore screen** for when map tiles or location services fail while service-list data still works.
+
+Replace the normal map canvas with a calm placeholder that says:
+
+### **Map unavailable right now**
+
+Supporting text:
+
+**You can still browse nearby services while we try to reconnect the map.**
+
+Provide actions:
+
+- **Retry Map** — primary
+- **Use Service List** — secondary
+
+Keep the service-list bottom sheet or vertically scrollable service cards usable, showing providers such as **Morong Community Health Center, Bayanihan Pharmacy, Morong Municipal Office, URS Registrar** with their normal metrics.
+
+Search and filters should remain visibly usable.
+
+Use restrained blue/neutral error styling. Avoid technical error codes, full-screen failure takeover, or alarming red visuals.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Loading / Map Failure state**.
+
+---
+
+# P41 — Moderator Queue Mobile
+
+**Continuity / reference instruction:** Use **P28 Moderator Queue Desktop** as the exact moderation information/workflow source and reuse the established SerbisYO internal-utility typography, semantic colors, queue cards, status chips, and button language. Recompose the desktop split workspace into a focused mobile moderation queue rather than squeezing the desktop sidebar into a phone.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Use the SerbisYO brand shell with logo, compact search, notifications, and the canonical male moderator avatar. Do not use the normal consumer bottom navigation; use a compact internal moderator navigation pattern instead.
+
+Generate **one dedicated portrait mobile Moderator Queue screen**.
+
+At the top show:
+
+### **Moderation Queue**
+
+Supporting line:
+
+**Review community contributions, corrections, and reported content.**
+
+Use segmented tabs:
+
+- **Pending Review**
+- **Reported Contributions**
+- **Suggested Corrections**
+
+Show a vertically scrollable queue of cards. Each card should include:
+
+- provider image/name
+- provider category
+- contribution/report type
+- short reason or correction label
+- submitted time
+- status chip
+- chevron/open action
+
+Examples may include **Morong Community Health Center, Bayanihan Pharmacy, Morong Municipal Office, URS Registrar, Teresa Water District**.
+
+Include a compact sort control such as **Newest First**.
+
+Do not show the full detail review in the same mobile screen; tapping an item should conceptually open P42.
+
+Avoid a desktop sidebar squeezed into mobile, enterprise analytics, or excessive density.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Moderator Queue screen**.
+
+---
+
+# P42 — Moderator Detail / Report Review Mobile
+
+**Continuity / reference instruction:** Use **P29 Moderator Detail / Report Review** as the exact review-content source and **P41 Moderator Queue Mobile** as the mobile internal-navigation source. Preserve the same report reason, provider, contribution content, semantic colors, moderation language, and decision hierarchy.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.**
+
+Generate **one dedicated portrait mobile Moderator Report Review screen**.
+
+Use a compact top bar with **Back to Queue**, SerbisYO moderator identity, notification control, and canonical male avatar.
+
+Show the review content in a clear vertical order:
+
+1. **Provider context** — Morong Community Health Center, category, location
+2. **Report reason** — e.g. Fake or misleading information
+3. **Original contribution** — submitted text, reported wait time, service, visit date
+4. **Reporter explanation**
+5. **Related recent contributions / official information** for context
+6. **Previous moderation status** if any
+7. Optional moderator note field
+
+At the bottom, use a sticky decision area with:
+
+- **Keep Contribution** — positive/green
+- **Remove Contribution** — restrained red
+- **Escalate / Needs Review** — secondary blue/neutral
+
+Keep warning colors restrained and decision text explicit. The screen should support a fair decision, not feel punitive.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Moderator Detail / Report Review screen**.
+
+---
+
+# P43 — Future Provider Dashboard Mobile
+
+**Continuity / reference instruction:** Use **P30 Future Provider Dashboard** as the provider-side content source of truth and the approved SerbisYO mobile language from **P02/P04** for typography, surfaces, control sizing, radii, and touch ergonomics. Preserve provider-side metric names and operational tone. This remains **future-scope / pitch-only**.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Use a provider-specific mobile shell rather than the normal consumer bottom navigation. Show the verified provider identity in the header.
+
+Generate **one dedicated portrait mobile Future Provider Dashboard** for **Morong Community Health Center**.
+
+Show a compact verified provider header with image, name, **Clinic / Healthcare**, Morong, Rizal, and a **View Public Profile** action.
+
+Present current Community Intelligence in stacked mobile metric cards:
+
+- Average Wait
+- Reliability
+- Information Accuracy
+- Accessibility
+- Community Confidence
+- Recent Trend
+
+Below, show operational sections as touch-friendly cards or grouped rows:
+
+- **Update Official Information**
+- **Respond to Feedback**
+- **Recurring Issues**
+- **Recent Community Insights**
+
+Use examples such as long waiting time during morning hours, limited waiting-area seating, and recent positive queue improvements.
+
+Keep analytics concise and improvement-focused. Avoid competitive rankings, revenue/business KPIs, defensive messaging, or desktop charts compressed into tiny mobile panels.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Future Provider Dashboard screen**.
+
+---
+
+# P44 — Future Official vs Community View Mobile
+
+**Continuity / reference instruction:** Use **P31 Future Official vs Community View** as the exact comparison-content source and **P43 Future Provider Dashboard Mobile** as the provider-side mobile shell. Preserve the same verified provider identity, metric language, comparison semantics, colors, insight tone, and spacing. This is a deeper mobile transparency view inside the same future provider product area.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.**
+
+Generate **one dedicated portrait mobile Official vs Community comparison screen** for **Morong Community Health Center**.
+
+Show a compact provider header and title:
+
+### **Official vs Community**
+
+Supporting copy:
+
+**Compare posted service information with recent community-reported experience to identify gaps and opportunities for improvement.**
+
+Use vertically stacked comparison cards. Each section should contain three clear parts:
+
+1. **Official Information**
+2. **Community Experience**
+3. **Insight & Opportunity**
+
+Include comparisons such as:
+
+- **Processing Time:** Official **20 min** vs Community **31 min average**
+- **Operating Hours:** Posted **8:00 AM–5:00 PM** vs recent reports mostly confirming the schedule
+- **Service Availability:** Official **Open** vs **95% of reports confirm availability**
+- **Accessibility Features:** posted wheelchair entrance/priority lane vs community notes about limited seating or signage
+- **Information Accuracy:** official complete information vs community accuracy rating such as **4.3/5**
+
+Use restrained green for aligned information and soft amber for improvement opportunities. Avoid accusatory red comparisons or public-shaming language.
+
+Keep cards vertically scannable with concise recommendation text such as **Review queue management**, **Improve signage**, or **Keep information updated**.
+
+**Generation requirement:** output **only one 941 × 1672 portrait mobile Future Official vs Community screen**.
+
+---
+
 # Retrieval Order
 
 The prompt library keeps already-processed P01–P10 unchanged. The four detailed contribution steps have been consolidated into **two board prompts** so only one desktop board and one mobile board are needed for the chronological contribution flow.
@@ -1049,6 +1477,20 @@ The prompt library keeps already-processed P01–P10 unchanged. The four detaile
 
 32. **P32 — SerbisYO UI Component System Board**
 33. **P33 — Map Marker and Service Card Exploration Board**
+
+## Added mobile counterparts
+
+34. **P34 — Search / Autocomplete Mobile** — mobile counterpart of P07
+35. **P35 — Filters / Sorting Mobile** — mobile counterpart of P08
+36. **P36 — Login / Register Mobile** — mobile counterpart of P23
+37. **P37 — Simple Service Comparison Mobile** — mobile counterpart of P24
+38. **P38 — No Results / Empty Search Mobile** — mobile counterpart of P25
+39. **P39 — No Community Data Mobile** — mobile counterpart of P26
+40. **P40 — Loading / Map Failure Mobile** — mobile counterpart of P27
+41. **P41 — Moderator Queue Mobile** — mobile counterpart of P28
+42. **P42 — Moderator Detail / Report Review Mobile** — mobile counterpart of P29
+43. **P43 — Future Provider Dashboard Mobile** — mobile counterpart of P30
+44. **P44 — Future Official vs Community View Mobile** — mobile counterpart of P31
 
 ## Prompt retrieval rule
 

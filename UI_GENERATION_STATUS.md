@@ -44,6 +44,17 @@ Last updated: October 18, 2026
 | **P31** | Future Official vs Community View | **NOT GENERATED** |
 | **P32** | SerbisYO UI Component System Board | **NOT GENERATED** |
 | **P33** | Map Marker + Service Card Exploration Board | **NOT GENERATED** |
+| **P34** | Search / Autocomplete Mobile | **NOT GENERATED** |
+| **P35** | Filters / Sorting Mobile | **NOT GENERATED** |
+| **P36** | Login / Register Mobile | **NOT GENERATED** |
+| **P37** | Service Comparison Mobile | **NOT GENERATED** |
+| **P38** | No Results / Empty Search Mobile | **NOT GENERATED** |
+| **P39** | No Community Data Mobile | **NOT GENERATED** |
+| **P40** | Loading / Map Failure Mobile | **NOT GENERATED** |
+| **P41** | Moderator Queue Mobile | **NOT GENERATED** |
+| **P42** | Moderator Detail / Report Review Mobile | **NOT GENERATED** |
+| **P43** | Future Provider Dashboard Mobile | **NOT GENERATED** |
+| **P44** | Future Official vs Community View Mobile | **NOT GENERATED** |
 
 ## Current Rule
 
@@ -52,3 +63,4 @@ Last updated: October 18, 2026
 - P13/P14 remain separate post-submission success screens.
 - **P13–P16 have now been generated** and are awaiting final approval.
 - **P17 is the next ungenerated prompt.**
+- P34–P44 were appended later as explicit mobile counterparts. Existing prompt numbers were not renumbered.
