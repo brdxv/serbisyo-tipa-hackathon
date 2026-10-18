@@ -21,8 +21,8 @@ This file tracks generated and pending UI concept references. `APPROVED` means t
 
 | Prompt | Screen | Status |
 |---|---|---|
-| **P09** | Community Intelligence / Busy Hours Desktop | **REDO REQUIRED — NEXT** |
-| **P10** | Community Intelligence / Busy Hours Mobile | **REDO REQUIRED AFTER P09** |
+| **P09** | Community Intelligence / Busy Hours Desktop | **GENERATED — PENDING APPROVAL** |
+| **P10** | Community Intelligence / Busy Hours Mobile | **GENERATED — PENDING APPROVAL** |
 | **P11** | Contribution Step 1 — Confirm Service Desktop | **NOT GENERATED** |
 | **P12** | Contribution Step 1 — Confirm Service Mobile | **NOT GENERATED** |
 | **P13** | Contribution Step 2 — Visit Details Desktop | **NOT GENERATED** |
@@ -59,4 +59,5 @@ This file tracks generated and pending UI concept references. `APPROVED` means t
 - Generate/review **desktop first**, then immediately generate its **mobile counterpart**.
 - P07 and P08 remain device-adaptive interaction states because they modify the existing Explore screen rather than represent a standalone page.
 - Internal moderator/future-scope tools remain desktop-first unless the Team Leader later requests mobile counterparts.
-- **P09 is the next ungenerated prompt.**
+- **P09 + P10** have now been regenerated using the standardized frame sizes and recurring SerbisYO shell rules; both are awaiting final approval.
+- **P11** is the next ungenerated prompt.
