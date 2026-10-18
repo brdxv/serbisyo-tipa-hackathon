@@ -1,0 +1,21 @@
+{
+  "name": "serbisyo-tipa-hackathon",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,api -c auto \"npm run dev -w @serbisyo/web\" \"npm run dev -w @serbisyo/api\"",
+    "dev:web": "npm run dev -w @serbisyo/web",
+    "dev:api": "npm run dev -w @serbisyo/api",
+    "build": "npm run build -w @serbisyo/web && npm run build -w @serbisyo/api",
+    "typecheck": "npm run typecheck -w @serbisyo/web && npm run typecheck -w @serbisyo/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

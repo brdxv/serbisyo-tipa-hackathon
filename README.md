@@ -22,6 +22,35 @@ Instead of relying only on ordinary star ratings, SerbisYO turns community exper
 - `TEAM_WORKPLAN.md` - team composition, role responsibilities, collaboration rules, and timeline.
 - `QA_RESEARCH_PITCH.md` - research direction, QA plan, pitch deck structure, demo flow, and presentation preparation.
 - `AGENTS.md` - instructions for AI-assisted development inside this project.
+- `SOURCE_STRUCTURE.md` - implementation-oriented repository structure, boundaries, and development order.
+
+## Development Workspace
+
+The codebase now uses a small npm-workspace structure:
+
+- `apps/web` - React + Vite + Tailwind responsive frontend.
+- `apps/api` - Node.js + Express API.
+- `database` - explicit PostgreSQL schema and seed data.
+
+Install dependencies from the repository root:
+
+```bash
+npm install
+```
+
+Run frontend and API together:
+
+```bash
+npm run dev
+```
+
+Default local addresses:
+
+- Web: `http://localhost:5173`
+- API: `http://localhost:4000`
+- API health check: `http://localhost:4000/api/health`
+
+Copy `apps/api/.env.example` to `apps/api/.env` when PostgreSQL is ready. The frontend can start before the database integration is complete by using seeded/mock feature data.
 
 ## Hackathon Deadline Mindset
 
