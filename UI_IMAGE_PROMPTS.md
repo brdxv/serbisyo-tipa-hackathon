@@ -158,17 +158,19 @@ Create a future SerbisYO provider view that compares `Official service informati
 
 ---
 
-# Recommended First Concepts to Generate
+# Prompt Grouping Rule
 
-If the team only has time to generate a few concept images, prioritize these first:
+For the team's image-generation workflow, **each prompt should represent a different page, workflow, or major interface state**. The first three prompts are not visual variations of the same page. They should follow the primary user journey so three generated images can establish the product's core system design.
 
-1. **Explore / Home - Desktop Spatial Workspace**
-2. **Explore / Home Mobile - Full-Screen Map + Bottom Sheet**
-3. **Service Profile - Desktop Service Intelligence Sheet**
-4. **Service Profile - Mobile Expanding Service Sheet**
-5. **Contribute Experience - Mobile Multi-Step Contribution**
+Recommended first group:
 
-These five concepts establish most of the visual system needed for the remaining screens.
+1. **Explore / Home** - map-based discovery and nearby service results.
+2. **Service Profile** - detailed service intelligence and community information.
+3. **Contribute Experience** - structured community contribution workflow.
+
+After these three are approved, continue with Search/Filters, Suggest Update/Report, Saved Services, Profile/Activity, Moderator View, and future-scope Provider Dashboard.
+
+The alternative prompts elsewhere in this file remain useful as optional visual explorations, but when the Team Leader asks for prompts in groups, default to **different screens in workflow order**, not multiple variations of one screen.
 
 # Comparison Method
 
