@@ -36,6 +36,21 @@ This file records the **approved visual baseline** chosen by the Team Leader for
 - Persistent bottom navigation: **Explore, Contribute, Saved, Profile**.
 - Mobile layout prioritizes thumb reach, readable metrics, and clear spatial continuity.
 
+## Canonical Image Frames
+
+- **Desktop / PC:** **1536 × 1024 px (3:2 landscape)**.
+- **Mobile:** **941 × 1672 px (approximately 9:16 portrait)**.
+- If an image generator cannot produce the exact pixel dimensions, preserve the matching aspect ratio and composition. Do not change device format simply to fit more content.
+
+## Canonical Recurring Shell and User Identity
+
+- The **male avatar used throughout the approved mobile references is the canonical signed-in user avatar for all future SerbisYO screens**, including desktop screens.
+- Some earlier desktop references show a female avatar. That detail is now superseded; preserve the layout but replace the profile image with the canonical male avatar in future generations.
+- Desktop recurring header: SerbisYO logo at top-left, global rounded search bar (`Search a service or place...`), `Morong, Rizal` location selector, notification bell with red unread dot, and canonical male avatar at far right.
+- Mobile recurring header: iOS-style status bar, SerbisYO logo, `Morong, Rizal` location selector, notification bell with red unread dot, and canonical male avatar at upper-right.
+- Normal consumer mobile pages preserve bottom navigation: **Explore, Contribute, Saved, Profile**. Focused forms may retain this shell when consistent with the approved contribution references.
+- Search/category controls are reused according to page context: Explore/discovery screens keep them; focused detail/contribution screens should not add them merely for decoration.
+
 ## Cross-Page Visual Rules
 
 All later consumer-facing pages should preserve:

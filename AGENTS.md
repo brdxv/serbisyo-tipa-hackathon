@@ -20,6 +20,8 @@ For visual/UI concept generation or major interface work, also read:
 
 When returning or using an image-generation prompt, include its **Continuity / reference instruction**. If the referenced earlier SerbisYO image exists in the current conversation or project workflow, treat it as the visual source of truth instead of generating a new design language.
 
+For UI image prompts, also include the canonical frame and shell rules from `APPROVED_UI_BASELINE.md`: **1536×1024 desktop**, **941×1672 mobile**, and the **canonical male profile avatar** from the approved mobile screens. Never alternate the profile avatar between pages.
+
 Use the current ordered prompt IDs from `UI_IMAGE_PROMPTS_MASTER.md`. Do not use the old numbering after the October 18 prompt-library reorder. In particular, the approved Explore pair is **P01 Desktop + P02 Mobile**.
 
 For role, QA, research, or presentation work also read:

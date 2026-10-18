@@ -611,6 +611,9 @@ When generating concepts:
 - Responsive pairs must be generated as a family: desktop establishes the information/component system, while mobile recomposes that same system for a portrait canvas and touch interaction. Mobile should not be a separate visual redesign.
 - Sequential workflow screens such as contribution steps must preserve the same shell and only change the active step/content.
 - For deeper contribution and trust workflows, maintain explicit desktop/mobile prompt pairs rather than relying on one device-neutral prompt. This includes Community Intelligence, all four contribution steps, contribution success, Suggest Update, and Report Information.
+- Standard concept frame sizes are **1536 × 1024 px (3:2)** for desktop and **941 × 1672 px (~9:16)** for mobile. Preserve these proportions across the prompt library so pages are visually comparable.
+- Use one canonical signed-in user identity across all screens: the **male avatar from the approved mobile references**. This overrides the female avatar present in some older desktop images.
+- Reuse the corresponding desktop/mobile global shell rather than reinterpreting it on each page: logo, search where applicable, location selector, notification bell, canonical profile avatar, and mobile bottom navigation.
 - Prompt IDs are paired consecutively wherever desktop/mobile versions both exist. The approved Explore pair is now **P01 Desktop + P02 Mobile**; the former mobile Explore label P04 is retained only as historical context in `APPROVED_UI_BASELINE.md`.
 
 The canonical prompt library for these explorations is stored in `UI_IMAGE_PROMPTS.md`.

@@ -21,8 +21,8 @@ This file tracks generated and pending UI concept references. `APPROVED` means t
 
 | Prompt | Screen | Status |
 |---|---|---|
-| **P09** | Community Intelligence / Busy Hours Desktop | **NOT GENERATED — NEXT** |
-| **P10** | Community Intelligence / Busy Hours Mobile | **NOT GENERATED** |
+| **P09** | Community Intelligence / Busy Hours Desktop | **REDO REQUIRED — NEXT** |
+| **P10** | Community Intelligence / Busy Hours Mobile | **REDO REQUIRED AFTER P09** |
 | **P11** | Contribution Step 1 — Confirm Service Desktop | **NOT GENERATED** |
 | **P12** | Contribution Step 1 — Confirm Service Mobile | **NOT GENERATED** |
 | **P13** | Contribution Step 2 — Visit Details Desktop | **NOT GENERATED** |

@@ -8,6 +8,10 @@ The purpose of these images is to establish visual direction before implementati
 
 > **Approved visual baseline:** P01 (Explore / Home Desktop) and P02 (Explore / Home Mobile) are the approved master references supplied/approved by the Team Leader. All later consumer-facing prompts must preserve their established SerbisYO logo treatment, blue/green palette, typography, icon family, map styling, marker language, card construction, metric styling, rounded surfaces, shadows, spacing rhythm, and responsive relationship unless the Team Leader explicitly approves a redesign.
 
+> **Canonical output frames:** Desktop/PC concepts use **1536 × 1024 px (3:2 landscape)**, matching the approved/generated desktop references. Mobile concepts use **941 × 1672 px (approximately 9:16 portrait)**, matching the approved mobile reference. If an image tool cannot output those exact pixel dimensions, keep the same aspect ratio and composition rather than changing the layout shape. Never generate a desktop page in a tall/mobile frame or a mobile page in a wide/desktop frame.
+
+> **Canonical recurring app shell:** All future screens must preserve the same recurring SerbisYO identity and account shell unless a prompt explicitly describes a focused/immersive state. On **desktop**, keep the SerbisYO logo at top-left, the same large rounded global search field (`Search a service or place...`) in the header, the `Morong, Rizal` location selector toward the right, the notification bell with red unread dot, and the **same male profile avatar used in the approved mobile screens** at the far right. The male avatar is now canonical and **supersedes the female avatar visible in some older desktop reference images**. Keep the same category/utility chip row on Explore and other map/discovery contexts where it is relevant. On **mobile**, keep the iOS-style status bar, SerbisYO logo at top-left, `Morong, Rizal` location selector, notification bell with red unread dot, and the **same male avatar** at the upper-right. Use the established bottom navigation (`Explore`, `Contribute`, `Saved`, `Profile`) on normal consumer mobile pages. Search bars and category chips should appear only where that page type already uses them, rather than being forced into focused contribution/detail flows.
+
 Unless a prompt says otherwise, preserve these principles:
 
 - Product: **SerbisYO**, a community-powered service intelligence, discovery, and transparency web app.
@@ -27,6 +31,8 @@ Unless a prompt says otherwise, preserve these principles:
 - **Cross-page continuity rule:** when a prompt names another prompt as a continuity reference and that earlier image has already been generated, use the earlier generated image as the visual source of truth. Preserve the same SerbisYO logo treatment, primary/semantic colors, typography family and weight hierarchy, icon style, border radii, shadows, spacing rhythm, marker language, card construction, metric treatments, and navigation patterns unless the new screen specifically requires a responsive adaptation. Do not redesign the brand from page to page.
 - **Responsive continuity rule:** when a mobile prompt corresponds to an already-generated desktop page, treat the desktop image as the established design system and **recompose it for mobile** rather than inventing a new visual direction. Keep the same content hierarchy and component identity while changing placement, density, and interaction for thumb-friendly use.
 - **Workflow continuity rule:** when a later workflow step depends on an earlier step, keep the same selected provider, progress component, form styling, button treatment, and page shell. Only the step content should change.
+- **Avatar continuity rule:** never alternate between male and female avatars across generated screens. Use the **male avatar from the approved mobile references** for the signed-in user on both desktop and mobile from this point forward.
+- **Header continuity rule:** do not redraw, relocate, or restyle the recurring logo/search/location/notification/profile controls from page to page. Reuse the corresponding approved desktop or mobile shell and change only the page content beneath it unless the workflow explicitly requires a focused state.
 
 ---
 
@@ -258,6 +264,10 @@ Use the SerbisYO design language: light layered panels, restrained depth, modern
 
 **Continuity / reference instruction:** Use **P03 Service Profile Desktop** as the direct visual source of truth. This is an expanded desktop subview of the Service Profile, not a new product area. Preserve the same SerbisYO header, provider identity, typography, score colors, confidence treatment, progress bars, card/surface styling, map language, radii, shadows, spacing, and action hierarchy.
 
+**Canvas / image size:** **1536 × 1024 px, 3:2 landscape.** Match the same desktop frame and overall density used by P01/P03. Do not generate a taller dashboard or a different aspect ratio.
+
+**Recurring shell requirement:** Keep the desktop SerbisYO shell unchanged: SerbisYO logo top-left; large rounded `Search a service or place...` field across the upper center; `Morong, Rizal` location selector; notification bell with red unread dot; and the **canonical male profile avatar** at the far right. Use the same male avatar seen in the approved mobile references, even if an older desktop reference contains a woman. Keep the established category/utility chip row beneath the search/header where the Service Profile context shows it.
+
 Generate **one dedicated high-fidelity desktop Community Intelligence / Busy Hours detail screen only** for **Morong Community Health Center**. Keep enough Service Profile context visible that the user understands where they came from.
 
 Show a clear header such as **Community Intelligence** with the provider name beneath. Present the five core dimensions:
@@ -283,6 +293,10 @@ Use the exact SerbisYO desktop visual language from P03. **Generation requiremen
 # P10 — Community Intelligence / Busy Hours Detail Mobile
 
 **Continuity / reference instruction:** Use **P09 Community Intelligence Desktop** as the information and metric source of truth, and use **P04 Service Profile Mobile** as the mobile shell and responsive visual reference. Preserve the same metric names, colors, confidence treatment, provider identity, typography, rounded surfaces, icon family, spacing rhythm, and mobile navigation language.
+
+**Canvas / image size:** **941 × 1672 px, approximately 9:16 portrait.** Match the exact tall portrait proportion and content density of the approved mobile references. Do not generate a shorter phone mockup, multiple phones, or a desktop-width image.
+
+**Recurring shell requirement:** Preserve the approved mobile header exactly in spirit and placement: iOS-style status bar, SerbisYO logo at upper-left, `Morong, Rizal` location selector, notification bell with red unread dot, and the **same canonical male avatar** at upper-right. Preserve the established `Explore / Contribute / Saved / Profile` bottom navigation if it is visible in the corresponding Service Profile mobile shell. Do not substitute a female avatar or invent a new profile photo.
 
 Generate **one dedicated high-fidelity portrait mobile Community Intelligence / Busy Hours detail screen only**. Do not create a collage or desktop/mobile comparison.
 
