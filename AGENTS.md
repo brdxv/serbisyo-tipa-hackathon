@@ -6,10 +6,14 @@ This file defines project rules for AI-assisted development inside the SerbisYO 
 
 Before making meaningful changes, read:
 
-1. `PROJECT_CONTEXT.md`
-2. `PRODUCT_SCOPE.md`
-3. `USER_FLOWS_UI.md`
-4. `TECHNICAL_PLAN.md`
+1. `DEVELOPMENT_CONTINUATION_CONTEXT.md`
+2. `PROJECT_CONTEXT.md`
+3. `BRAND_CONTEXT.md`
+4. `ASSET_CONTEXT.md`
+5. `MORONG_REAL_PLACES_CONTEXT.md` when working on Explore, map, providers, search, service profiles, or prototype data
+6. `PRODUCT_SCOPE.md`
+7. `USER_FLOWS_UI.md`
+8. `TECHNICAL_PLAN.md`
 
 For visual/UI concept generation or major interface work, also read:
 
@@ -41,7 +45,7 @@ For role, QA, research, or presentation work also read:
 ## Technical Rules
 
 - System type: responsive web app.
-- Language: TypeScript.
+- Languages: TypeScript for the frontend; PHP 8.2+ for the backend.
 - Frontend: React + Vite.
 - Styling: Tailwind CSS.
 - Backend: PHP 8.2+ JSON API.
@@ -52,6 +56,9 @@ For role, QA, research, or presentation work also read:
 - Avoid unnecessary dependencies and infrastructure.
 - Prefer reusable typed components and clear API contracts.
 - Desktop and mobile behavior are both required.
+- Treat the root `assets/` directory as the canonical graphic asset library.
+- When an approved icon, marker, vector, or logo asset exists, use it instead of recreating the graphic with emoji, Unicode, raw CSS, or an unrelated icon library.
+- Normal UI structure such as cards, buttons, tabs, chips, forms, sheets, and layout must remain HTML/React/CSS rather than raster images.
 
 ## AI Assistance Rule
 
@@ -70,4 +77,12 @@ The current scoring weights in `TECHNICAL_PLAN.md` are a prototype model, not a 
 - Preserve working functionality when refactoring.
 - If a requested change conflicts with MVP scope or the current project direction, surface the conflict clearly before making a large change.
 - When implementation begins, test important changes before considering them complete.
+
+## Development UI Commentor
+
+- In Vite development mode, SerbisYO mounts the canonical AGAPAY UI Commentor port from `apps/web/src/components/dev/DevElementCommentor.jsx` with `apps/web/src/styles/dev-commentor.css`.
+- Project-persisted comments are stored in `dev-data/ui-commentor-comments.json` through `/api/dev/comments`. The file is intentionally gitignored.
+- When the user says they left comments or asks to process Commentor feedback, read that JSON file before editing code, group related issues, validate the affected UI, then resolve/delete comments only after the requested behavior is confirmed.
+- Hold `Ctrl+C` for about 1 second to toggle the Commentor when normal copy is not in use; `Ctrl+Shift+C` toggles it immediately. `Esc` closes the active AGAPAY comment composer.
+- `Ctrl+D` is reserved in development for a fresh-user reset. It clears SerbisYO same-origin browser/application state and returns to `/login`; it does not and cannot purge the browser's global HTTP disk cache.
 

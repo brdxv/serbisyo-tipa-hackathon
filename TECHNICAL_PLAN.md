@@ -11,6 +11,7 @@ Responsive web application.
 | Languages | TypeScript + PHP | TypeScript for the React frontend; PHP for the backend API |
 | Frontend | React + Vite | Interactive UI and fast development/build tooling |
 | Styling | Tailwind CSS | Responsive styling and consistent UI implementation |
+| Maps | Leaflet + MapLibre GL + OpenFreeMap | Leaflet preserves interaction/marker logic while MapLibre renders a fully styleable OpenFreeMap vector basemap across Explore and Service Profile |
 | Backend | PHP 8.2+ | JSON API, validation, business logic, scoring, and database access |
 | Database | PostgreSQL | Relational storage for providers, services, contributions, users, and moderation data |
 
@@ -38,11 +39,19 @@ PHP Backend
         v
 PostgreSQL Database
 
-Map Provider / Geospatial UI
-        ^
+OpenFreeMap vector tiles
         |
-Frontend map integration
+        v
+MapLibre GL vector renderer
+        |
+        v
+Leaflet interaction / markers
+        |
+        v
+Explore UI
 ```
+
+The Explore page intentionally separates **basemap rendering** from **service interaction**. MapLibre/OpenFreeMap controls the cartographic appearance, while Leaflet continues to own SerbisYO markers, tooltips, fit-bounds behavior, and list-to-map interactions. `apps/web/src/map/serbisyoExploreMapTheme.ts` is the canonical Explore cartography layer. A raster OpenStreetMap fallback remains available if the vector style cannot be loaded.
 
 For the hackathon, use lightweight PHP with PDO rather than introducing a framework or ORM unless the team has a clear need for one. PostgreSQL remains the database source of truth.
 

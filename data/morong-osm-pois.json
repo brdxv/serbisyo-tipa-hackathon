@@ -1,0 +1,674 @@
+﻿[
+    {
+        "id":  "osm-way-962511906",
+        "name":  "Petron",
+        "lat":  14.5156418,
+        "lng":  121.2388559,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Petron, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.03
+    },
+    {
+        "id":  "osm-node-12635535460",
+        "name":  "RCBC",
+        "lat":  14.5153569,
+        "lng":  121.2391148,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "bank"
+                 },
+        "display_name":  "RCBC, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.06
+    },
+    {
+        "id":  "osm-node-603645199",
+        "name":  "Leth\u0027s Buy",
+        "lat":  14.5163035,
+        "lng":  121.2388273,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "convenience"
+                 },
+        "display_name":  "Leth\u0027s Buy, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.08
+    },
+    {
+        "id":  "osm-node-4529352391",
+        "name":  "Generika",
+        "lat":  14.5149886,
+        "lng":  121.239212,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "pharmacy"
+                 },
+        "display_name":  "Generika, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.09
+    },
+    {
+        "id":  "osm-node-4307049591",
+        "name":  "Mercury Drug",
+        "lat":  14.5151077,
+        "lng":  121.2392326,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "pharmacy"
+                 },
+        "display_name":  "Mercury Drug, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.09
+    },
+    {
+        "id":  "osm-node-10613669633",
+        "name":  "Tea and me",
+        "lat":  14.5165234,
+        "lng":  121.2384326,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "cafe"
+                 },
+        "display_name":  "Tea and me, Sumulong Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.1
+    },
+    {
+        "id":  "osm-node-4877427223",
+        "name":  "BDO",
+        "lat":  14.5147852,
+        "lng":  121.2392557,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "bank"
+                 },
+        "display_name":  "BDO, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.11
+    },
+    {
+        "id":  "osm-node-2483566220",
+        "name":  "Savemore Market",
+        "lat":  14.5149448,
+        "lng":  121.2395202,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "supermarket"
+                 },
+        "display_name":  "Savemore Market, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.12
+    },
+    {
+        "id":  "osm-way-1570542617",
+        "name":  "Rizal Provincial Hospital System, Morong Main",
+        "lat":  14.5166714,
+        "lng":  121.239511,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "hospital"
+                 },
+        "display_name":  "Rizal Provincial Hospital System, Morong Main, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.15
+    },
+    {
+        "id":  "osm-way-962511905",
+        "name":  "Morong Doctors Hospital",
+        "lat":  14.5143256,
+        "lng":  121.2393735,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "hospital"
+                 },
+        "display_name":  "Morong Doctors Hospital, 491, Governor Martinez Street, San Juan, Poblacion, Caniogan, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.16
+    },
+    {
+        "id":  "osm-way-267670776",
+        "name":  "Morong National High School",
+        "lat":  14.5171786,
+        "lng":  121.2382349,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Morong National High School, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.18
+    },
+    {
+        "id":  "osm-node-7631078485",
+        "name":  "Cristina Mart",
+        "lat":  14.5137432,
+        "lng":  121.2385349,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "supermarket"
+                 },
+        "display_name":  "Cristina Mart, Turentigue Street, San Jose, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.21
+    },
+    {
+        "id":  "osm-relation-21751966",
+        "name":  "Morong National Senior High School",
+        "lat":  14.5171548,
+        "lng":  121.237452,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Morong National Senior High School, Sumulong Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.21
+    },
+    {
+        "id":  "osm-node-10613726926",
+        "name":  "MMCL pharmacy",
+        "lat":  14.5164858,
+        "lng":  121.2365161,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "pharmacy"
+                 },
+        "display_name":  "MMCL pharmacy, 590, Sumulong Street, Caingin, San Jose, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.24
+    },
+    {
+        "id":  "osm-way-962511914",
+        "name":  "Thriftmart",
+        "lat":  14.5176627,
+        "lng":  121.239546,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "supermarket"
+                 },
+        "display_name":  "Thriftmart, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.25
+    },
+    {
+        "id":  "osm-way-267670782",
+        "name":  "Tomas Claudio Memorial Elementary School",
+        "lat":  14.5179065,
+        "lng":  121.2382202,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Tomas Claudio Memorial Elementary School, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.26
+    },
+    {
+        "id":  "osm-way-1303491210",
+        "name":  "Bo Bean Coffee \u0026 Bubble Tea",
+        "lat":  14.5165214,
+        "lng":  121.2362582,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "cafe"
+                 },
+        "display_name":  "Bo Bean Coffee \u0026 Bubble Tea, Sumulong Street, Caingin, San Jose, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.27
+    },
+    {
+        "id":  "osm-node-2483576784",
+        "name":  "Morong Police Station",
+        "lat":  14.5129612,
+        "lng":  121.2388601,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "police"
+                 },
+        "display_name":  "Morong Police Station, Tupas Street, San Jose, Poblacion, Caniogan, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.29
+    },
+    {
+        "id":  "osm-way-1303086121",
+        "name":  "The Waffle Bar",
+        "lat":  14.5136491,
+        "lng":  121.2367564,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "restaurant"
+                 },
+        "display_name":  "The Waffle Bar, P.Pascual Street, San Jose, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.29
+    },
+    {
+        "id":  "osm-relation-21751967",
+        "name":  "University of Rizal System - Morong",
+        "lat":  14.517488,
+        "lng":  121.2365569,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "university"
+                 },
+        "display_name":  "University of Rizal System - Morong, Sumulong Street, Caingin, San Jose, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.3
+    },
+    {
+        "id":  "osm-node-4529332396",
+        "name":  "AMA Bank",
+        "lat":  14.5128273,
+        "lng":  121.2384322,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "bank"
+                 },
+        "display_name":  "AMA Bank, Tupas Street, San Jose, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.31
+    },
+    {
+        "id":  "osm-node-4359076390",
+        "name":  "Uncle John\u0027s",
+        "lat":  14.5125772,
+        "lng":  121.2383413,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "convenience"
+                 },
+        "display_name":  "Uncle John\u0027s, T. Claudio Street, San Pedro, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.34
+    },
+    {
+        "id":  "osm-node-603645191",
+        "name":  "Era Plaza",
+        "lat":  14.5124814,
+        "lng":  121.2392287,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "restaurant"
+                 },
+        "display_name":  "Era Plaza, Natividad Street, San Jose, Poblacion, Caniogan, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.35
+    },
+    {
+        "id":  "osm-way-1097987859",
+        "name":  "UCPB Savings Bank",
+        "lat":  14.5119505,
+        "lng":  121.2384057,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "bank"
+                 },
+        "display_name":  "UCPB Savings Bank, T. Claudio Street, San Pedro, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.41
+    },
+    {
+        "id":  "osm-node-10613669634",
+        "name":  "Alphamart, San Jose, Morong",
+        "lat":  14.5165484,
+        "lng":  121.2343236,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "convenience"
+                 },
+        "display_name":  "Alphamart, San Jose, Morong, Sumulong Street, Caingin, San Jose, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.47
+    },
+    {
+        "id":  "osm-way-1136168133",
+        "name":  "Hebron",
+        "lat":  14.5198824,
+        "lng":  121.2390893,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Hebron, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.48
+    },
+    {
+        "id":  "osm-node-10061902789",
+        "name":  "Kapater Bistro",
+        "lat":  14.5198851,
+        "lng":  121.2392194,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "restaurant"
+                 },
+        "display_name":  "Kapater Bistro, 0045, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  0.48
+    },
+    {
+        "id":  "osm-way-267670861",
+        "name":  "Timoteo A. Reyes, Sr. Memorial Elementary School",
+        "lat":  14.5102982,
+        "lng":  121.2414111,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Timoteo A. Reyes, Sr. Memorial Elementary School, J. Pascual Street, San Pedro, Poblacion, Caniogan, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.66
+    },
+    {
+        "id":  "osm-way-1552402353",
+        "name":  "Seaoil",
+        "lat":  14.5087289,
+        "lng":  121.2369015,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Seaoil, T. Claudio Street, San Pedro, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.78
+    },
+    {
+        "id":  "osm-node-11294801598",
+        "name":  "7-Eleven",
+        "lat":  14.5233854,
+        "lng":  121.2398977,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "convenience"
+                 },
+        "display_name":  "7-Eleven, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.88
+    },
+    {
+        "id":  "osm-way-405587141",
+        "name":  "Smart Gas",
+        "lat":  14.5235669,
+        "lng":  121.2403916,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Smart Gas, T. Claudio Street, Namay, San Juan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.9
+    },
+    {
+        "id":  "osm-way-962511903",
+        "name":  "Roman Tantiongco Memorial School",
+        "lat":  14.51424,
+        "lng":  121.2469949,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Roman Tantiongco Memorial School, Turentigue Street, San Juan, Poblacion, Caniogan, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.91
+    },
+    {
+        "id":  "osm-node-6783254847",
+        "name":  "Flying V",
+        "lat":  14.5238167,
+        "lng":  121.2401806,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Flying V, Corazon C. Aquino Avenue, Sagbat, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  0.93
+    },
+    {
+        "id":  "osm-way-405587153",
+        "name":  "Flying V",
+        "lat":  14.5241141,
+        "lng":  121.2398456,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Flying V, Corazon C. Aquino Avenue, Sagbat, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  0.95
+    },
+    {
+        "id":  "osm-node-1770348170",
+        "name":  "Morong Fire Station",
+        "lat":  14.5065764,
+        "lng":  121.2368936,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fire_station"
+                 },
+        "display_name":  "Morong Fire Station, T. Claudio Street, San Pedro, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.02
+    },
+    {
+        "id":  "osm-node-11211364843",
+        "name":  "Petron",
+        "lat":  14.5248845,
+        "lng":  121.2387696,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Petron, Corazon C. Aquino Avenue, Sagbat, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  1.03
+    },
+    {
+        "id":  "osm-node-10177592717",
+        "name":  "Total",
+        "lat":  14.5063323,
+        "lng":  121.2355963,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Total, T. Claudio Street, San Pedro, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.08
+    },
+    {
+        "id":  "osm-way-756133285",
+        "name":  "Maybancal Elementary School",
+        "lat":  14.5248904,
+        "lng":  121.2425036,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Maybancal Elementary School, G. Robles Street, Caingin, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.11
+    },
+    {
+        "id":  "osm-way-405587138",
+        "name":  "Phoenix",
+        "lat":  14.5278696,
+        "lng":  121.244333,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Phoenix, Sagbat-Pililla Diversion Road, Caingin, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.49
+    },
+    {
+        "id":  "osm-node-4077591035",
+        "name":  "Bean In Love Cafe",
+        "lat":  14.5280883,
+        "lng":  121.2445253,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "cafe"
+                 },
+        "display_name":  "Bean In Love Cafe, Sagbat-Pililla Diversion Road, Caingin, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.52
+    },
+    {
+        "id":  "osm-node-4077591036",
+        "name":  "EJ\u0027s Tapsi and Sizzling",
+        "lat":  14.5280539,
+        "lng":  121.2445146,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "restaurant"
+                 },
+        "display_name":  "EJ\u0027s Tapsi and Sizzling, Sagbat-Pililla Diversion Road, Caingin, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.52
+    },
+    {
+        "id":  "osm-node-5344935021",
+        "name":  "JM\u0027s Place",
+        "lat":  14.5051286,
+        "lng":  121.2294736,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "restaurant"
+                 },
+        "display_name":  "JM\u0027s Place, Manila East Road, San Pedro, Poblacion, Bombongan, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.52
+    },
+    {
+        "id":  "osm-node-11294669824",
+        "name":  "Aljen\u0027s Cafe",
+        "lat":  14.5284693,
+        "lng":  121.244639,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "cafe"
+                 },
+        "display_name":  "Aljen\u0027s Cafe, Ramos Boulevard, Sagbat, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  1.57
+    },
+    {
+        "id":  "osm-way-866169714",
+        "name":  "Renaissance School of Science and Technology",
+        "lat":  14.5023542,
+        "lng":  121.2333409,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Renaissance School of Science and Technology, Manila East Road, San Pedro, Poblacion, Bombongan, Morong, Rizal, Calabarzon, 1773, Philippines",
+        "distance_km":  1.57
+    },
+    {
+        "id":  "osm-way-962499202",
+        "name":  "Shell",
+        "lat":  14.5288151,
+        "lng":  121.245195,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Shell, Sagbat-Pililla Diversion Road, Caingin, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.63
+    },
+    {
+        "id":  "osm-node-1645385494",
+        "name":  "Paseo Rizal",
+        "lat":  14.5293614,
+        "lng":  121.24433,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "restaurant"
+                 },
+        "display_name":  "Paseo Rizal, Ramos Boulevard, Sagbat, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  1.65
+    },
+    {
+        "id":  "osm-node-10176184317",
+        "name":  "Kingâ€™s Dug Out",
+        "lat":  14.5014014,
+        "lng":  121.2334731,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "restaurant"
+                 },
+        "display_name":  "Kingâ€™s Dug Out, Manila East Road, San Pedro, Poblacion, Bombongan, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  1.67
+    },
+    {
+        "id":  "osm-node-11211337278",
+        "name":  "Alfamart",
+        "lat":  14.5254427,
+        "lng":  121.2550353,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "convenience"
+                 },
+        "display_name":  "Alfamart, H. Raymundo Street, Can-Cal-Lan, Poblacion, Calero, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  2.07
+    },
+    {
+        "id":  "osm-relation-12930088",
+        "name":  "Lagundi Elementary School",
+        "lat":  14.5274881,
+        "lng":  121.2544064,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Lagundi Elementary School, H. Raymundo Street, Can-Cal-Lan, Poblacion, Lagundi, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  2.15
+    },
+    {
+        "id":  "osm-node-11211348257",
+        "name":  "Hebron",
+        "lat":  14.5285508,
+        "lng":  121.253718,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "fuel"
+                 },
+        "display_name":  "Hebron, Sagbat-Pililla Diversion Road, Caingin, Can-Cal-Lan, Poblacion, Maybancal, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  2.16
+    },
+    {
+        "id":  "osm-relation-12930089",
+        "name":  "Lagundi-Caniogan-Calero-Lanang National High School",
+        "lat":  14.5280384,
+        "lng":  121.2543227,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Lagundi-Caniogan-Calero-Lanang National High School, H. Raymundo Street, Can-Cal-Lan, Poblacion, Lagundi, Morong, Rizal, Calabarzon, 1910, Philippines",
+        "distance_km":  2.18
+    },
+    {
+        "id":  "osm-way-771555340",
+        "name":  "Bombongan Elementary School",
+        "lat":  14.5059574,
+        "lng":  121.2195751,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Bombongan Elementary School, ynares street, Batingan, Macamot, Morong, Rizal, Calabarzon, 1940, Philippines",
+        "distance_km":  2.3
+    },
+    {
+        "id":  "osm-way-962485896",
+        "name":  "Pulong Kumanoy Elementary School",
+        "lat":  14.5382483,
+        "lng":  121.2507927,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "Pulong Kumanoy Elementary School, Bitang Road, Can-Cal-Lan, Lagundi, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  2.83
+    },
+    {
+        "id":  "osm-way-756146527",
+        "name":  "San Guillermo Elementary School",
+        "lat":  14.5232902,
+        "lng":  121.2131577,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "San Guillermo Elementary School, H. Cosep Street, Bambu, San Guillermo, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  2.85
+    },
+    {
+        "id":  "osm-way-756147081",
+        "name":  "San Guillermo National High School",
+        "lat":  14.5242451,
+        "lng":  121.2128113,
+        "tags":  {
+                     "category":  "amenity",
+                     "type":  "school"
+                 },
+        "display_name":  "San Guillermo National High School, H. Cosep Street, Bambu, San Guillermo, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  2.92
+    },
+    {
+        "id":  "osm-node-12349691886",
+        "name":  "Alfamart",
+        "lat":  14.5372394,
+        "lng":  121.222133,
+        "tags":  {
+                     "category":  "shop",
+                     "type":  "convenience"
+                 },
+        "display_name":  "Alfamart, Corazon C. Aquino Avenue, San Guillermo, Morong, Rizal, Calabarzon, 1960, Philippines",
+        "distance_km":  2.98
+    }
+]

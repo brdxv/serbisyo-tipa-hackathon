@@ -1,0 +1,36 @@
+{
+  "researchDate": "2026-10-22",
+  "zone": {
+    "name": "Central Morong prototype cluster",
+    "center": { "lat": 14.512052, "lng": 121.238126 },
+    "bounds": {
+      "south": 14.50545,
+      "north": 14.51755,
+      "west": 121.23484,
+      "east": 121.241797
+    },
+    "approximateDiameterKm": 1.35
+  },
+  "dataPolicy": {
+    "realFields": ["name", "category", "address", "coordinates"],
+    "prototypeOnlyFields": ["averageWait", "processingTime", "reliability", "informationAccuracy", "accessibility", "communityConfidence", "busyHours", "serbisyoScore", "communityExperiences"],
+    "prototypeMetricsMustBeMarkedSimulated": true
+  },
+  "places": [
+    { "id": "morong-municipal-hall", "name": "Morong Municipal Hall", "category": "government", "address": "T. Claudio St., Sitio Paglabas, San Pedro, Morong, Rizal 1960", "coordinates": { "lat": 14.50545, "lng": 121.23571 }, "imageStrategy": "actual", "imageSourceHint": "Municipality of Morong or Wikimedia Commons" },
+    { "id": "lto-morong-district-office", "name": "LTO Morong District Office", "category": "transportation-government", "address": "LTO Complex, Morong, Rizal", "coordinates": { "lat": 14.50629, "lng": 121.23534 }, "imageStrategy": "actual-preferred", "imageSourceHint": "Current LTO/business place listing" },
+    { "id": "morong-fire-station", "name": "Morong Fire Station", "category": "emergency-government", "address": "Public Market Compound, San Pedro, Morong, Rizal", "coordinates": { "lat": 14.50658, "lng": 121.23689 }, "imageStrategy": "actual", "imageSourceHint": "Municipality of Morong official Fire Station page" },
+    { "id": "morong-public-market", "name": "Morong Public Market", "category": "commerce-public-facility", "address": "Brgy. San Pedro, Morong, Rizal", "coordinates": { "lat": 14.50718, "lng": 121.2372 }, "imageStrategy": "actual", "imageSourceHint": "Municipality/news/current market photo" },
+    { "id": "registry-of-deeds-morong", "name": "Registry of Deeds - Morong", "category": "government", "address": "G64Q+V44, Morong, Rizal; near Morong Public Market", "coordinates": { "lat": 14.5072, "lng": 121.23777 }, "imageStrategy": "actual-preferred", "imageSourceHint": "Current place/business listing" },
+    { "id": "east-systems-colleges-of-rizal", "name": "East Systems Colleges of Rizal", "category": "education", "address": "J. Pascual St., San Pedro, Morong, Rizal 1960", "coordinates": { "lat": 14.509713, "lng": 121.241797 }, "imageStrategy": "actual-preferred", "imageSourceHint": "School/current place listing" },
+    { "id": "morong-rural-health-unit", "name": "Morong Rural Health Unit", "category": "healthcare-clinic", "address": "Brgy. San Pedro, Morong, Rizal", "addressNote": "Latest PhilHealth list uses Tupas St.; other official health directories also reference Tomas Claudio St./Manila East Road. Verify street locally before showing turn-by-turn directions.", "coordinates": { "lat": 14.512813, "lng": 121.238828 }, "imageStrategy": "actual", "imageSourceHint": "Municipality of Morong Municipal Health Office page" },
+    { "id": "commandancia-museong-pambayan", "name": "Commandancia / Museong Pambayan ng Morong", "category": "government-museum-public-facility", "address": "Tupas St., Morong, Rizal", "coordinates": { "lat": 14.512889, "lng": 121.238911 }, "imageStrategy": "actual", "imageSourceHint": "Wikimedia Commons or Municipality of Morong" },
+    { "id": "morong-doctors-hospital", "name": "Morong Doctors Hospital", "category": "healthcare-hospital", "address": "491 Governor Martinez St., Morong, Rizal 1960", "coordinates": { "lat": 14.51434, "lng": 121.2394 }, "imageStrategy": "actual-preferred", "imageSourceHint": "Current hospital/business listing" },
+    { "id": "savemore-market-morong", "name": "Savemore Market Morong", "category": "commerce-supermarket", "address": "Tomas Claudio St., Brgy. San Juan, Morong, Rizal 1960", "coordinates": { "lat": 14.51495, "lng": 121.23952 }, "imageStrategy": "actual-preferred", "imageSourceHint": "Current branch/business listing" },
+    { "id": "mercury-drug-morong-t-claudio", "name": "Mercury Drug - Morong T. Claudio", "category": "pharmacy", "address": "Tomas Claudio St., Morong, Rizal 1960", "coordinates": { "lat": 14.5151, "lng": 121.23905 }, "imageStrategy": "actual-preferred", "imageSourceHint": "Current branch/storefront listing" },
+    { "id": "rizal-provincial-hospital-system-morong", "name": "Rizal Provincial Hospital System - Morong", "category": "healthcare-government-hospital", "address": "Tomas Claudio St., Brgy. San Juan, Morong, Rizal 1960", "coordinates": { "lat": 14.51656, "lng": 121.23917 }, "imageStrategy": "actual", "imageSourceHint": "Wikimedia Commons public-domain exterior preferred" },
+    { "id": "supreme-care-medical-diagnostic", "name": "Supreme Care Medical Diagnostic & Imaging Center", "category": "healthcare-diagnostic-center", "address": "743 Tomas Claudio St., Brgy. San Juan, Morong, Rizal 1960", "coordinates": { "lat": 14.51698, "lng": 121.23924 }, "imageStrategy": "actual-preferred", "imageSourceHint": "Current clinic/business/social listing" },
+    { "id": "morong-national-high-school", "name": "Morong National High School", "category": "education", "address": "T. Claudio cor. Sumulong St., Brgy. San Juan, Morong, Rizal", "coordinates": { "lat": 14.51719, "lng": 121.23823 }, "imageStrategy": "actual", "imageSourceHint": "DepEd/Wikimedia/current school listing" },
+    { "id": "urs-morong-campus", "name": "University of Rizal System - Morong Campus", "category": "education-university", "address": "Sumulong St., Brgy. San Juan, Morong, Rizal", "coordinates": { "lat": 14.51755, "lng": 121.23484 }, "imageStrategy": "actual", "imageSourceHint": "Official URS or Wikimedia Commons" }
+  ]
+}

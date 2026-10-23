@@ -1,0 +1,210 @@
+.dev-element-commentor-ui{position:fixed;inset:0;z-index:11000;pointer-events:none;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#23374f}.dev-element-commentor-ui *{box-sizing:border-box}.dev-element-commentor-target{position:fixed;z-index:11001;border:2px dashed #7c5cff;border-radius:7px;background:rgba(124,92,255,.055);box-shadow:0 0 0 1px rgba(255,255,255,.72),0 5px 18px rgba(57,39,125,.13);pointer-events:none;transition:top .04s linear,left .04s linear,width .04s linear,height .04s linear,border-color .12s ease,background .12s ease}.dev-element-commentor-target.is-group{border-color:#347fc4;background:rgba(52,127,196,.055)}.dev-element-commentor-target.is-selected{border-style:solid;border-width:2.5px;background:rgba(124,92,255,.09);box-shadow:0 0 0 3px rgba(124,92,255,.1),0 8px 24px rgba(32,45,73,.16)}.dev-element-commentor-target>span{position:absolute;top:-25px;left:-2px;max-width:180px;border-radius:6px 6px 6px 0;background:#4936a4;padding:4px 7px;color:#fff;font-size:9px;font-weight:850;letter-spacing:.02em;line-height:1.2;white-space:nowrap}.dev-element-commentor-target.is-group>span{background:#286a9f}.dev-element-commentor-toolbar{position:fixed;top:12px;left:50%;z-index:11010;display:flex;max-width:min(1120px,calc(100vw - 28px));min-height:44px;align-items:center;gap:7px;transform:translateX(-50%);border:1px solid rgba(113,124,151,.62);border-radius:13px;background:rgba(248,250,253,.97);padding:6px 7px 6px 10px;box-shadow:0 12px 35px rgba(22,33,54,.18);backdrop-filter:blur(14px);pointer-events:auto}.dev-element-commentor-brand{display:flex;align-items:center;gap:7px;white-space:nowrap}.dev-element-commentor-brand svg{color:#6b4de8}.dev-element-commentor-brand strong{color:#293d59;font-size:11.5px}.dev-element-commentor-route{max-width:230px;overflow:hidden;border-left:1px solid #dde3eb;padding-left:9px;color:#7d8da1;font-size:9.5px;text-overflow:ellipsis;white-space:nowrap}.dev-element-commentor-toolbar label{display:flex;align-items:center;gap:5px;border:1px solid #d3dce8;border-radius:8px;background:#fff;padding:0 7px;color:#69809b}.dev-element-commentor-toolbar select{height:28px;max-width:150px;border:0;outline:0;background:transparent;color:#405b7c;font:inherit;font-size:10px;font-weight:750}.dev-element-commentor-toolbar>button{display:flex;min-height:30px;align-items:center;gap:5px;border:1px solid transparent;border-radius:8px;background:transparent;padding:0 8px;color:#526c8a;font:inherit;font-size:10px;font-weight:800;cursor:pointer}.dev-element-commentor-toolbar>button:hover,.dev-element-commentor-toolbar>button.is-active{border-color:#d8dff0;background:#f0edff;color:#5b45bd}.dev-element-commentor-toolbar>button.is-icon{display:grid;width:30px;place-items:center;padding:0}.dev-element-commentor-toolbar kbd{border:1px solid #d6dce6;border-bottom-width:2px;border-radius:6px;background:#fff;padding:4px 6px;color:#728096;font-size:9px;font-weight:800;white-space:nowrap}.dev-element-commentor-marker{position:fixed;z-index:11008;display:flex;width:27px;height:27px;align-items:center;justify-content:center;gap:1px;border:2px solid #fff;border-radius:999px;background:#6d52df;color:#fff;box-shadow:0 5px 14px rgba(43,34,92,.3);font:inherit;cursor:pointer;pointer-events:auto;transform:translate(-50%,-50%);transition:transform .12s ease,box-shadow .12s ease}.dev-element-commentor-marker:hover{transform:translate(-50%,-50%) scale(1.13);box-shadow:0 7px 18px rgba(43,34,92,.38)}.dev-element-commentor-marker b{font-size:8px;line-height:1}.dev-element-commentor-marker.is-low{background:#6c8095}.dev-element-commentor-marker.is-medium{background:#5c67ce}.dev-element-commentor-marker.is-high{background:#d16c33}.dev-element-commentor-marker.is-critical{background:#c53c52}.dev-element-commentor-marker.is-draft{background:#8795a6;border-style:dashed;opacity:.88}.dev-element-commentor-marker.is-resolved{background:#4d8a69;border-color:#f4fbf7;opacity:.78;box-shadow:0 4px 12px rgba(38,91,62,.24)}.dev-element-commentor-toast{position:fixed;top:66px;left:50%;z-index:11020;display:flex;align-items:center;gap:7px;transform:translateX(-50%);border:1px solid #c8d6ce;border-radius:9px;background:rgba(247,252,249,.98);padding:8px 11px;color:#3a6a52;box-shadow:0 8px 24px rgba(25,52,42,.15);font-size:10.5px;font-weight:800;pointer-events:none}.dev-element-commentor-panel,.dev-element-commentor-composer{position:fixed;z-index:11015;overflow:hidden;border:1px solid rgba(114,128,151,.65);border-radius:15px;background:rgba(249,251,253,.985);box-shadow:0 20px 55px rgba(20,31,49,.23);backdrop-filter:blur(16px);pointer-events:auto}.dev-element-commentor-panel{top:68px;left:14px;width:min(390px,calc(100vw - 28px));max-height:calc(100vh - 84px)}.dev-element-commentor-composer{top:68px;right:14px;width:min(430px,calc(100vw - 28px));max-height:calc(100vh - 84px);overflow:auto;transition:top .14s ease,left .14s ease,box-shadow .14s ease}.dev-element-commentor-composer:not(.is-placement-fallback){box-shadow:0 22px 58px rgba(20,31,49,.25),0 0 0 2px rgba(124,92,255,.06)}.dev-element-commentor-panel>header,.dev-element-commentor-composer>header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border-bottom:1px solid #e2e7ee;background:linear-gradient(180deg,#fff,#f7f9fc);padding:13px 14px}.dev-element-commentor-panel>header>div,.dev-element-commentor-composer>header>div{min-width:0}.dev-element-commentor-panel>header small,.dev-element-commentor-panel>header strong,.dev-element-commentor-panel>header span,.dev-element-commentor-composer>header small,.dev-element-commentor-composer>header strong,.dev-element-commentor-composer>header span{display:block}.dev-element-commentor-panel>header small,.dev-element-commentor-composer>header small{color:#8b97a8;font-size:9px;font-weight:850;letter-spacing:.06em;text-transform:uppercase}.dev-element-commentor-panel>header strong,.dev-element-commentor-composer>header strong{margin-top:3px;color:#304d6e;font-size:13px}.dev-element-commentor-panel>header span,.dev-element-commentor-composer>header span{margin-top:3px;overflow:hidden;color:#7b8da3;font-size:9.5px;text-overflow:ellipsis;white-space:nowrap}.dev-element-commentor-panel>header button,.dev-element-commentor-composer>header button{display:grid;width:30px;height:30px;flex:0 0 30px;place-items:center;border:1px solid #dde4ec;border-radius:8px;background:#fff;color:#71839a;cursor:pointer}.dev-element-commentor-panel>header button:hover,.dev-element-commentor-composer>header button:hover{background:#f0f4f9;color:#344f70}.dev-element-commentor-panel-actions{display:flex;gap:7px;border-bottom:1px solid #e5eaf0;padding:9px 10px}.dev-element-commentor-panel-actions button{display:flex;min-height:31px;align-items:center;gap:5px;border:1px solid #cfd8e4;border-radius:8px;background:#fff;padding:0 9px;color:#4e6684;font:inherit;font-size:9.5px;font-weight:800;cursor:pointer}.dev-element-commentor-panel-actions button:first-child{border-color:#bdb4ee;background:#f3f0ff;color:#5d48ba}.dev-element-commentor-status-note{display:flex;align-items:flex-start;gap:6px;margin:0;border-bottom:1px solid #e5eaf0;background:#f5faf7;padding:7px 10px;color:#64816f;font-size:8.5px;line-height:1.4}.dev-element-commentor-status-note svg{flex:none;margin-top:1px;color:#4d8a69}.dev-element-commentor-list{display:grid;gap:7px;max-height:calc(100vh - 222px);overflow:auto;padding:9px}.dev-element-commentor-list article{border:1px solid #dce3eb;border-radius:10px;background:#fff;overflow:hidden}.dev-element-commentor-list article.is-draft{border-style:dashed;background:#fbfcfd}.dev-element-commentor-list article.is-resolved{border-color:#cfe2d7;background:#fbfefc;opacity:.82}.dev-element-commentor-list-main{display:block;width:100%;border:0;background:transparent;padding:9px 10px;text-align:left;cursor:pointer}.dev-element-commentor-list-status{display:flex;width:100%;min-height:29px;align-items:center;justify-content:center;gap:5px;border:0;border-top:1px solid #e4e9ef;background:#f8fafc;color:#60758f;font:inherit;font-size:8.5px;font-weight:850;cursor:pointer}.dev-element-commentor-list-status.is-resolve{background:#f2faf6;color:#3f785c}.dev-element-commentor-list-status.is-unresolve{background:#f7f5ff;color:#6650bc}.dev-element-commentor-list-status:hover{filter:brightness(.975)}.dev-element-commentor-list-main>span{display:flex;align-items:center;gap:5px}.dev-element-commentor-list-main>span b,.dev-element-commentor-list-main>span em{border-radius:999px;padding:3px 6px;font-size:8px;font-style:normal;font-weight:850;line-height:1.1}.dev-element-commentor-list-main>span b{background:#ece9ff;color:#624cc1}.dev-element-commentor-list-main>span em{background:#f0f3f7;color:#718197;text-transform:capitalize}.dev-element-commentor-list-main strong{display:block;margin-top:7px;color:#345373;font-size:10.5px}.dev-element-commentor-list-main p{display:-webkit-box;margin:4px 0 0;overflow:hidden;color:#637991;font-size:9.5px;line-height:1.4;-webkit-box-orient:vertical;-webkit-line-clamp:2}.dev-element-commentor-list-main small{display:block;margin-top:6px;overflow:hidden;color:#98a4b3;font-size:8.5px;text-overflow:ellipsis;white-space:nowrap}.dev-element-commentor-list article:hover{border-color:#bfcbea;box-shadow:0 3px 10px rgba(45,65,95,.08)}.dev-element-commentor-empty{display:grid;justify-items:center;gap:5px;padding:30px 18px;color:#8190a3;text-align:center}.dev-element-commentor-empty svg{color:#8b77dd}.dev-element-commentor-empty strong{color:#566b86;font-size:11px}.dev-element-commentor-empty span{max-width:250px;font-size:9.5px;line-height:1.4}.dev-element-commentor-target-mode{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:10px 11px 0}.dev-element-commentor-target-mode button{display:grid;grid-template-columns:auto 1fr;column-gap:7px;align-items:center;border:1px solid #d6dee8;border-radius:10px;background:#fff;padding:9px;color:#657c98;text-align:left;cursor:pointer}.dev-element-commentor-target-mode button svg{grid-row:1/3}.dev-element-commentor-target-mode button span{font-size:10.5px;font-weight:850}.dev-element-commentor-target-mode button small{font-size:8.5px;color:#91a0b2}.dev-element-commentor-target-mode button.is-active{border-color:#8d79e2;background:#f2efff;color:#5642ae;box-shadow:inset 0 0 0 1px rgba(111,84,215,.12)}.dev-element-commentor-target-mode button:disabled{opacity:.42;cursor:not-allowed}.dev-element-commentor-target-summary{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 11px 0;border:1px solid #e0e6ed;border-radius:9px;background:#f7f9fc;padding:7px 8px}.dev-element-commentor-target-summary code{min-width:0;overflow:hidden;color:#63758a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:8.5px;text-overflow:ellipsis;white-space:nowrap}.dev-element-commentor-target-summary span{flex:0 0 auto;color:#8998aa;font-size:8.5px}.dev-element-commentor-form{display:grid;gap:10px;padding:11px}.dev-element-commentor-form label{display:grid;gap:5px}.dev-element-commentor-form label>span{display:flex;align-items:center;justify-content:space-between;color:#516a87;font-size:9.5px;font-weight:850}.dev-element-commentor-form label>span small{color:#98a5b4;font-size:8px;font-weight:650}.dev-element-commentor-form input,.dev-element-commentor-form select,.dev-element-commentor-form textarea{width:100%;border:1px solid #cfd9e4;border-radius:9px;background:#fff;padding:8px 9px;color:#344e6c;outline:none;font:inherit;font-size:10.5px;line-height:1.4;transition:border-color .12s ease,box-shadow .12s ease}.dev-element-commentor-form input,.dev-element-commentor-form select{height:36px}.dev-element-commentor-form textarea{min-height:126px;resize:vertical}.dev-element-commentor-form input:focus,.dev-element-commentor-form select:focus,.dev-element-commentor-form textarea:focus{border-color:#8c79df;box-shadow:0 0 0 3px rgba(124,92,255,.11)}.dev-element-commentor-form-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:8px}.dev-element-commentor-category-field{display:grid;gap:6px}.dev-element-commentor-category-field>span{display:flex;align-items:center;justify-content:space-between;color:#516a87;font-size:9.5px;font-weight:850}.dev-element-commentor-category-field>span small{color:#98a5b4;font-size:8px;font-weight:650}.dev-element-commentor-category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.dev-element-commentor-category-grid button{display:flex;min-height:32px;align-items:center;gap:6px;border:1px solid #d4dce6;border-radius:8px;background:#fff;padding:0 8px;color:#647a95;font:inherit;font-size:9px;font-weight:800;cursor:pointer}.dev-element-commentor-category-grid button svg{opacity:0}.dev-element-commentor-category-grid button.is-selected{border-color:#8d79e2;background:#f2efff;color:#5844b1;box-shadow:inset 0 0 0 1px rgba(111,84,215,.12)}.dev-element-commentor-category-grid button.is-selected svg{opacity:1}.dev-element-commentor-draft-state{color:#8797a9;font-size:8.5px}.dev-element-commentor-composer>footer{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #e1e6ed;background:#f8fafc;padding:10px 11px}.dev-element-commentor-composer>footer>div{display:flex;flex-wrap:wrap;gap:6px}.dev-element-commentor-composer>footer button{display:flex;min-height:32px;align-items:center;gap:5px;border:1px solid #ccd7e3;border-radius:8px;background:#fff;padding:0 9px;color:#526c89;font:inherit;font-size:9.5px;font-weight:850;cursor:pointer}.dev-element-commentor-composer>footer button.is-primary{border-color:#654ed0;background:#654ed0;color:#fff;box-shadow:0 4px 10px rgba(89,66,188,.2)}.dev-element-commentor-composer>footer button.is-primary:hover{background:#5842bc}.dev-element-commentor-composer>footer button.is-primary:disabled{opacity:.42;cursor:not-allowed;box-shadow:none}.dev-element-commentor-composer>footer button.is-secondary{border-color:#b9c7d8;background:#f6f9fc}.dev-element-commentor-composer>footer button.is-resolve{border-color:#b9dccb;background:#f2faf6;color:#3f785c}.dev-element-commentor-composer>footer button.is-unresolve{border-color:#c9c0ef;background:#f6f3ff;color:#6650bc}.dev-element-commentor-composer>footer button.is-danger{border-color:#ebc9ce;background:#fff7f8;color:#a84d5a}body.dev-element-commentor-active{cursor:crosshair}body.dev-element-commentor-active .dev-element-commentor-ui,body.dev-element-commentor-active .dev-element-commentor-ui *{cursor:default}.dev-element-commentor-toolbar button,.dev-element-commentor-panel button,.dev-element-commentor-composer button,.dev-element-commentor-marker{cursor:pointer!important}.dev-element-commentor-form input,.dev-element-commentor-form textarea{cursor:text!important}.dev-element-commentor-form select,.dev-element-commentor-toolbar select{cursor:pointer!important}@media(max-width:900px){.dev-element-commentor-route{display:none}.dev-element-commentor-toolbar{left:10px;right:10px;width:auto;max-width:none;transform:none}.dev-element-commentor-panel{top:66px;left:10px;width:min(380px,calc(100vw - 20px))}.dev-element-commentor-composer{width:min(430px,calc(100vw - 20px))}}@media(max-width:680px){.dev-element-commentor-toolbar kbd,.dev-element-commentor-brand strong,.dev-element-commentor-toolbar>button span{display:none}.dev-element-commentor-toolbar{justify-content:center}.dev-element-commentor-panel{right:8px;left:8px;width:auto}.dev-element-commentor-composer{width:min(430px,calc(100vw - 16px));max-height:calc(100vh - 76px)}.dev-element-commentor-panel{max-height:calc(100vh - 76px)}.dev-element-commentor-form-grid{grid-template-columns:1fr}.dev-element-commentor-composer>footer{align-items:stretch;flex-direction:column}.dev-element-commentor-composer>footer>button.is-primary{justify-content:center}.dev-element-commentor-target-mode{grid-template-columns:1fr}}
+
+.dev-element-commentor-review-status{
+  display:flex;
+  min-width:0;
+  max-width:300px;
+  align-items:center;
+  gap:6px;
+  border:1px solid #c9dfd2;
+  border-radius:8px;
+  background:#f3faf6;
+  padding:4px 7px;
+  color:#47765d;
+}
+
+.dev-element-commentor-storage-state{
+  display:inline-flex;
+  min-height:28px;
+  align-items:center;
+  gap:3px;
+  border:1px solid #d7e0e9;
+  border-radius:8px;
+  background:#f8fafc;
+  padding:0 7px;
+  color:#718197;
+  font-size:8.5px;
+  font-weight:750;
+  white-space:nowrap;
+}
+.dev-element-commentor-storage-state strong{color:#405d79;font-size:9px}
+.dev-element-commentor-storage-state.is-synced{border-color:#c9dfd2;background:#f3faf6;color:#527763}
+.dev-element-commentor-storage-state.is-synced strong{color:#35654d}
+.dev-element-commentor-storage-state.is-error{border-color:#ebc7cc;background:#fff6f7;color:#a4515d}
+.dev-element-commentor-viewport-indicator{display:flex;min-height:28px;align-items:center;gap:5px;border:1px solid #d7e0e9;border-radius:8px;background:#f8fafc;padding:3px 7px;color:#607892;white-space:nowrap}
+.dev-element-commentor-viewport-indicator>svg{flex:none}
+.dev-element-commentor-viewport-indicator>span{display:grid;line-height:1.05}
+.dev-element-commentor-viewport-indicator strong{font-size:8.5px}
+.dev-element-commentor-viewport-indicator small{margin-top:2px;color:#8d9aac;font-size:7.5px;font-weight:700}
+.dev-element-commentor-viewport-indicator.is-mobile{border-color:#c7d7f1;background:#f2f6ff;color:#4c66a2}
+.dev-element-commentor-viewport-indicator.is-desktop{border-color:#cbded8;background:#f3faf7;color:#477866}
+.dev-element-commentor-list article.is-target-unavailable{border-style:dashed}
+.dev-element-commentor-target-state{
+  display:block;
+  border-top:1px dashed #dce4ec;
+  background:#f7f9fc;
+  padding:6px 9px;
+  color:#78889c;
+  font-size:8px;
+  font-weight:700;
+  line-height:1.35;
+}
+.dev-element-commentor-list-main>span em.is-viewport-mobile{background:#edf3ff;color:#506aa6}
+.dev-element-commentor-list-main>span em.is-viewport-desktop{background:#edf8f3;color:#4b7867}
+@media(max-width:760px){.dev-element-commentor-storage-state{display:none}}
+.dev-element-commentor-review-status>svg{flex:0 0 auto;color:#3e805c}
+.dev-element-commentor-review-status>span{min-width:0;display:grid;line-height:1.12}
+.dev-element-commentor-review-status strong{color:#3c6e53;font-size:9px;white-space:nowrap}
+.dev-element-commentor-review-status small{overflow:hidden;color:#6e8978;font-size:7.5px;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:1080px){.dev-element-commentor-review-status{max-width:190px}.dev-element-commentor-review-status small{display:none}}
+@media(max-width:760px){.dev-element-commentor-review-status{display:none}}
+
+/* Movable Commentor toolbar: the drag zone is intentionally separate from
+   buttons/selects so repositioning the toolbar never steals control clicks. */
+.dev-element-commentor-toolbar{cursor:grab!important;touch-action:none}
+.dev-element-commentor-toolbar :is(button,label,select,input,textarea,a,kbd){touch-action:auto}
+.dev-element-commentor-toolbar-drag-zone{display:flex;min-width:0;align-items:center;gap:7px;color:#6f8096;cursor:grab!important;touch-action:none;user-select:none}
+.dev-element-commentor-toolbar-drag-zone>.lucide-grip-vertical{flex:none;opacity:.72}
+.dev-element-commentor-toolbar.is-dragging{box-shadow:0 18px 44px rgba(22,33,54,.28);transition:none}
+.dev-element-commentor-toolbar.is-dragging .dev-element-commentor-toolbar-drag-zone{cursor:grabbing!important}
+.dev-element-commentor-toolbar.is-dragging *{user-select:none}
+
+.dev-element-commentor-composer>.dev-element-commentor-composer-drag-handle{cursor:grab!important;touch-action:none;user-select:none}
+.dev-element-commentor-composer>.dev-element-commentor-composer-drag-handle button{cursor:pointer!important;touch-action:auto}
+.dev-element-commentor-composer.is-dragging{transition:none!important;box-shadow:0 24px 62px rgba(20,31,49,.32),0 0 0 2px rgba(124,92,255,.1)}
+.dev-element-commentor-composer.is-dragging>.dev-element-commentor-composer-drag-handle{cursor:grabbing!important}
+.dev-element-commentor-composer.is-manually-positioned{transition:box-shadow .14s ease!important}
+
+/* Group-depth navigator exposes the actual DOM/container hierarchy used by
+   the Commentor so review targets can move between nested cards/sections. */
+.dev-element-commentor-group-depth{display:grid;grid-template-columns:38px minmax(0,1fr) 38px;align-items:center;gap:8px;margin:8px 11px 0;border:1px solid #cfc4fb;border-radius:11px;background:linear-gradient(180deg,#faf9ff,#f4f1ff);padding:7px}
+.dev-element-commentor-group-depth>button{display:grid;width:38px;height:36px;place-items:center;border:1px solid #a99ae8;border-radius:9px;background:#fff;color:#5b46bc;box-shadow:0 2px 6px rgba(77,58,159,.08);cursor:pointer}
+.dev-element-commentor-group-depth>button:not(:disabled):hover,.dev-element-commentor-group-depth>button:not(:disabled):focus-visible{border-color:#9583df;outline:0;background:#f1eeff;color:#5a45b5}
+.dev-element-commentor-group-depth>button:disabled{cursor:not-allowed;opacity:.34}
+.dev-element-commentor-group-depth>span{display:grid;min-width:0;grid-template-columns:auto minmax(0,1fr);column-gap:6px;align-items:center;color:#657992}
+.dev-element-commentor-group-depth>span>svg{grid-row:1/3;color:#6a53d2}
+.dev-element-commentor-group-depth strong{overflow:hidden;color:#425e7d;font-size:9.5px;text-overflow:ellipsis;white-space:nowrap}
+.dev-element-commentor-group-depth small{overflow:hidden;color:#8a98aa;font-size:8px;text-overflow:ellipsis;white-space:nowrap}
+.dev-element-commentor-viewport-field{display:grid;gap:6px}
+.dev-element-commentor-viewport-field>span{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;color:#516a87;font-size:9.5px;font-weight:850}
+.dev-element-commentor-viewport-field>span small{max-width:235px;color:#98a5b4;font-size:8px;font-weight:650;text-align:right;line-height:1.3}
+.dev-element-commentor-viewport-options{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:6px}
+.dev-element-commentor-viewport-options button{display:grid;min-width:0;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:2px 6px;border:1px solid #d4dce6;border-radius:9px;background:#fff;padding:7px 8px;color:#647a95;text-align:left;font:inherit;cursor:pointer}
+.dev-element-commentor-viewport-options button>svg{grid-row:1/3;color:#7b8fa9}
+.dev-element-commentor-viewport-options button strong{overflow:hidden;font-size:9px;text-overflow:ellipsis;white-space:nowrap}
+.dev-element-commentor-viewport-options button small{overflow:hidden;color:#96a3b3;font-size:7.5px;font-weight:700;text-overflow:ellipsis;white-space:nowrap}
+.dev-element-commentor-viewport-options button.is-selected{border-color:#8d79e2;background:#f2efff;color:#5844b1;box-shadow:inset 0 0 0 1px rgba(111,84,215,.12)}
+.dev-element-commentor-viewport-options button.is-selected>svg{color:#654dcc}
+@media(max-width:900px){.dev-element-commentor-toolbar{max-width:calc(100vw - 20px)!important}}
+@media(max-width:680px){.dev-element-commentor-toolbar-drag-zone .dev-element-commentor-route{display:none}.dev-element-commentor-toolbar-drag-zone>.lucide-grip-vertical{display:block}.dev-element-commentor-viewport-indicator small{display:none}.dev-element-commentor-viewport-options{grid-template-columns:1fr}.dev-element-commentor-viewport-field>span{display:grid}.dev-element-commentor-viewport-field>span small{max-width:none;text-align:left}}
+
+/* DevTools device emulation uses the browser's real focus/visual viewport
+   behavior. Inputs below 16px can therefore trigger the same automatic
+   mobile magnification as a phone browser and leave the inspected page at a
+   non-1 visualViewport scale. Keep the development overlay above that
+   threshold without changing production UI typography. */
+@media(max-width:680px){
+  .dev-element-commentor-toolbar select,
+  .dev-element-commentor-form input,
+  .dev-element-commentor-form select,
+  .dev-element-commentor-form textarea{font-size:16px}
+}
+
+/* Keep saved-comment buttons inside the reviewed element instead of floating
+   above its top-right boundary. This is especially important for narrow
+   sidebar navigation rows where the old placement could look like it belonged
+   to the previous menu item. */
+.dev-element-commentor-marker{transform:translate(-100%,45%)!important}
+.dev-element-commentor-marker:hover{transform:translate(-100%,45%) scale(1.13)!important}
+
+/* Saved/resolved comments whose original target is temporarily unmounted
+   still need a visible way back into their editor. Keep them in a small
+   fixed history rail instead of silently dropping their overlay marker. */
+.dev-element-commentor-history-rail{position:fixed;z-index:11009;top:70px;right:10px;display:flex;max-height:calc(100vh - 84px);width:46px;flex-direction:column;overflow:hidden;border:1px solid rgba(121,134,160,.5);border-radius:12px;background:rgba(248,250,253,.96);box-shadow:0 10px 28px rgba(28,39,61,.16);backdrop-filter:blur(12px);pointer-events:auto}
+.dev-element-commentor-history-rail>header{display:flex;min-height:34px;align-items:center;justify-content:center;gap:3px;border-bottom:1px solid #e1e6ed;color:#6d7f95;font-size:7px;font-weight:800}
+.dev-element-commentor-history-rail>header span{display:flex;flex-direction:column;align-items:center;line-height:1}.dev-element-commentor-history-rail>header strong{color:#415d79;font-size:8px}
+.dev-element-commentor-history-rail>div{display:flex;min-height:0;flex:1;flex-direction:column;align-items:center;gap:5px;overflow-y:auto;padding:6px 5px}
+.dev-element-commentor-history-marker{display:flex;width:28px;height:28px;flex:0 0 28px;align-items:center;justify-content:center;gap:1px;border:2px solid #fff;border-radius:999px;background:#6d52df;color:#fff;box-shadow:0 4px 10px rgba(43,34,92,.24);font:inherit;cursor:pointer;pointer-events:auto}
+.dev-element-commentor-history-marker b{font-size:7px;line-height:1}.dev-element-commentor-history-marker:hover{transform:scale(1.08)}.dev-element-commentor-history-marker.is-resolved{background:#5f7b6d;opacity:.88}.dev-element-commentor-history-marker.is-critical{background:#c94b59}.dev-element-commentor-history-marker.is-high{background:#d97b35}.dev-element-commentor-history-marker.is-low{background:#6887aa}
+.dev-element-commentor-history-marker.is-resolved,
+.dev-element-commentor-history-marker.is-resolved.is-critical,
+.dev-element-commentor-history-marker.is-resolved.is-high,
+.dev-element-commentor-history-marker.is-resolved.is-medium,
+.dev-element-commentor-history-marker.is-resolved.is-low{background:#5f7b6d;opacity:.88}
+@media(max-width:680px){.dev-element-commentor-history-rail{top:66px;right:6px;max-height:calc(100vh - 74px);width:40px}}
+
+/* Commentor workspace controls: the editor behaves like a small movable
+   development window instead of a fixed modal. Its content reflows against
+   the editor's own width, so resizing it does not depend on page breakpoints. */
+.dev-element-commentor-composer{
+  display:flex!important;
+  min-width:min(278px,calc(100vw - 16px));
+  min-height:230px;
+  flex-direction:column;
+  overflow:hidden!important;
+  container-name:dev-commentor-composer;
+  container-type:inline-size;
+}
+.dev-element-commentor-composer.is-minimized{min-height:0!important;overflow:hidden!important}
+.dev-element-commentor-composer.is-resizing{transition:none!important;user-select:none;box-shadow:0 24px 62px rgba(20,31,49,.32),0 0 0 2px rgba(124,92,255,.14)}
+.dev-element-commentor-composer>header{position:relative;z-index:35;flex:0 0 auto}
+.dev-element-commentor-composer-header-actions{display:flex;flex:0 0 auto;align-items:center;gap:5px}
+.dev-element-commentor-composer-header-actions>button{margin:0}
+.dev-element-commentor-composer-body{min-width:0;min-height:0;flex:1 1 auto;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;-webkit-overflow-scrolling:touch}
+.dev-element-commentor-composer>footer{position:relative;z-index:30;flex:0 0 auto}
+.dev-element-commentor-composer.is-minimized>.dev-element-commentor-composer-body,
+.dev-element-commentor-composer.is-minimized>footer{display:none!important}
+.dev-element-commentor-composer.is-minimized>header{border-bottom:0;border-radius:14px}
+
+.dev-element-commentor-resize-handle{position:absolute;z-index:60;display:block;background:transparent;pointer-events:auto;touch-action:none}
+.dev-element-commentor-resize-handle.is-n{top:0;right:14px;left:14px;height:8px;cursor:ns-resize}
+.dev-element-commentor-resize-handle.is-ne{top:0;right:0;width:14px;height:14px;cursor:nesw-resize}
+.dev-element-commentor-resize-handle.is-e{top:14px;right:0;bottom:14px;width:8px;cursor:ew-resize}
+.dev-element-commentor-resize-handle.is-se{right:0;bottom:0;width:14px;height:14px;cursor:nwse-resize}
+.dev-element-commentor-resize-handle.is-s{right:14px;bottom:0;left:14px;height:8px;cursor:ns-resize}
+.dev-element-commentor-resize-handle.is-sw{bottom:0;left:0;width:14px;height:14px;cursor:nesw-resize}
+.dev-element-commentor-resize-handle.is-w{top:14px;bottom:14px;left:0;width:8px;cursor:ew-resize}
+.dev-element-commentor-resize-handle.is-nw{top:0;left:0;width:14px;height:14px;cursor:nwse-resize}
+.dev-element-commentor-resize-handle.is-se::after{position:absolute;right:3px;bottom:3px;width:7px;height:7px;border-right:2px solid rgba(101,78,208,.62);border-bottom:2px solid rgba(101,78,208,.62);border-radius:0 0 2px 0;content:""}
+.dev-element-commentor-resize-handle:is(.is-n,.is-e,.is-s,.is-w):hover{background:rgba(101,78,208,.09)}
+.dev-element-commentor-composer.is-resizing .dev-element-commentor-resize-handle{background:rgba(101,78,208,.06)}
+
+@container dev-commentor-composer (max-width:390px){
+  .dev-element-commentor-target-mode{grid-template-columns:1fr}
+  .dev-element-commentor-form-grid{grid-template-columns:1fr}
+  .dev-element-commentor-viewport-options{grid-template-columns:1fr}
+  .dev-element-commentor-category-grid{grid-template-columns:1fr}
+  .dev-element-commentor-group-depth{grid-template-columns:34px minmax(0,1fr) 34px;gap:6px;margin-inline:8px;padding:6px}
+  .dev-element-commentor-group-depth>button{width:34px;height:34px}
+  .dev-element-commentor-target-summary{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;margin-inline:8px}
+  .dev-element-commentor-target-summary span{justify-self:start}
+  .dev-element-commentor-form{padding-inline:8px}
+  .dev-element-commentor-composer>footer{align-items:stretch;flex-direction:column}
+  .dev-element-commentor-composer>footer>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+  .dev-element-commentor-composer>footer button{justify-content:center}
+  .dev-element-commentor-composer>footer>button.is-primary{width:100%}
+}
+@container dev-commentor-composer (max-width:325px){
+  .dev-element-commentor-composer>header{padding:10px}
+  .dev-element-commentor-composer>header>div>span{max-width:170px}
+  .dev-element-commentor-target-mode{padding-inline:8px}
+  .dev-element-commentor-form label>span,
+  .dev-element-commentor-category-field>span,
+  .dev-element-commentor-viewport-field>span{display:grid;gap:2px}
+  .dev-element-commentor-form label>span small,
+  .dev-element-commentor-category-field>span small,
+  .dev-element-commentor-viewport-field>span small{max-width:none;text-align:left}
+  .dev-element-commentor-composer>footer>div{grid-template-columns:1fr}
+}
+
+/* Hidden/unmounted comments can be moved or suppressed without losing access:
+   the toolbar owns the show/hide control and the rail header is a drag handle. */
+.dev-element-commentor-history-rail{width:58px}
+.dev-element-commentor-history-rail>header{min-height:40px;gap:2px;padding:3px;cursor:grab;touch-action:none;user-select:none}
+.dev-element-commentor-history-rail>header>svg:first-child{flex:none;color:#9aa7b6}
+.dev-element-commentor-history-rail>header span{min-width:0;flex:1}
+.dev-element-commentor-history-rail>header button{display:grid;width:19px;height:19px;flex:0 0 19px;place-items:center;border:0;border-radius:5px;background:transparent;padding:0;color:#8392a5;cursor:pointer;touch-action:manipulation}
+.dev-element-commentor-history-rail>header button:hover{background:#edf1f6;color:#4f637c}
+.dev-element-commentor-history-rail.is-dragging{box-shadow:0 16px 38px rgba(28,39,61,.24);transition:none}
+.dev-element-commentor-history-rail.is-dragging>header{cursor:grabbing}
+@media(max-width:680px){.dev-element-commentor-history-rail{width:54px}}

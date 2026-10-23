@@ -1,22 +1,28 @@
-# SerbisYO Hackathon Project
+# TaymPers Hackathon Project
 
-SerbisYO is Team 10's finalized T.I.P.A. CS Hackathon 2026 project concept. This folder is the canonical project reference for product direction, system scope, UI/UX, development, research, QA, and presentation preparation.
+**TaymPers: A Community-Powered Platform for Accessible, Transparent, Accountable, and Reliable Services** is Team 10's finalized T.I.P.A. CS Hackathon 2026 project concept. This folder is the canonical project reference for product direction, system scope, UI/UX, development, research, QA, and presentation preparation.
 
 ## Core Idea
 
-SerbisYO is a community-powered, map-based service intelligence and transparency platform. It helps people know **where to go, when to go, what to expect, and which service provider is more reliable** before they commit time, money, and effort to a service.
+TaymPers is a community-powered, map-based service intelligence and transparency platform. It helps people know **where to go, when to go, what to expect, and which service provider is more reliable** before they commit time, money, and effort to a service.
 
-Instead of relying only on ordinary star ratings, SerbisYO turns community experiences into structured service information such as waiting time, processing time, service reliability, information accuracy, accessibility, service quality, availability, and recent community updates.
+Instead of relying only on ordinary star ratings, TaymPers turns community experiences into structured service information such as waiting time, processing time, service reliability, information accuracy, accessibility, service quality, availability, and recent community updates.
 
 ## Canonical Project Files
 
+- `DEVELOPMENT_CONTINUATION_CONTEXT.md` - current downloaded prototype state, routes, known drift/issues, asset rules, and continuation priorities.
+- `BRAND_CONTEXT.md` - written TaymPers palette, typography, visual roles, and implementation checks derived from approved branding references.
+- `ASSET_CONTEXT.md` - canonical asset folders, filenames, runtime-copy rules, and when to use assets versus CSS/HTML.
+- `MORONG_REAL_PLACES_CONTEXT.md` - verified central-Morong real-place cluster, coordinates, address data, image strategy, and the rule separating factual place data from simulated TaymPers metrics.
+- `IMAGE_COLLECTION_CONTEXT.md` - zero-paid-API Wikimedia Commons + controlled Playwright/Puppeteer/Cheerio image-discovery workflow for real establishments.
+- Development-only image approval UI: `http://localhost:5173/image-review`.
 - `PROJECT_CONTEXT.md` - project vision, problem, users, principles, SDG alignment, and terminology.
 - `PRODUCT_SCOPE.md` - hackathon MVP, priorities, non-goals, and feature freeze rules.
 - `USER_FLOWS_UI.md` - required pages, elements, interactions, responsive behavior, and UI/UX direction.
 - `DESIGN_BLUEPRINT.md` - detailed page-by-page visual direction, responsive layouts, interaction patterns, and design priorities.
 - `UI_IMAGE_PROMPTS.md` - reusable image-generation prompts for exploring 2-3 visual directions per primary page/state.
 - `UI_IMAGE_PROMPTS_MASTER.md` - canonical detailed image-generation prompts for every required page, workflow step, system state, optional screen, and future-scope concept. Core Group 1 includes dedicated desktop and mobile prompts and uses one-screen-per-image generation.
-- `APPROVED_UI_BASELINE.md` - approved P01/P02 desktop and mobile visual baseline, pairing rules, and consistency requirements for all later SerbisYO screens.
+- `APPROVED_UI_BASELINE.md` - approved P01/P02 desktop and mobile visual baseline, pairing rules, and consistency requirements for all later TaymPers screens.
 - `UI_GENERATION_STATUS.md` - live checklist of generated, approved, pending, and not-yet-generated UI concept screens.
 - `TECHNICAL_PLAN.md` - tech stack, architecture, data model, scoring logic, and implementation order.
 - `TEAM_WORKPLAN.md` - team composition, role responsibilities, collaboration rules, and timeline.
@@ -31,6 +37,10 @@ The codebase uses a small frontend/backend structure:
 - `apps/web` - React + Vite + Tailwind responsive frontend.
 - `apps/api` - PHP 8.2+ JSON API using the built-in PHP server for local development.
 - `database` - explicit PostgreSQL schema and seed data.
+
+TaymPers mapping uses **Leaflet + MapLibre GL + OpenFreeMap**: Leaflet keeps TaymPers marker/interaction behavior, while MapLibre renders a customizable vector basemap using the zero-key OpenFreeMap service. The shared map theme currently retains the legacy-compatible filename `apps/web/src/map/serbisyoExploreMapTheme.ts`, and both Explore and Service Profile maps retain a raster OpenStreetMap fallback.
+
+Explore owns the persistent discovery shell. Service profiles opened from cards, map markers, previews, or `/services/:providerId` render as animated overlays inside the Explore content region so the desktop/mobile headers, filters, chips, and bottom navigation remain stable instead of being recreated per workflow.
 
 Install dependencies from the repository root:
 
@@ -60,13 +70,26 @@ The launcher will:
 4. Wait for Vite to become available.
 5. Open `http://localhost:5173` automatically in the default browser.
 
-Keep the **SerbisYO Development Server** window open while working. Closing that window, or pressing `Ctrl+C` inside it, stops the local servers.
+Keep the **TaymPers Development Server** window open while working. Closing that window, or pressing `Ctrl+C` inside it, stops the local servers.
 
 For launcher testing without automatically opening a browser, run:
 
 ```bat
 RUN_SERBISYO.bat --no-browser
 ```
+
+### Development UI tools
+
+When running through Vite development mode, TaymPers includes the **same UI Commentor tool used in AGAPAY**, ported into this project with project-local persistence.
+
+- With the Commentor enabled, hover/click the actual interface to inspect a target and open the AGAPAY single/group-target composer.
+- Comments persist locally in `dev-data/ui-commentor-comments.json` through the PHP dev API.
+- **Hold Ctrl+C for about 1 second** to show/hide the Commentor when normal copy is not in use.
+- **Ctrl+Shift+C** toggles the Commentor immediately.
+- **Esc** closes the active comment composer.
+- **Ctrl+D** resets same-origin TaymPers state (local/session storage, CacheStorage, enumerable IndexedDB databases, cookies, and service-worker registrations) and returns to Login as a fresh user.
+
+`Ctrl+D` intentionally overrides the browser bookmark shortcut while the local development app is open. A page cannot erase the browser's entire global HTTP disk cache; the shortcut targets the application state that affects TaymPers prototype sessions.
 
 Default local addresses:
 
