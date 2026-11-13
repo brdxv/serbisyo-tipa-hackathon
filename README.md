@@ -1,109 +1,61 @@
-# TaymPers Hackathon Project
+# TaymPers: Time First
 
-**TaymPers: A Community-Powered Platform for Accessible, Transparent, Accountable, and Reliable Services** is Team 10's finalized T.I.P.A. CS Hackathon 2026 project concept. This folder is the canonical project reference for product direction, system scope, UI/UX, development, research, QA, and presentation preparation.
+**A Community-Powered Platform for Accessible, Transparent, Accountable, and Reliable Services**
 
-## Core Idea
+TaymPers is a map-first service-intelligence platform. It helps people know **where to go, when to go, what to expect, and which provider is more reliable** before they spend time, money, and effort on a service. Built by **TIPA Team 10** for the **DOST NAIRA Hackathon (CS Hackathon 2026)**, with a prototype focused on central Morong, Rizal.
 
-TaymPers is a community-powered, map-based service intelligence and transparency platform. It helps people know **where to go, when to go, what to expect, and which service provider is more reliable** before they commit time, money, and effort to a service.
+> Team Leader & Presenter: **Ian Kurt G. Valencia** · 15-member team of developers, researchers/QA, UI/UX designers, and presenters.
 
-Instead of relying only on ordinary star ratings, TaymPers turns community experiences into structured service information such as waiting time, processing time, service reliability, information accuracy, accessibility, service quality, availability, and recent community updates.
+## The Problem
 
-## Canonical Project Files
+*"Pagod ka na bang maghintay sa wala?"* (Are you tired of waiting with no certainty?)
 
-- `DEVELOPMENT_CONTINUATION_CONTEXT.md` - current downloaded prototype state, routes, known drift/issues, asset rules, and continuation priorities.
-- `BRAND_CONTEXT.md` - written TaymPers palette, typography, visual roles, and implementation checks derived from approved branding references.
-- `ASSET_CONTEXT.md` - canonical asset folders, filenames, runtime-copy rules, and when to use assets versus CSS/HTML.
-- `MORONG_REAL_PLACES_CONTEXT.md` - verified central-Morong real-place cluster, coordinates, address data, image strategy, and the rule separating factual place data from simulated TaymPers metrics.
-- `IMAGE_COLLECTION_CONTEXT.md` - zero-paid-API Wikimedia Commons + controlled Playwright/Puppeteer/Cheerio image-discovery workflow for real establishments.
-- Development-only image approval UI: `http://localhost:5173/image-review`.
-- `PROJECT_CONTEXT.md` - project vision, problem, users, principles, SDG alignment, and terminology.
-- `PRODUCT_SCOPE.md` - hackathon MVP, priorities, non-goals, and feature freeze rules.
-- `USER_FLOWS_UI.md` - required pages, elements, interactions, responsive behavior, and UI/UX direction.
-- `DESIGN_BLUEPRINT.md` - detailed page-by-page visual direction, responsive layouts, interaction patterns, and design priorities.
-- `UI_IMAGE_PROMPTS.md` - reusable image-generation prompts for exploring 2-3 visual directions per primary page/state.
-- `UI_IMAGE_PROMPTS_MASTER.md` - canonical detailed image-generation prompts for every required page, workflow step, system state, optional screen, and future-scope concept. Core Group 1 includes dedicated desktop and mobile prompts and uses one-screen-per-image generation.
-- `APPROVED_UI_BASELINE.md` - approved P01/P02 desktop and mobile visual baseline, pairing rules, and consistency requirements for all later TaymPers screens.
-- `UI_GENERATION_STATUS.md` - live checklist of generated, approved, pending, and not-yet-generated UI concept screens.
-- `TECHNICAL_PLAN.md` - tech stack, architecture, data model, scoring logic, and implementation order.
-- `TEAM_WORKPLAN.md` - team composition, role responsibilities, collaboration rules, and timeline.
-- `QA_RESEARCH_PITCH.md` - research direction, QA plan, pitch deck structure, demo flow, and presentation preparation.
-- `AGENTS.md` - instructions for AI-assisted development inside this project.
-- `SOURCE_STRUCTURE.md` - implementation-oriented repository structure, boundaries, and development order.
+Long and unpredictable queues, outdated or scattered service information, and services that turn out to be unavailable after you've already traveled. The problem isn't just waiting. It's accessing services without knowing what to expect.
 
-## Development Workspace
+## What TaymPers Does
 
-The codebase uses a small frontend/backend structure:
+Instead of plain star ratings, TaymPers turns community experiences into structured service information:
 
-- `apps/web` - React + Vite + Tailwind responsive frontend.
-- `apps/api` - PHP 8.2+ JSON API using the built-in PHP server for local development.
-- `database` - explicit PostgreSQL schema and seed data.
+- **Explore map:** real Morong establishments on an OpenFreeMap/OpenStreetMap basemap, with search and filters
+- **Service profiles:** operating hours, availability, estimated waiting and processing times, and peak hours
+- **Community intelligence:** reliability, information accuracy, accessibility, and service quality indicators
+- **TaymPers Score:** a composite service-reliability score built from community reports
+- **Contribute & report:** share experiences, update service information, and flag issues
+- **Moderation:** role-based workspaces for moderators and service providers
 
-TaymPers mapping uses **Leaflet + MapLibre GL + OpenFreeMap**: Leaflet keeps TaymPers marker/interaction behavior, while MapLibre renders a customizable vector basemap using the zero-key OpenFreeMap service. The shared map theme currently retains the legacy-compatible filename `apps/web/src/map/serbisyoExploreMapTheme.ts`, and both Explore and Service Profile maps retain a raster OpenStreetMap fallback.
+The real place names, addresses, and coordinates are kept separate from simulated prototype metrics (wait times, scores) used for the demo.
 
-Explore owns the persistent discovery shell. Service profiles opened from cards, map markers, previews, or `/services/:providerId` render as animated overlays inside the Explore content region so the desktop/mobile headers, filters, chips, and bottom navigation remain stable instead of being recreated per workflow.
+## Tech Stack
 
-Install dependencies from the repository root:
+| Layer | Technology |
+|---|---|
+| Frontend | React, TypeScript, Vite, Tailwind CSS, React Router |
+| Maps | Leaflet, MapLibre GL, OpenFreeMap / OpenStreetMap |
+| Backend | PHP 8.2+ JSON API |
+| Database | PostgreSQL |
+| Media | Wikimedia Commons–sourced establishment images |
+
+## Repository Structure
+
+```text
+apps/web     React + Vite + Tailwind frontend
+apps/api     PHP JSON API (built-in PHP server for local dev)
+database     PostgreSQL schema and seed data
+data         verified Morong real-place dataset
+assets       brand, establishment, and UI assets
+```
+
+## Running Locally
 
 ```bash
 npm install
+npm run dev          # starts the Vite frontend and the PHP API (localhost:8000) together
 ```
 
-Run frontend and API together:
+Requires Node.js 20+ and PHP 8.2+. On Windows you can also use `RUN_SERBISYO.bat`. Copy `apps/web/.env.example` and `apps/api/.env.example` to `.env` and fill in your local PostgreSQL settings.
 
-```bash
-npm run dev
-```
+## Project Documentation
 
-### Windows one-click launcher
+Planning documents are kept in the repo root: `PROJECT_CONTEXT.md` (vision and problem), `PRODUCT_SCOPE.md` (MVP scope), `TECHNICAL_PLAN.md` (architecture and scoring), `DESIGN_BLUEPRINT.md` and `USER_FLOWS_UI.md` (UI/UX), `TEAM_WORKPLAN.md` (roles), `QA_RESEARCH_PITCH.md` (research and pitch), and `TAYMPERS_DEMO_GUIDE.md` (demo flow).
 
-Developers on Windows can also double-click:
-
-```text
-RUN_SERBISYO.bat
-```
-
-The launcher will:
-
-1. Verify that Node.js/npm and PHP are available. Node.js is used only for the React/Vite frontend toolchain.
-2. Install/sync the frontend dependencies.
-3. Start the React frontend and PHP API in a separate development-server window.
-4. Wait for Vite to become available.
-5. Open `http://localhost:5173` automatically in the default browser.
-
-Keep the **TaymPers Development Server** window open while working. Closing that window, or pressing `Ctrl+C` inside it, stops the local servers.
-
-For launcher testing without automatically opening a browser, run:
-
-```bat
-RUN_SERBISYO.bat --no-browser
-```
-
-### Development UI tools
-
-When running through Vite development mode, TaymPers includes the **same UI Commentor tool used in AGAPAY**, ported into this project with project-local persistence.
-
-- With the Commentor enabled, hover/click the actual interface to inspect a target and open the AGAPAY single/group-target composer.
-- Comments persist locally in `dev-data/ui-commentor-comments.json` through the PHP dev API.
-- **Hold Ctrl+C for about 1 second** to show/hide the Commentor when normal copy is not in use.
-- **Ctrl+Shift+C** toggles the Commentor immediately.
-- **Esc** closes the active comment composer.
-- **Ctrl+D** resets same-origin TaymPers state (local/session storage, CacheStorage, enumerable IndexedDB databases, cookies, and service-worker registrations) and returns to Login as a fresh user.
-
-`Ctrl+D` intentionally overrides the browser bookmark shortcut while the local development app is open. A page cannot erase the browser's entire global HTTP disk cache; the shortcut targets the application state that affects TaymPers prototype sessions.
-
-Default local addresses:
-
-- Web: `http://localhost:5173`
-- PHP API: `http://localhost:8000`
-- API health check: `http://localhost:8000/api/health`
-
-Copy `apps/api/.env.example` to `apps/api/.env` when PostgreSQL is ready. The PHP backend intentionally has no Composer dependency yet so the team can start immediately. PostgreSQL access uses PHP PDO and requires the `pdo_pgsql` extension once database-backed routes are implemented. The frontend can still start before database integration is complete by using seeded/mock feature data.
-
-## Hackathon Deadline Mindset
-
-Treat **October 22, 2026 at 11:59 PM** as the hard submission deadline even if the event allows activity or presentation work to continue on October 23.
-
-The main rule for the sprint is:
-
-> Build one complete, understandable, responsive, and reliable core experience before adding optional features.
-
+> Originally developed under the working name **SerbisYO**.
